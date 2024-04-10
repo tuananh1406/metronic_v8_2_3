@@ -1,0 +1,71 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color: $body-bg;
+$app-bg-color-dark: $coal-400; 
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Container
+$app-container-padding-x: 40px !default;
+$app-container-padding-x-mobile: 20px !default;
+
+// Content
+$app-content-padding-y: 0;
+$app-content-padding-y-mobile: 0;
+
+// Header base
+$app-header-base-transition: margin-left $app-general-transition-duration $app-general-transition-timing;
+$app-header-base-height: 90px;
+$app-header-base-height-mobile: 70px;
+$app-header-base-bg-color: $white;
+$app-header-base-bg-color-dark: transparent;
+$app-header-base-border-bottom: 1px solid transparent; 
+$app-header-base-border-bottom-dark: 1px solid transparent;
+
+// Header sticky
+$app-header-sticky-height: 90px;
+$app-header-sticky-bg-color: $app-header-base-bg-color;
+$app-header-sticky-bg-color-dark: $body-bg-dark;
+$app-header-sticky-border-bottom: 1px solid $gray-300; 
+$app-header-sticky-border-bottom-dark: 1px solid $gray-300-dark;
+$app-header-sticky-border-bottom-mobile: 1px solid $gray-300; 
+$app-header-sticky-border-bottom-mobile-dark: 1px solid $gray-300-dark;
+
+// Sidebar base
+$app-sidebar-base-width: 270px;
+$app-sidebar-base-width-mobile: 250px; 
+$app-sidebar-base-bg-color: $coal-500;
+$app-sidebar-base-bg-color-dark: $coal-500;
+ 
+// Sidebar primary
+$app-sidebar-panel-base-transition: margin-left $app-general-transition-duration $app-general-transition-timing;
+$app-sidebar-panel-base-z-index: 2;
+$app-sidebar-panel-base-width: 350px;
+$app-sidebar-panel-base-width-mobile: 300px;
+$app-sidebar-panel-base-bg-color: $body-bg;
+$app-sidebar-panel-base-bg-color-dark: $coal-400;
+$app-sidebar-panel-base-border-end: 1px solid $gray-300;
+$app-sidebar-panel-base-border-end-dark: 1px solid $gray-300-dark;
+
+// Footer
+$app-footer-height: auto;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px;

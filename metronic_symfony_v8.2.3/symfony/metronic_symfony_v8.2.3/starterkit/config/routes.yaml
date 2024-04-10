@@ -1,0 +1,35 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\DashboardController::index
+
+
+dashboard:
+    path: /dashboard
+    controller: App\Controller\DashboardController::index
+
+
+signin:
+    path: /signin
+    controller: App\Controller\AuthController::signin
+
+
+signup:
+    path: /signup
+    controller: App\Controller\AuthController::signup
+
+
+reset-password:
+    path: /reset-password
+    controller: App\Controller\AuthController::reset_password
+
+
+new-password:
+    path: /new-password
+    controller: App\Controller\AuthController::new_password
+

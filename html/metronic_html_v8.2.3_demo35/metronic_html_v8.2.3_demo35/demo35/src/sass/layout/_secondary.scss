@@ -1,0 +1,21 @@
+//
+// Secondary
+//
+
+// General
+.app-header-secondary {
+    .app-header-slider {
+        border-top: var(--#{$prefix}header-secondary-top-border-color);
+        border-bottom: var(--#{$prefix}header-secondary-bottom-border-color);   
+    }
+} 
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header-secondary {
+        .custom-link {
+            width: 32px;
+            height: 32px;
+        }
+    } 
+}

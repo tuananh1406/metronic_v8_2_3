@@ -1,0 +1,68 @@
+<div class="container d-flex flex-stack flex-wrap gap-2" id="kt_header_container">
+  <app-page-title
+    #ktPageTitle
+    class="page-title d-flex"
+    [ngClass]="pageTitleCssClasses"
+  ></app-page-title>
+
+  <!--begin::header menu toggle-->
+  <div class="d-flex d-lg-none align-items-center ms-n2 me-2" title="Show aside menu">
+    <div class="btn btn-icon btn-active-icon-primary" id="kt_aside_toggle">
+      <!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+      <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs015.svg'" class="svg-icon svg-icon-1 mt-1"></span>
+      <!--end::Svg Icon-->
+    </div>
+    <a routerLink="/" class="d-flex align-items-center">
+      <img alt="Logo" src="./assets/media/logos/demo3.svg" class="h-20px">
+    </a>
+  </div>
+  <!--end::Heaeder menu toggle-->
+
+  <!--begin::Wrapper-->
+  <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+    <!--begin::Navbar-->
+    <ng-container *ngIf="headerLeft === 'menu'">
+      <div class="d-flex align-items-stretch" id="kt_header_nav">
+        <div
+          class="header-menu align-items-stretch"
+          data-kt-drawer="true"
+          data-kt-drawer-name="header-menu"
+          data-kt-drawer-activate="{default: true, lg: false}"
+          data-kt-drawer-overlay="true"
+          data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+          data-kt-drawer-direction="end"
+          data-kt-drawer-toggle="#kt_header_menu_mobile_toggle"
+          data-kt-swapper="true"
+          data-kt-swapper-mode="prepend"
+          data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}"
+        >
+          <app-header-menu
+            class="
+              menu
+              menu-lg-rounded
+              menu-column
+              menu-lg-row
+              menu-state-bg
+              menu-title-gray-700
+              menu-state-title-primary
+              menu-state-icon-primary
+              menu-state-bullet-primary
+              menu-arrow-gray-500
+              fw-bold
+              my-5 my-lg-0
+              align-items-stretch
+            "
+            id="#kt_header_menu"
+            data-kt-menu="true"
+          ></app-header-menu>
+        </div>
+      </div>
+    </ng-container>
+    <!--end::Navbar-->
+
+    <!--begin::Toolbar wrapper-->
+    <app-topbar class="d-flex align-items-center flex-shrink-0"></app-topbar>
+    <!--end::Toolbar wrapper-->
+  </div>
+  <!--end::Wrapper-->
+</div>

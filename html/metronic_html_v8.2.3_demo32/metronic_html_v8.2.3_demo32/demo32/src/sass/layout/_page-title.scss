@@ -1,0 +1,26 @@
+//
+// Page title
+//
+
+ 
+.app-toolbar {	 
+	.icon-custom {
+		color: $app-toolbar-base-page-icon-color;	
+	}
+
+	.bullet {
+		background-color: $app-toolbar-base-page-desc-color;
+	}
+
+	.custom-text {
+		color: $app-toolbar-base-page-text-color;	
+		font-size: 1.2rem;	 
+	}
+	.page-desc {
+		color: $app-toolbar-base-page-desc-color;	
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		line-height: 1.5;	 
+	}	
+} 

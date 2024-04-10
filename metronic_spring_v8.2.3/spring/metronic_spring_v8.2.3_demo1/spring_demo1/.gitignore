@@ -1,0 +1,21 @@
+~/.vscode-root
+
+starterkit/_keenthemes/tools/yarn.lock
+starterkit/_keenthemes/tools/package-lock.json
+starterkit/_keenthemes/tools/node_modules
+starterkit/_keenthemes/tools/yarn-error.log
+
+starterkit/src/main/resources/static/assets
+
+# exclude font cache
+_cache.php
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

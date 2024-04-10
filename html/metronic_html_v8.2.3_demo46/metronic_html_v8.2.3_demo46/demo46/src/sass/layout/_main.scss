@@ -1,0 +1,25 @@
+//
+// Wrapper
+//
+
+
+// General
+.app-wrapper {		 
+	padding-bottom: 10px !important; 
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-wrapper {	
+		padding: $app-layout-gap;
+		padding-bottom: 0;		
+
+		.app-container {	
+			padding-right: 0 !important;
+
+			body:not([data-kt-app-sidebar-enabled="true"]) & {
+				padding-left: 0 !important;
+			}
+		}
+	}
+} 

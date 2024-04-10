@@ -1,0 +1,95 @@
+<% content_for :title do %>
+  Dashboard
+<% end %>
+
+<% content_for :layout do %>
+
+  <!--begin::Row-->
+  <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+    <!--begin::Col-->
+    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+      <%= render 'partials/widgets/cards/widget-20' %>
+
+      <%= render 'partials/widgets/cards/widget-7' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+      <%= render 'partials/widgets/cards/widget-17' %>
+
+      <%= render 'partials/widgets/lists/widget-26' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xxl-6">
+      <%= render 'partials/widgets/engage/widget-10' %>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Row-->
+
+  <!--begin::Row-->
+  <div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xxl-6 mb-5 mb-xl-10">
+      <%= render 'partials/widgets/charts/widget-8' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-6 mb-5 mb-xl-10">
+      <%= render 'partials/widgets/tables/widget-16' %>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Row-->
+
+  <!--begin::Row-->
+  <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+    <!--begin::Col-->
+    <div class="col-xxl-6">
+      <%= render 'partials/widgets/cards/widget-18' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-6">
+      <%= render 'partials/widgets/charts/widget-36' %>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Row-->
+
+  <!--begin::Row-->
+  <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-4">
+      <%= render 'partials/widgets/charts/widget-35' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-8">
+      <%= render 'partials/widgets/tables/widget-14' %>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Row-->
+
+  <!--begin::Row-->
+  <div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-4">
+      <%= render 'partials/widgets/charts/widget-31' %>
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-8">
+      <%= render 'partials/widgets/charts/widget-24' %>
+    </div>
+    <!--end::Col-->
+  </div>
+  <!--end::Row-->
+
+<% end %>
+
+<%# Choose the layout. See app/views/layout/metronic/demo1/_bootstrap/default.rb %>
+<%# <%= render template: "#{Rails.configuration.settings.KT_THEME_LAYOUT_DIR}/default_header_layout" %>
+<%= render template: "#{Rails.configuration.settings.KT_THEME_LAYOUT_DIR}/default" %>

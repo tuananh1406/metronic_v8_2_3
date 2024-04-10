@@ -1,0 +1,32 @@
+<div class="mx-5">
+  <!--begin::Header-->
+  <h3 class="fw-bolder text-gray-900 mb-10 mx-0">Notifications</h3>
+  <!--end::Header-->
+
+  <!--begin::Body-->
+  <div class="mb-12">
+
+    <!--begin::Item-->
+    <div *ngFor="let item of allNotifications"
+      class="d-flex align-items-center bg-light-{{item.color}} rounded p-5 mb-7">
+      <!--begin::Icon-->
+      <span class="svg-icon svg-icon-{{item.color}} me-5">
+        <span [inlineSVG]="item.icon" class="svg-icon-1 svg-icon-{{item.color}}"></span>
+      </span>
+      <!--end::Icon-->
+
+      <!--begin::Title-->
+      <div class="flex-grow-1 me-2">
+        <a class="fw-bolder text-gray-800 text-hover-primary fs-6">{{item.title}}</a>
+        <span class="text-muted fw-bold d-block">{{item.text}}></span>
+      </div>
+      <!--end::Title-->
+
+      <!--begin::Lable-->
+      <span class="fw-bolder text-{{item.color}} py-1">{{item.number}}</span>
+      <!--end::Lable-->
+    </div>
+    <!--end::Item-->
+  </div>
+  <!--end::Body-->
+</div>

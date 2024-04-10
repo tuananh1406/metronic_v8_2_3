@@ -1,0 +1,22 @@
+//
+// Main 
+//
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+	&.app-default {
+		background-image: url('../media/misc/page-bg.png');	
+	}
+} 
+
+@include color-mode(dark) {
+	body {
+		&.app-default {
+			background-image: none;
+		}
+	}
+}

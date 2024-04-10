@@ -1,0 +1,14 @@
+//
+// Wrapper
+//
+
+// General mode
+.app-wrapper {	
+	background-color: var(--#{$prefix}body-bg);
+	@include border-top-radius(20px);	
+
+	&.app-container {
+		padding-left: 0 !important;	
+		padding-right: 0 !important;	
+	}
+}

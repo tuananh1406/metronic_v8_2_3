@@ -1,0 +1,92 @@
+{% extends "#{theme.getParameter('KT_THEME_LAYOUT_DIR')}/_default.html.twig" %}
+{#{% extends "#{theme.getParameter('KT_THEME_LAYOUT_DIR')}/_default_header_layout.html.twig" %}#}
+
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+
+    <!--begin::Row-->
+    <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+        <!--begin::Col-->
+        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+            {% include "partials/widgets/cards/_widget-20.html.twig" %}
+
+            {% include "partials/widgets/cards/_widget-7.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10">
+            {% include "partials/widgets/cards/_widget-17.html.twig" %}
+
+            {% include "partials/widgets/lists/_widget-26.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xxl-6">
+            {% include "partials/widgets/engage/_widget-10.html.twig" %}
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->
+
+    <!--begin::Row-->
+    <div class="row gx-5 gx-xl-10">
+        <!--begin::Col-->
+        <div class="col-xxl-6 mb-5 mb-xl-10">
+            {% include "partials/widgets/charts/_widget-8.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xl-6 mb-5 mb-xl-10">
+            {% include "partials/widgets/tables/_widget-16.html.twig" %}
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->
+
+    <!--begin::Row-->
+    <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+        <!--begin::Col-->
+        <div class="col-xxl-6">
+            {% include "partials/widgets/cards/_widget-18.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xl-6">
+            {% include "partials/widgets/charts/_widget-36.html.twig" %}
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->
+
+    <!--begin::Row-->
+    <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+        <!--begin::Col-->
+        <div class="col-xl-4">
+            {% include "partials/widgets/charts/_widget-35.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xl-8">
+            {% include "partials/widgets/tables/_widget-14.html.twig" %}
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->
+
+    <!--begin::Row-->
+    <div class="row gx-5 gx-xl-10">
+        <!--begin::Col-->
+        <div class="col-xl-4">
+            {% include "partials/widgets/charts/_widget-31.html.twig" %}
+        </div>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xl-8">
+            {% include "partials/widgets/charts/_widget-24.html.twig" %}
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->
+
+{% endblock %}

@@ -1,0 +1,65 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color: #FCFCFC;
+$app-bg-color-dark: $coal-400;
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Container
+$app-container-padding-x: 40px !default;
+$app-container-padding-x-mobile: 20px !default;
+
+// Header
+$app-header-base-height-mobile: 60px;
+$app-header-base-border-bottom: 1px solid $gray-300;
+$app-header-base-border-bottom-dark: 1px solid $coal-100;
+
+// Header primary
+$app-header-primary-base-height: 60px;
+$app-header-primary-base-bg-color: #B02A00;
+$app-header-primary-base-bg-color-dark: $coal-600;
+
+// Header secondary
+$app-header-secondary-base-height: 94px;
+$app-header-secondary-base-height-mobile: 0px;
+$app-header-secondary-base-bg-color: #A12700;
+$app-header-secondary-base-bg-color-dark: $coal-black;
+$app-header-secondary-menu-sub-bg-color: $white;
+$app-header-secondary-menu-sub-bg-color-dark: $coal-400;
+
+// Sidebar base
+$app-sidebar-base-width: 300px;
+$app-sidebar-base-bg-color: $body-bg;
+$app-sidebar-base-bg-color-dark: $coal-400;
+$app-sidebar-base-border-end: 1px solid $gray-300;
+$app-sidebar-base-border-end-dark: 1px solid $coal-100;
+
+// Sidebar fixed
+$app-sidebar-fixed-z-index: 99;
+
+// Content
+$app-content-padding-y: 30px;
+$app-content-padding-y-mobile: 15px;
+
+// Footer
+$app-footer-height: auto;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px;

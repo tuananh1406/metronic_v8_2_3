@@ -1,0 +1,25 @@
+//
+// To make future updates easier consider overriding the global variables from _variables.bootstrap.scss and _variables.custom.scss for current demo in this file.
+// Note that this file is included first and variables defined in _variables.bootstrap.scss and _variables.custom.scss
+// are not accessible in this file but you can override any global variable as shown below:
+//
+
+
+// Border Radiues
+$border-radius-sm:            						.5rem;
+$border-radius:               						.65rem;
+$border-radius-lg:            						1rem;
+$border-radius-xl:                        1.5rem;
+
+// Theme colors
+$info: 							#FF6F1E; 
+$info-active: 				#F15700;
+$info-light: 					#FFF5EF;
+$info-clarity: 					rgba(255, 111, 30, 0.20);
+$info-inverse: 					#ffffff;
+
+$info-dark: 							#D74E00; 
+$info-active-dark: 					#F35700;
+$info-light-dark: 					#272320;
+$info-clarity-dark: 					rgba(215, 78, 0, 0.20);
+$info-inverse-dark: 					#ffffff;

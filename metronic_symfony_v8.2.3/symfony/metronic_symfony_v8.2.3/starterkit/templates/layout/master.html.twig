@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html {{ theme.printHtmlAttributes('html') | raw }}>
+<!--begin::Head-->
+<head>
+    <base href=""/>
+    <title>{% block page_title %}{% endblock %} - Keenthemes</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <link rel="canonical" href=""/>
+
+    {{ theme.includeFavicon() | raw }}
+
+    <!--begin::Fonts-->
+    {{ theme.includeFonts() | raw }}
+    <!--end::Fonts-->
+
+    {% block stylesheets %}
+
+        {# {{ encore_entry_link_tags('app') }} #}
+
+        <!--begin::Global Stylesheets Bundle(used by all pages)-->
+        {% for path in theme.getGlobalAssets('css') %}
+            <link rel="stylesheet" href="{{ theme.asset(path) }}">
+        {% endfor %}
+        <!--end::Global Stylesheets Bundle-->
+
+        <!--begin::Vendor Stylesheets(used by this page)-->
+        {% for path in theme.getVendors('css') %}
+            <link rel="stylesheet" href="{{ theme.asset(path) }}">
+        {% endfor %}
+        <!--end::Vendor Stylesheets-->
+
+        <!--begin::Custom Stylesheets(optional)-->
+        {% for path in theme.getCustomCss() %}
+            <link rel="stylesheet" href="{{ theme.asset(path) }}">
+        {% endfor %}
+        <!--end::Custom Stylesheets-->
+
+    {% endblock %}
+
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<body id="kt_app_body" {{ theme.printHtmlClasses('body') }} {{ theme.printHtmlAttributes('body') | raw }}>
+
+{% include 'partials/theme-mode/_init.html.twig' %}
+
+{% block layout %}{% endblock %}
+
+{% block javascripts %}
+
+    {# {{ encore_entry_script_tags('app') }} #}
+
+    <!--begin::Javascript-->
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    {% for path in theme.getGlobalAssets() %}
+    <script src="{{ theme.asset(path) }}"></script>
+    {% endfor %}
+    <!--end::Global Javascript Bundle-->
+
+    <!--begin::Vendors Javascript(used by this page)-->
+    {% for path in theme.getVendors('js') %}
+    <script src="{{ theme.asset(path) }}"></script>
+    {% endfor %}
+    <!--end::Vendors Javascript-->
+
+    <!--begin::Custom Javascript(optional)-->
+    {% for path in theme.getCustomJs() %}
+    <script src="{{ theme.asset(path) }}"></script>
+    {% endfor %}
+    <!--end::Custom Javascript-->
+
+    <!--end::Javascript-->
+{% endblock %}
+
+</body>
+<!--end::Body-->
+
+</html>

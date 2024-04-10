@@ -1,0 +1,10 @@
+//
+// Main
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-main {
+		padding-right: $app-container-padding-x;	
+	}
+}

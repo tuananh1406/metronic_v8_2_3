@@ -1,0 +1,90 @@
+<!--begin::Search-->
+<div class="d-flex align-items-stretch" [ngClass]="itemClass">
+  <div id="kt_header_search" class="header-search d-flex align-items-stretch" data-kt-menu-trigger="click"
+    data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
+    <!-- begin::Search toggle -->
+    <div class="d-flex align-items-center" data-kt-search-element="toggle" id="kt_header_search_toggle">
+      <div class="btn btn-icon btn-active-light btn-active-color-primary w-30px h-30px w-md-40px h-md-40px">
+        <span [inlineSVG]="'./assets/media/icons/duotune/general/gen021.svg'" class="svg-icon"
+          [ngClass]="toolbarButtonIconSizeClass"></span>
+      </div>
+    </div>
+    <!-- end::Search toggle -->
+
+  </div>
+  <!-- begin::Menu -->
+  <app-search-result-inner class="menu menu-sub menu-sub-dropdown p-7 w-325px w-md-375px"
+    data-kt-search-element="content" class="menu menu-sub menu-sub-dropdown p-7 w-325px w-md-375px" data-kt-menu="true">
+  </app-search-result-inner>
+  <!-- end::Menu -->
+</div>
+<!--end::Search-->
+
+<!--begin::Activities-->
+<div class="d-flex align-items-center" [ngClass]="itemClass">
+  <!--begin::Drawer toggle-->
+  <div [ngClass]="btnClass" id="kt_activities_toggle">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen032.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <!--end::Drawer toggle-->
+</div>
+<!--end::Activities-->
+
+<!--begin::Chat-->
+<div class="d-flex align-items-center" [ngClass]="itemClass">
+  <!--begin::Menu wrapper-->
+  <div [ngClass]="btnClass" class="position-relative" id="kt_drawer_chat_toggle">
+    <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+    <span
+      class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink">
+    </span>
+  </div>
+  <!--end::Menu wrapper-->
+</div>
+<!--end::Chat-->
+
+<!--begin::Notifications-->
+<div class="d-flex align-items-center" [ngClass]="itemClass">
+  <!--begin::Menu- wrapper-->
+  <div [ngClass]="btnClass" class="position-relative" data-kt-menu-trigger="click" data-kt-menu-attach="parent"
+    data-kt-menu-placement="bottom-end">
+    <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs038.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <app-notifications-inner></app-notifications-inner>
+  <!--end::Menu wrapper-->
+</div>
+<!--end::Notifications-->
+
+<!-- begin::Theme mode -->
+<app-theme-mode-switcher class="d-flex align-items-center" [ngClass]="itemClass"
+  toggleBtnClass="{`btn-active-light-primary btn-custom ${btnClass}`}">
+</app-theme-mode-switcher>
+<!-- end::Theme mode -->
+
+<!--begin::User-->
+<div class="d-flex align-items-center ms-lg-5" id="kt_header_user_menu_toggle">
+  <!--begin::User info-->
+  <div class="btn btn-active-light d-flex align-items-center bg-hover-light py-2 px-2 px-md-3"
+    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+
+    <!--begin::Name-->
+    <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2">
+      <span class="text-muted fs-7 fw-bold lh-1 mb-2">Hello</span>
+      <span class="text-gray-900 fs-base fw-bolder lh-1">Richard</span>
+    </div>
+    <!--end::Name-->
+
+    <!--begin::Symbol-->
+    <div class="symbol symbol-30px symbol-md-40px">
+      <img src="./assets/media/avatars/300-1.jpg" alt="image" />
+    </div>
+    <!--end::Symbol-->
+  </div>
+  <!--end::User info-->
+
+  <app-user-inner></app-user-inner>
+</div>
+<!--end::User -->

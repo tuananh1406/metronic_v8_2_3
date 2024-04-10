@@ -1,0 +1,15 @@
+//
+// Layout
+//
+
+// General mode
+.app-toolbar {
+	background: var(--#{$prefix}app-toolbar-bg);
+}
+ 
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-toolbar {
+		padding-bottom: $app-toolbar-offset !important;
+	}
+}

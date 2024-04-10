@@ -1,0 +1,12 @@
+//
+// Header
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+        .app-header-logo {
+            width: var(--#{$prefix}app-sidebar-width-actual);
+        }
+	}
+}

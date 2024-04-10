@@ -1,0 +1,15 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Header     
+    --#{$prefix}header-link-bg-color: #{$app-header-base-link-bg-color};    
+}
+
+// Dark mode
+@include color-mode(dark) {
+    // Header     
+    --#{$prefix}header-link-bg-color: #{$app-header-base-link-bg-color-dark};    
+}

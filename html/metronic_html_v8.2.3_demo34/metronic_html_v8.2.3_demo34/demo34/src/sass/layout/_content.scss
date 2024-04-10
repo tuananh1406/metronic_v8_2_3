@@ -1,0 +1,25 @@
+//
+// Content
+//
+
+// General
+.app-content {
+	.app-container {
+		padding-left: $app-content-padding-x !important;
+		padding-right: $app-content-padding-x !important;
+	} 
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-content {
+		margin-top: -#{$app-toolbar-offset};		 
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-content { 		
+		margin-top: -#{$app-toolbar-offset-mobile};	
+	}
+}

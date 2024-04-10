@@ -1,0 +1,28 @@
+//
+// Layout
+//
+
+// General mode
+.app-toolbar {
+	background: $app-toolbar-base-custom-bg;
+
+	.btn-custom {
+		@include button-custom-variant(
+			$color: $app-toolbar-base-btn-custom-color, 
+			$icon-color: $white, 
+			$border-color: $app-toolbar-base-btn-border-custom-color, 
+			$bg-color: null, 
+			$color-active: null, 
+			$icon-color-active: null, 
+			$border-color-active: null, 
+			$bg-color-active: null
+		)
+	}	 
+}
+ 
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-toolbar {
+		padding-bottom: $app-toolbar-offset !important;
+	}
+}

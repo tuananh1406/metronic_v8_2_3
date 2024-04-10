@@ -1,0 +1,297 @@
+//
+// Sidebar
+//
+
+.app-sidebar {
+	display: flex;
+	flex-direction: column;
+
+	.hover-scroll-y {
+		@include scrollbar-color(transparent, lighten(#505463, 3%));
+	}
+
+	.separator {
+		border-bottom: 1px solid $gray-100-dark;
+	}
+}
+
+.app-sidebar-navs-default {
+	.menu {
+		.menu-heading {
+			color: $gray-400-dark;
+			font-size: 1rem;
+			font-weight: $font-weight-semibold;
+		}
+
+		// Child items
+		.menu-item {
+			.menu-link {
+				.menu-title {
+					font-size: 1rem;
+					font-weight: $font-weight-bold;
+				}
+
+                .bullet-dot {
+                    position: relative;
+                    border: 1px solid $coal-300;
+                    background-color: transparent !important;
+                    width: 14px;
+                    height: 14px;
+
+                    &:before {
+                        content: " ";
+                        top: 50%;
+                        left: 50%;
+                        position: absolute;
+                        display: flex;
+                        border-radius: 50%;
+                        background-color: $gray-400-dark;
+                        width: 4px;
+                        height: 4px;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+				&.active {
+					.bullet-dot {
+                        border: 1px solid $primary-clarity-dark;
+
+                        &:before {
+                            width: 6px;
+                            height: 6px;
+                            background-color: $primary-dark;
+                        }
+                    }
+				}
+			}
+
+            @include menu-link-default-state(
+				$title-color: $gray-700-dark,
+				$icon-color: $gray-400-dark,
+				$bullet-color: $gray-400-dark,
+				$arrow-color: $gray-400-dark,
+				$bg-color: null,
+				$all-links: false
+            );
+
+			@include menu-link-hover-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-show-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-here-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-active-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: rgba(255, 255, 255, 0.05),
+				$all-links: false
+			);
+		}
+
+		// Root items
+		> .menu-item {
+            > .menu-link {
+				.menu-title {
+					font-size: 1.1rem;
+					font-weight: $font-weight-bold;
+				}
+			}
+                
+            @include menu-link-default-state(
+				$title-color: $gray-700-dark,
+				$icon-color: $gray-400-dark,
+				$bullet-color: $gray-400-dark,
+				$arrow-color: $gray-400-dark,
+				$bg-color: null,
+				$all-links: false
+            );
+
+			@include menu-link-hover-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-show-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-here-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-active-state(
+				$title-color: $white,
+				$icon-color: $white,
+				$bullet-color: $primary,
+				$arrow-color: $white,
+				$bg-color: rgba(255, 255, 255, 0.05),
+				$all-links: false
+			);
+		}
+	}
+}
+
+.app-sidebar-navs-extended {
+	.menu {
+		// Child items
+		.menu-item {
+			.menu-link {
+				.menu-title {
+					font-size: 1.1rem;
+					font-weight: $font-weight-bold;
+				}
+
+				&.active {
+					.bullet-dot {
+						width: 6px;
+						height: 6px;
+					}
+				}
+			}
+
+			@include menu-link-default-state(
+				$title-color: var(--#{$prefix}gray-500),
+				$icon-color: null,
+				$bullet-color: var(--#{$prefix}gray-400),
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-hover-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: null,
+				$bullet-color: var(--#{$prefix}gray-800),
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-show-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: null,
+				$bullet-color: var(--#{$prefix}gray-800),
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-here-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: null,
+				$bullet-color: var(--#{$prefix}gray-800),
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-active-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: null,
+				$bullet-color: var(--#{$prefix}gray-800),
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+		}
+
+		// Root items
+		> .menu-item {
+			> .menu-link {
+				.menu-title {
+					font-size: 1.1rem;
+					font-weight: $font-weight-bold;
+				}
+			}
+
+			@include menu-link-default-state(
+				$title-color: var(--#{$prefix}gray-700),
+				$icon-color: var(--#{$prefix}gray-500),
+				$bullet-color: null,
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-hover-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: var(--#{$prefix}gray-700),
+				$bullet-color: null,
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-show-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: var(--#{$prefix}gray-700),
+				$bullet-color: null,
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+
+			@include menu-link-here-state(
+				$title-color: var(--#{$prefix}white),
+				$icon-color: var(--#{$prefix}white),
+				$bullet-color: null,
+				$arrow-color: null,
+				$bg-color: $gray-800,
+				$all-links: false
+			);
+
+			@include menu-link-active-state(
+				$title-color: var(--#{$prefix}gray-800),
+				$icon-color: var(--#{$prefix}gray-700),
+				$bullet-color: null,
+				$arrow-color: null,
+				$bg-color: null,
+				$all-links: false
+			);
+		}
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-sidebar {
+		display: none;
+	}
+}

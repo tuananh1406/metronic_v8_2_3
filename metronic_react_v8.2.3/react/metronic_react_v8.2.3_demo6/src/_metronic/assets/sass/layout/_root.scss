@@ -1,0 +1,59 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Page bg
+    --#{$prefix}page-bg: #{$page-bg};
+
+    // App blank bg color
+    --#{$prefix}app-blank-bg: #{$app-blank-bg-color};
+
+    // Header
+    --#{$prefix}header-default-bg-color: #{get($header-config, default, bg-color)};
+    --#{$prefix}header-default-border: #{get($header-config, default, border)};
+    --#{$prefix}header-fixed-bg-color: #{get($header-config, fixed, bg-color)};
+    --#{$prefix}header-fixed-box-shadow: #{get($header-config, fixed, box-shadow)};    
+
+    // Toolbar
+    --#{$prefix}toolbar-bg-color: #{get($toolbar-config, bg-color)};
+    --#{$prefix}toolbar-box-shadow: #{get($toolbar-config, box-shadow)};
+    --#{$prefix}toolbar-border: #{get($toolbar-config, border)};
+
+    // Aside
+    --#{$prefix}aside-bg-color: #{get($aside-config, bg-color)};
+    --#{$prefix}aside-logo-bg-color: #{get($aside-config, logo-bg-color)};
+    --#{$prefix}aside-box-shadow: #{get($aside-config, box-shadow)};
+
+    // Footer
+    --#{$prefix}footer-bg-color: #{get($footer-config, bg-color)};
+}
+
+// Dark mode
+@include color-mode(dark) {
+    // Page bg
+    --#{$prefix}page-bg: #{$page-bg-dark};
+
+    // App blank bg color
+    --#{$prefix}app-blank-bg: #{$app-blank-bg-color-dark};
+
+    // Header
+    --#{$prefix}header-default-bg-color: #{get($header-config, default, bg-color-dark)};
+    --#{$prefix}header-default-border: #{get($header-config, default, border-dark)};
+    --#{$prefix}header-fixed-bg-color: #{get($header-config, fixed, bg-color-dark)};
+    --#{$prefix}header-fixed-box-shadow: #{get($header-config, fixed, box-shadow-dark)};   
+
+    // Toolbar
+    --#{$prefix}toolbar-bg-color: #{get($toolbar-config, bg-color-dark)};
+    --#{$prefix}toolbar-box-shadow: #{get($toolbar-config, box-shadow-dark)};
+    --#{$prefix}toolbar-border: #{get($toolbar-config, border-dark)};
+
+    // Aside
+    --#{$prefix}aside-bg-color: #{get($aside-config, bg-color)};
+    --#{$prefix}aside-logo-bg-color: #{get($aside-config, logo-bg-color)};
+    --#{$prefix}aside-box-shadow: #{get($aside-config, box-shadow-dark)};
+
+    // Footer
+    --#{$prefix}footer-bg-color: #{get($footer-config, bg-color-dark)};
+}

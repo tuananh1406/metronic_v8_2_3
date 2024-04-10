@@ -1,0 +1,169 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    .separator {
+        border-bottom: var(--#{$prefix}app-separator-border);
+        margin: 0.75rem 0;
+    }
+
+    .menu-heading {
+        color: var(--#{$prefix}gray-700);
+    }
+
+    .scroll-y,
+    .hover-scroll-y {        
+        @include scrollbar-color(transparent, var(--#{$prefix}gray-300));
+    }
+}
+
+.app-sidebar-navs {
+    overflow: hidden;    
+}
+
+.app-sidebar-header {
+    padding: 0 $app-sidebar-base-px;
+    @include app-layout-transition(padding);
+}
+
+.app-sidebar-menu-primary.menu {
+    padding: 0 $app-sidebar-base-px;
+    @include app-layout-transition(padding);
+
+    // Root items
+    > .menu-item {
+        > .menu-link {
+            .menu-title {
+                font-size: 1.15rem;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        > .menu-sub {
+            > .toggle  {
+                color: var(--#{$prefix}gray-600);
+
+                i {
+                    color: var(--#{$prefix}success);
+                }
+            }
+        }
+
+        @include menu-link-default-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-500),  
+            $bullet-color: var(--#{$prefix}gray-400),  
+            $arrow-color: var(--#{$prefix}gray-500),  
+            $bg-color: null,
+            $all-links: false
+        );
+        
+        @include menu-link-hover-state( 
+            $title-color: var(--#{$prefix}primary), 
+            $icon-color: var(--#{$prefix}primary),  
+            $bullet-color: var(--#{$prefix}primary),  
+            $arrow-color: var(--#{$prefix}primary),  
+            $bg-color: null,
+            $all-links: false
+        );
+        
+        @include menu-link-show-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-500),  
+            $bullet-color: var(--#{$prefix}gray-400),  
+            $arrow-color: var(--#{$prefix}gray-500),   
+            $bg-color: null,
+            $all-links: false
+        );
+        
+        @include menu-link-here-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-500),  
+            $bullet-color: var(--#{$prefix}gray-400),  
+            $arrow-color: var(--#{$prefix}gray-500),   
+            $bg-color: null,
+            $all-links: false
+        );
+
+        @include menu-link-active-state( 
+            $title-color: var(--#{$prefix}primary), 
+            $icon-color: var(--#{$prefix}primary), 
+            $bullet-color: var(--#{$prefix}primary), 
+            $arrow-color: var(--#{$prefix}primary), 
+            $bg-color: var(--#{$prefix}body-bg), 
+            $all-links: false
+        ); 
+
+        // Child items
+        .menu-item {
+            > .menu-link {
+                .menu-title {
+                    font-size: 1.1rem;
+                    font-weight: $font-weight-bold;
+                }
+            }
+
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-700), 
+                $icon-color: var(--#{$prefix}gray-400),  
+                $bullet-color: var(--#{$prefix}gray-400),  
+                $arrow-color: var(--#{$prefix}gray-400), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}primary), 
+                $icon-color: null,  
+                $bullet-color: var(--#{$prefix}primary),  
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-show-state( 
+               $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-600),  
+                $bullet-color: var(--#{$prefix}gray-400),  
+                $arrow-color: var(--#{$prefix}gray-600),
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-600),  
+                $bullet-color: var(--#{$prefix}gray-400),  
+                $arrow-color: var(--#{$prefix}gray-600),
+                $bg-color: null,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}primary), 
+                $icon-color: var(--#{$prefix}primary), 
+                $bullet-color: var(--#{$prefix}primary), 
+                $arrow-color: var(--#{$prefix}primary), 
+                $bg-color: var(--#{$prefix}body-bg), 
+                $all-links: true
+            ); 
+        }
+    }      
+
+    // Shadow effect
+    .menu-item {
+        > .menu-link.active {
+            box-shadow: var(--#{$prefix}app-sidebar-base-menu-link-box-shadow-active);
+        }
+    }
+} 
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-sidebar {
+        overflow: hidden;
+        top: calc(var(--#{$prefix}app-header-height) - #{$app-content-top-offset}) !important;
+    }
+}

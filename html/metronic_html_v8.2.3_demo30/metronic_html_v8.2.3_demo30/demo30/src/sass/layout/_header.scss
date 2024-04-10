@@ -1,0 +1,83 @@
+//
+// Layout
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+			// Root links
+			& > .menu-item {
+				// Customize menu link default state       
+				@include menu-link-default-state( 
+					$title-color: var(--#{$prefix}gray-600), 
+					$icon-color: var(--#{$prefix}gray-500), 
+					$bullet-color: var(--#{$prefix}gray-500), 
+					$arrow-color: var(--#{$prefix}gray-500), 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link hover state       
+				@include menu-link-hover-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: var(--#{$prefix}gray-700), 
+					$bullet-color: var(--#{$prefix}gray-700), 
+					$arrow-color:  var(--#{$prefix}gray-700), 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link here state       
+				@include menu-link-here-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: var(--#{$prefix}gray-700),
+					$bullet-color: var(--#{$prefix}gray-700), 
+					$arrow-color:  var(--#{$prefix}gray-700),
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link show state       
+				@include menu-link-show-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: var(--#{$prefix}gray-700), 
+					$bullet-color: var(--#{$prefix}gray-700), 
+					$arrow-color: var(--#{$prefix}gray-700), 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link active state       
+				@include menu-link-active-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: var(--#{$prefix}gray-700), 
+					$bullet-color: var(--#{$prefix}gray-700), 
+					$arrow-color: var(--#{$prefix}gray-700), 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				& > .menu-link {
+					padding: 0;
+					margin-right: 1.75rem;				
+
+					.menu-title {
+						font-size: 1.1rem;
+						font-weight: $font-weight-bold;							
+					}
+				}
+
+			}
+		}
+    } 
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		[data-kt-app-header-fixed-mobile] & {
+			box-shadow: var(--#{$prefix}box-shadow-xs);	
+		}		
+	}
+}

@@ -1,0 +1,34 @@
+<!--begin::Tasks-->
+<div class="mx-5">
+  <!--begin::Header-->
+  <h3 class="fw-bolder text-gray-900 mb-10 mx-0">
+    Tasks Overview
+  </h3>
+  <!--end::Header-->
+
+  <!--begin::Body-->
+  <div class="mb-12">
+    <!--begin::Item-->
+    <div *ngFor="let item of allTasks" class="d-flex align-items-center mb-7">
+      <!--begin::Symbol-->
+      <div class="symbol symbol-50px me-5">
+        <span class="symbol-label bg-light-{{item.color}}">
+          <span [inlineSVG]="item.icon" class="svg-icon-2x svg-icon-{{item.color}}"></span>
+        </span>
+      </div>
+      <!--end::Symbol-->
+
+      <!--begin::Text-->
+      <div class="d-flex flex-column">
+        <a class="text-gray-800 text-hover-primary fs-6 fw-bold">
+          {{item.title}}</a>
+
+        <span class="text-muted fw-bold">{{item.description}}</span>
+      </div>
+      <!--end::Text-->
+    </div>
+    <!--end::Item-->
+  </div>
+  <!--end::Body-->
+</div>
+<!--end::Tasks-->

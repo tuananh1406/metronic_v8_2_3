@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = "Dashboard";	
+	KTTheme.AddVendors(new string[] {"amcharts", "amcharts-maps", "amcharts-stock"});
+}
+
+<a asp-action="signIn" asp-controller="Auth">Home</a>
+
+<partial name='@KTTheme.GetView("Partials/Default/_ContentMenu.cshtml")' />
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xxl-4 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget27.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xxl-4 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget28.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xxl-4 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Lists/_Widget9.cshtml" />
+    </div>
+    <!--end::Col-->
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-6 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Tables/_Widget9.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-6 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Tables/_Widget10.cshtml" />
+    </div>
+    <!--end::Col-->
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-6 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget15.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-6 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Tables/_Widget11.cshtml" />
+    </div>
+    <!--end::Col-->
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-4 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget29.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-8 mb-5 mb-xl-10">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget24.cshtml" />
+    </div>
+    <!--end::Col-->
+</div>
+<!--end::Row-->
+<!--begin::Row-->
+<div class="row gx-5 gx-xl-10">
+    <!--begin::Col-->
+    <div class="col-xl-4 mb-5 mb-xl-0">
+        <partial name="~/Views/Partials/Widgets/Lists/_Widget12.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-4 mb-5 mb-xl-0">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget31.cshtml" />
+    </div>
+    <!--end::Col-->
+    <!--begin::Col-->
+    <div class="col-xl-4 mb-5 mb-xl-0">
+        <partial name="~/Views/Partials/Widgets/Charts/_Widget30.cshtml" />
+    </div>
+    <!--end::Col-->
+</div>
+<!--end::Row-->

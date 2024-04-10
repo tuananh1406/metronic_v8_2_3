@@ -1,0 +1,113 @@
+//
+// Header Customization
+//
+
+// General
+.btn-custom {
+    background: var(--#{$prefix}header-primary-link-bg-color) !important;    
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+            > .menu-item.here > .menu-link {                    
+                background: var(--#{$prefix}header-link-bg-color) !important;
+            } 
+
+            > .menu-item {
+                @include menu-link-default-state( 
+                    $title-color: var(--#{$prefix}gray-700), 
+                    $icon-color: var(--#{$prefix}gray-400), 
+                    $bullet-color: null, 
+                    $arrow-color: null,
+                    $bg-color: null,
+                    $all-links: false
+                );
+                
+                @include menu-link-hover-state( 
+                    $title-color: var(--#{$prefix}gray-700), 
+                    $icon-color: var(--#{$prefix}gray-400), 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: null,
+                    $all-links: false
+                );
+                
+                @include menu-link-show-state( 
+                    $title-color: var(--#{$prefix}gray-700), 
+                    $icon-color: var(--#{$prefix}gray-400), 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: null,
+                    $all-links: false
+                );
+    
+                @include menu-link-here-state( 
+                    $title-color: var(--#{$prefix}white), 
+                    $icon-color: var(--#{$prefix}white),
+                    $bullet-color: null, 
+                    $arrow-color: null,
+                    $bg-color: null,
+                    $all-links: false
+                );
+    
+                @include menu-link-active-state( 
+                    $title-color: var(--#{$prefix}white), 
+                    $icon-color: var(--#{$prefix}white), 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: null,
+                    $all-links: false
+                ); 
+                
+                margin-right: 0.5rem;                        
+                
+                > .menu-link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: $app-header-base-link-width;
+                    height: $app-header-base-link-width;
+
+                    .menu-icon {                        
+                        margin: 0;
+                        margin-bottom: 0.5rem;                        
+
+                        > i {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .menu-title {                        
+                        flex-grow: 0;
+                        font-size: 1.15rem;
+                        font-weight: $font-weight-bold;
+                    }
+                }
+            }         
+        }        
+    } 
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header {
+        .header-nav {
+            display: none !important;
+        }
+
+        .app-header-menu {
+            .menu {   
+                > .menu-item {             
+                    > .menu-link {    
+                        .menu-icon {                        
+                            display: none;
+                        }
+                    }
+                }         
+            }        
+        } 
+    } 
+}

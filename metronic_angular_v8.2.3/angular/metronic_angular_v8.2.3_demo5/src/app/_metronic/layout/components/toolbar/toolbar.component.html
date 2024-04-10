@@ -1,0 +1,25 @@
+<div class="toolbar d-flex flex-stack flex-wrap mb-5 mb-lg-7" id="kt_toolbar">
+
+  <!--begin::Toolbar-->
+  <ng-container *ngIf="pageTitleDisplay && headerLeft !== 'page-title'">
+    <app-page-title #ktPageTitle class="page-title d-flex flex-column py-1" [ngClass]="pageTitleCssClasses">
+    </app-page-title>
+  </ng-container>
+
+  <ng-container *ngIf="title$ | async">
+    <ng-container *ngIf="toolbarActions">
+      <!--begin::Actions-->
+      <div class="d-flex align-items-center py-1">
+        <!--begin::Button-->
+
+        <a routerLink="/apps/tickets-system/ask" class="btn btn-flex btn-sm btn-primary fw-bolder border-0 fs-6 h-40px"
+          id="kt_toolbar_primary_button">
+          Ask Question
+        </a>
+        <!--end::Button-->
+      </div>
+      <!--end::Actions-->
+    </ng-container>
+    <!--end::Toolbar-->
+  </ng-container>
+</div>

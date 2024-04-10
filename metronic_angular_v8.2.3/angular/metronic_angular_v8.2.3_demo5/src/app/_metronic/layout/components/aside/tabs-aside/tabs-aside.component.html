@@ -1,0 +1,13 @@
+<div class="hover-scroll-y mb-10" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}"
+  data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_aside_nav"
+  data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer" data-kt-scroll-offset="0px">
+  <ul class="nav flex-column" id="kt_aside_nav_tabs">
+    <li *ngFor="let tab of allTabs" class="nav-item mb-2" [title]="tab.tooltip" [ngbTooltip]="tab.tooltip"
+      placement="end">
+      <a class="nav-link btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
+        (click)="setActiveTab(tab.link)" [ngClass]="{'active': tab.link === activeTab.link}">
+        <span [inlineSVG]="tab.icon" class="svg-icon svg-icon-2"></span>
+      </a>
+    </li>
+  </ul>
+</div>

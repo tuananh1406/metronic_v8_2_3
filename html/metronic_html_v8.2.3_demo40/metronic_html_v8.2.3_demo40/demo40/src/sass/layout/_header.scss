@@ -1,0 +1,145 @@
+//
+// Header
+//
+
+.app-header {
+	.btn-custom {
+		@include button-custom-variant(
+			$color: null, 
+			$icon-color: var(--#{$prefix}primary), 
+			$border-color: null, 
+			$bg-color: var(--#{$prefix}gray-200), 
+			$color-active: null, 
+			$icon-color-active: null,  
+			$border-color-active: null, 
+			$bg-color-active: null, 
+		);				 
+	}
+
+	.app-header-secondary {
+		background-image: url('../media/misc/secondary-header-bg.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% 100%;
+
+		.app-container {			 
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+
+		.header-search {
+			.form-control.search-input {
+				background: transparent;
+				border-color: $app-header-primary-base-search-border-color;
+				@include border-radius(6px);
+				@include placeholder($white);
+				color: $white !important;
+			}
+	
+			.search-icon {						 				 			 
+				color: $white !important; 				 
+			}		 
+		}
+	}	 
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {		
+		.app-header-menu {
+			.menu {
+				> .menu-item {
+					margin-right: 0.5rem;   
+
+					> .menu-link {
+						.menu-title {
+							font-weight: $font-weight-bold;
+							font-size: 1.15rem;
+						}
+					}
+
+					@include menu-link-default-state( 
+						$title-color: var(--#{$prefix}gray-700), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null,
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-hover-state( 
+						$title-color: var(--#{$prefix}gray-900), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-show-state( 
+						$title-color: var(--#{$prefix}gray-900), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					);
+		
+					@include menu-link-here-state( 
+						$title-color: var(--#{$prefix}gray-900), 
+						$icon-color: null,
+						$bullet-color: null, 
+						$arrow-color: null,
+						$bg-color: var(--#{$prefix}gray-200),
+						$all-links: false
+					);
+		
+					@include menu-link-active-state( 
+						$title-color: var(--#{$prefix}gray-900), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					); 
+				}         
+			}        
+		} 
+
+		.header-search {
+			.form-control.search-input {
+				background: transparent;
+				border-color: $app-header-primary-base-search-border-color;
+				@include border-radius(6px);
+				@include placeholder($gray-200);
+			}
+	
+			.search-icon {						 				 			 
+				color: $white; 				 
+			}		 
+		}
+	}
+}   
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		.header-search {
+			.search-toggle-mobile {
+				display: flex;
+                justify-content: center;
+                align-items: center;
+                @include border-radius(6px);
+                width: 35px;
+                height: 35px;
+				border: 1px solid $app-header-primary-base-search-border-color;
+				background: transparent;
+				cursor: pointer;
+				 
+				i {						 				 			 
+					color: $white; 				 
+				}	
+			}	
+		}
+	}
+}

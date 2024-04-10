@@ -1,0 +1,38 @@
+//
+// Content
+//
+
+// General
+.app-content {
+	background-color: var(--#{$prefix}body-bg);
+	box-shadow: var(--#{$prefix}app-content-shadow);
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-content {
+		margin-top: -#{$app-toolbar-offset};
+		@include border-radius($app-content-border-radius);
+
+		.app-content-menu.menu {
+			margin: 0 -#{$app-content-padding-x};	
+		}
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-content { 
+		@include border-radius($app-content-border-radius-mobile);
+		margin-top: -#{$app-toolbar-offset-mobile};
+		
+		.app-content-menu {
+			margin: 0 -#{$app-content-padding-x-mobile};
+			
+			// Root links        
+			> .nav-item { 				 
+				margin-right: 2rem !important;  					
+			}
+		}
+	}
+}

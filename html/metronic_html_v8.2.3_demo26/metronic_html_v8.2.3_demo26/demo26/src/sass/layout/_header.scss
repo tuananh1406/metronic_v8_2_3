@@ -1,0 +1,83 @@
+//
+// Layout
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+			// Root links
+			& > .menu-item {
+				// Customize menu link default state       
+				@include menu-link-default-state( 
+					$title-color: var(--#{$prefix}gray-700), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link hover state       
+				@include menu-link-hover-state( 
+					$title-color: var(--#{$prefix}gray-700), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color:  null, 
+					$bg-color: null,
+					$all-links: false
+				);
+
+				// Customize menu link here state       
+				@include menu-link-here-state( 
+					$title-color: var(--#{$prefix}gray-800), 
+					$icon-color: null,
+					$bullet-color: null, 
+					$arrow-color:  null,
+					$bg-color: var(--#{$prefix}gray-200), 
+					$all-links: false
+				);
+
+				// Customize menu link show state       
+				@include menu-link-show-state( 
+					$title-color: var(--#{$prefix}gray-800), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null,
+					$all-links: false
+				);
+
+				// Customize menu link active state       
+				@include menu-link-active-state( 
+					$title-color: var(--#{$prefix}gray-800), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				& > .menu-link {
+					padding: 0.8rem 1.5rem;				 
+
+					.menu-title {
+						font-size: 1.3rem;
+						font-weight: $font-weight-semibold;							
+					}
+				}
+
+				margin-right: 0.5rem; 	
+			}
+		}
+    } 
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		[data-kt-app-header-fixed-mobile] & {
+			box-shadow: var(--#{$prefix}box-shadow-xs);	
+		}		
+	}
+}

@@ -1,0 +1,3782 @@
+
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic 
+Product Version: 8.2.3
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+	<!--begin::Head-->
+	<head>
+		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
+		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes" />
+		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:site_name" content="Metronic by Keenthemes" />
+		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-body position-relative app-blank">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--begin::Root-->
+		<div class="d-flex flex-column flex-root" id="kt_app_root">
+			<!--begin::Header Section-->
+			<div class="mb-0" id="home">
+				<!--begin::Wrapper-->
+				<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" style="background-image: url(assets/media/svg/illustrations/landing.svg)">
+					<!--begin::Header-->
+					<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+						<!--begin::Container-->
+						<div class="container">
+							<!--begin::Wrapper-->
+							<div class="d-flex align-items-center justify-content-between">
+								<!--begin::Logo-->
+								<div class="d-flex align-items-center flex-equal">
+									<!--begin::Mobile menu toggle-->
+									<button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
+										<i class="ki-outline ki-abstract-14 fs-2hx"></i>
+									</button>
+									<!--end::Mobile menu toggle-->
+									<!--begin::Logo image-->
+									<a href="landing.html">
+										<img alt="Logo" src="assets/media/logos/landing.svg" class="logo-default h-25px h-lg-30px" />
+										<img alt="Logo" src="assets/media/logos/landing-dark.svg" class="logo-sticky h-20px h-lg-25px" />
+									</a>
+									<!--end::Logo image-->
+								</div>
+								<!--end::Logo-->
+								<!--begin::Menu wrapper-->
+								<div class="d-lg-block" id="kt_header_nav_wrapper">
+									<div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+										<!--begin::Menu-->
+										<div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-600 menu-state-title-primary nav nav-flush fs-5 fw-semibold" id="kt_landing_menu">
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Home</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">How it Works</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#achievements" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Achievements</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Team</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Portfolio</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Pricing</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+										</div>
+										<!--end::Menu-->
+									</div>
+								</div>
+								<!--end::Menu wrapper-->
+								<!--begin::Toolbar-->
+								<div class="flex-equal text-end ms-1">
+									<a href="authentication/layouts/corporate/sign-in.html" class="btn btn-success">Sign In</a>
+								</div>
+								<!--end::Toolbar-->
+							</div>
+							<!--end::Wrapper-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+					<!--begin::Landing hero-->
+					<div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+						<!--begin::Heading-->
+						<div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
+							<!--begin::Title-->
+							<h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">Build An Outstanding Solutions 
+							<br />with 
+							<span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+								<span id="kt_landing_hero_text">The Best Theme Ever</span>
+							</span></h1>
+							<!--end::Title-->
+							<!--begin::Action-->
+							<a href="index.html" class="btn btn-primary">Try Metronic</a>
+							<!--end::Action-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Clients-->
+						<div class="d-flex flex-center flex-wrap position-relative px-5">
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
+								<img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
+								<img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
+								<img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
+								<img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
+								<img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
+								<img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
+								<img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+							<!--begin::Client-->
+							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
+								<img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
+							</div>
+							<!--end::Client-->
+						</div>
+						<!--end::Clients-->
+					</div>
+					<!--end::Landing hero-->
+				</div>
+				<!--end::Wrapper-->
+				<!--begin::Curve bottom-->
+				<div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve bottom-->
+			</div>
+			<!--end::Header Section-->
+			<!--begin::How It Works Section-->
+			<div class="mb-n10 mb-lg-n20 z-index-2">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Heading-->
+					<div class="text-center mb-17">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-gray-900 mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">How it Works</h3>
+						<!--end::Title-->
+						<!--begin::Text-->
+						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool 
+						<br />for different amazing and great useful admin</div>
+						<!--end::Text-->
+					</div>
+					<!--end::Heading-->
+					<!--begin::Row-->
+					<div class="row w-100 gy-10 mb-md-20">
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-gray-900">Jane Miller</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
+								<br />by using single tool for different 
+								<br />amazing and great</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-gray-900">Setup Your App</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
+								<br />by using single tool for different 
+								<br />amazing and great</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-4 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bold text-gray-900">Enjoy Nautica App</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
+								<br />by using single tool for different 
+								<br />amazing and great</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+					<!--begin::Product slider-->
+					<div class="tns tns-default">
+						<!--begin::Slider-->
+						<div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
+							<!--begin::Item-->
+							<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+								<img src="assets/media/preview/demos/demo1/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+								<img src="assets/media/preview/demos/demo2/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+								<img src="assets/media/preview/demos/demo4/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+								<img src="assets/media/preview/demos/demo5/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
+							</div>
+							<!--end::Item-->
+						</div>
+						<!--end::Slider-->
+						<!--begin::Slider button-->
+						<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
+							<i class="ki-outline ki-left fs-2x"></i>
+						</button>
+						<!--end::Slider button-->
+						<!--begin::Slider button-->
+						<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
+							<i class="ki-outline ki-right fs-2x"></i>
+						</button>
+						<!--end::Slider button-->
+					</div>
+					<!--end::Product slider-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::How It Works Section-->
+			<!--begin::Statistics Section-->
+			<div class="mt-sm-n10">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="pb-15 pt-18 landing-dark-bg">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Heading-->
+						<div class="text-center mt-15 mb-18" id="achievements" data-kt-scroll-offset="{default: 100, lg: 150}">
+							<!--begin::Title-->
+							<h3 class="fs-2hx text-white fw-bold mb-5">We Make Things Better</h3>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="fs-5 text-gray-700 fw-bold">Save thousands to millions of bucks by using single tool 
+							<br />for different amazing and great useful admin</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Statistics-->
+						<div class="d-flex flex-center">
+							<!--begin::Items-->
+							<div class="d-flex flex-wrap flex-center justify-content-lg-between mb-15 mx-auto w-xl-900px">
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<i class="ki-outline ki-element-11 fs-2tx text-white mb-3"></i>
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="700" data-kt-countup-suffix="+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 fw-semibold fs-5 lh-0">Known Companies</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<i class="ki-outline ki-chart-pie-4 fs-2tx text-white mb-3"></i>
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="80" data-kt-countup-suffix="K+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 fw-semibold fs-5 lh-0">Statistic Reports</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+								<!--begin::Item-->
+								<div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+									<!--begin::Symbol-->
+									<i class="ki-outline ki-basket fs-2tx text-white mb-3"></i>
+									<!--end::Symbol-->
+									<!--begin::Info-->
+									<div class="mb-0">
+										<!--begin::Value-->
+										<div class="fs-lg-2hx fs-2x fw-bold text-white d-flex flex-center">
+											<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="35" data-kt-countup-suffix="M+">0</div>
+										</div>
+										<!--end::Value-->
+										<!--begin::Label-->
+										<span class="text-gray-600 fw-semibold fs-5 lh-0">Secure Payments</span>
+										<!--end::Label-->
+									</div>
+									<!--end::Info-->
+								</div>
+								<!--end::Item-->
+							</div>
+							<!--end::Items-->
+						</div>
+						<!--end::Statistics-->
+						<!--begin::Testimonial-->
+						<div class="fs-2 fw-semibold text-muted text-center mb-3">
+						<span class="fs-1 lh-1 text-gray-700">“</span>When you care about your topic, you’ll write about it in a 
+						<br />
+						<span class="text-gray-700 me-1">more powerful</span>, emotionally expressive way 
+						<span class="fs-1 lh-1 text-gray-700">“</span></div>
+						<!--end::Testimonial-->
+						<!--begin::Author-->
+						<div class="fs-2 fw-semibold text-muted text-center">
+							<a href="account/security.html" class="link-primary fs-4 fw-bold">Marcus Levy,</a>
+							<span class="fs-4 fw-bold text-gray-600">KeenThemes CEO</span>
+						</div>
+						<!--end::Author-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+				<!--begin::Curve bottom-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve bottom-->
+			</div>
+			<!--end::Statistics Section-->
+			<!--begin::Team Section-->
+			<div class="py-10 py-lg-20">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Heading-->
+					<div class="text-center mb-12">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-gray-900 mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">Our Great Team</h3>
+						<!--end::Title-->
+						<!--begin::Sub-title-->
+						<div class="fs-5 text-muted fw-bold">It’s no doubt that when a development takes longer to complete, additional costs to
+						<br />integrate and test each extra feature creeps up and haunts most of us.</div>
+						<!--end::Sub-title=-->
+					</div>
+					<!--end::Heading-->
+					<!--begin::Slider-->
+					<div class="tns tns-default" style="direction: ltr">
+						<!--begin::Wrapper-->
+						<div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev" data-tns-next-button="#kt_team_slider_next" data-tns-responsive="{1200: {items: 3}, 992: {items: 2}}">
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-1.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Paul Miles</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Development Lead</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-2.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Melisa Marcus</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Creative Director</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-5.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">David Nilson</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Python Expert</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-20.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Anne Clarc</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Project Manager</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-23.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Ricky Hunt</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Art Director</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-12.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Alice Wayde</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">Marketing Manager</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+							<!--begin::Item-->
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-9.jpg')"></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-3">Carles Puyol</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-semibold mt-1">QA Managers</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+							<!--end::Item-->
+						</div>
+						<!--end::Wrapper-->
+						<!--begin::Button-->
+						<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev">
+							<i class="ki-outline ki-left fs-2x"></i>
+						</button>
+						<!--end::Button-->
+						<!--begin::Button-->
+						<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next">
+							<i class="ki-outline ki-right fs-2x"></i>
+						</button>
+						<!--end::Button-->
+					</div>
+					<!--end::Slider-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Team Section-->
+			<!--begin::Projects Section-->
+			<div class="mb-lg-n15 position-relative z-index-2">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Card-->
+					<div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
+						<!--begin::Card body-->
+						<div class="card-body p-lg-20">
+							<!--begin::Heading-->
+							<div class="text-center mb-5 mb-lg-10">
+								<!--begin::Title-->
+								<h3 class="fs-2hx text-gray-900 mb-5" id="portfolio" data-kt-scroll-offset="{default: 100, lg: 250}">Our Projects</h3>
+								<!--end::Title-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Tabs wrapper-->
+							<div class="d-flex flex-center mb-5 mb-lg-15">
+								<!--begin::Tabs-->
+								<ul class="nav border-transparent flex-center fs-5 fw-bold">
+									<li class="nav-item">
+										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6 active" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_latest">Latest</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_web_design">Web Design</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_mobile_apps">Mobile Apps</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_development">Development</a>
+									</li>
+								</ul>
+								<!--end::Tabs-->
+							</div>
+							<!--end::Tabs wrapper-->
+							<!--begin::Tabs content-->
+							<div class="tab-content">
+								<!--begin::Tab pane-->
+								<div class="tab-pane fade show active" id="kt_landing_projects_latest">
+									<!--begin::Row-->
+									<div class="row g-10">
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-23.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/img-23.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Row-->
+											<div class="row g-10 mb-10">
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-22.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-22.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-21.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-21.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x400/img-20.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-20.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Tab pane-->
+								<!--begin::Tab pane-->
+								<div class="tab-pane fade" id="kt_landing_projects_web_design">
+									<!--begin::Row-->
+									<div class="row g-10">
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-11.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/img-11.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Row-->
+											<div class="row g-10 mb-10">
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-12.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-12.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-21.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-21.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x400/img-20.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-20.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Tab pane-->
+								<!--begin::Tab pane-->
+								<div class="tab-pane fade" id="kt_landing_projects_mobile_apps">
+									<!--begin::Row-->
+									<div class="row g-10">
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Row-->
+											<div class="row g-10 mb-10">
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-16.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-16.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-12.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-12.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x400/img-15.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-15.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-23.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/img-23.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Tab pane-->
+								<!--begin::Tab pane-->
+								<div class="tab-pane fade" id="kt_landing_projects_development">
+									<!--begin::Row-->
+									<div class="row g-10">
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-15.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/img-15.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-lg-6">
+											<!--begin::Row-->
+											<div class="row g-10 mb-10">
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-22.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-22.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-lg-6">
+													<!--begin::Item-->
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-21.jpg">
+														<!--begin::Image-->
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-21.jpg')"></div>
+														<!--end::Image-->
+														<!--begin::Action-->
+														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+															<i class="ki-outline ki-eye fs-3x text-white"></i>
+														</div>
+														<!--end::Action-->
+													</a>
+													<!--end::Item-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+											<!--begin::Item-->
+											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x400/img-14.jpg">
+												<!--begin::Image-->
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-14.jpg')"></div>
+												<!--end::Image-->
+												<!--begin::Action-->
+												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+													<i class="ki-outline ki-eye fs-3x text-white"></i>
+												</div>
+												<!--end::Action-->
+											</a>
+											<!--end::Item-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Tab pane-->
+							</div>
+							<!--end::Tabs content-->
+						</div>
+						<!--end::Card body-->
+					</div>
+					<!--end::Card-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Projects Section-->
+			<!--begin::Pricing Section-->
+			<div class="mt-sm-n20">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="py-20 landing-dark-bg">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Plans-->
+						<div class="d-flex flex-column container pt-lg-20">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<h1 class="fs-2hx fw-bold text-white mb-5" id="pricing" data-kt-scroll-offset="{default: 100, lg: 150}">Clear Pricing Makes it Easy</h1>
+								<div class="text-gray-600 fw-semibold fs-5">Save thousands to millions of bucks by using single tool for different 
+								<br />amazing and outstanding cool and great useful admin</div>
+							</div>
+							<!--end::Heading-->
+							<!--begin::Pricing-->
+							<div class="text-center" id="kt_pricing">
+								<!--begin::Nav group-->
+								<div class="nav-group landing-dark-bg d-inline-flex mb-15" data-kt-buttons="true" style="border: 1px dashed #2B4666;">
+									<a href="#" class="btn btn-color-gray-600 btn-active btn-active-success px-6 py-3 me-2 active" data-kt-plan="month">Monthly</a>
+									<a href="#" class="btn btn-color-gray-600 btn-active btn-active-success px-6 py-3" data-kt-plan="annual">Annual</a>
+								</div>
+								<!--end::Nav group-->
+								<!--begin::Row-->
+								<div class="row g-10">
+									<!--begin::Col-->
+									<div class="col-xl-4">
+										<div class="d-flex h-100 align-items-center">
+											<!--begin::Option-->
+											<div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
+												<!--begin::Heading-->
+												<div class="mb-7 text-center">
+													<!--begin::Title-->
+													<h1 class="text-gray-900 mb-5 fw-boldest">Startup</h1>
+													<!--end::Title-->
+													<!--begin::Description-->
+													<div class="text-gray-500 fw-semibold mb-5">Best Settings for Startups</div>
+													<!--end::Description-->
+													<!--begin::Price-->
+													<div class="text-center">
+														<span class="mb-2 text-primary">$</span>
+														<span class="fs-3x fw-bold text-primary" data-kt-plan-price-month="99" data-kt-plan-price-annual="999">99</span>
+														<span class="fs-7 fw-semibold opacity-50" data-kt-plan-price-month="/ Mon" data-kt-plan-price-annual="/ Ann">/ Mon</span>
+													</div>
+													<!--end::Price-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Features-->
+												<div class="w-100 mb-10">
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Up to 10 Active Users</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Up to 30 Project Integrations</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800">Keen Analytics Platform</span>
+														<i class="ki-outline ki-cross-circle fs-1"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800">Targets Timelines & Files</span>
+														<i class="ki-outline ki-cross-circle fs-1"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack">
+														<span class="fw-semibold fs-6 text-gray-800">Unlimited Projects</span>
+														<i class="ki-outline ki-cross-circle fs-1"></i>
+													</div>
+													<!--end::Item-->
+												</div>
+												<!--end::Features-->
+												<!--begin::Select-->
+												<a href="#" class="btn btn-primary">Select</a>
+												<!--end::Select-->
+											</div>
+											<!--end::Option-->
+										</div>
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-xl-4">
+										<div class="d-flex h-100 align-items-center">
+											<!--begin::Option-->
+											<div class="w-100 d-flex flex-column flex-center rounded-3 bg-primary py-20 px-10">
+												<!--begin::Heading-->
+												<div class="mb-7 text-center">
+													<!--begin::Title-->
+													<h1 class="text-white mb-5 fw-boldest">Business</h1>
+													<!--end::Title-->
+													<!--begin::Description-->
+													<div class="text-white opacity-75 fw-semibold mb-5">Best Settings for Business</div>
+													<!--end::Description-->
+													<!--begin::Price-->
+													<div class="text-center">
+														<span class="mb-2 text-white">$</span>
+														<span class="fs-3x fw-bold text-white" data-kt-plan-price-month="199" data-kt-plan-price-annual="1999">199</span>
+														<span class="fs-7 fw-semibold text-white opacity-75" data-kt-plan-price-month="/ Mon" data-kt-plan-price-annual="/ Ann">/ Mon</span>
+													</div>
+													<!--end::Price-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Features-->
+												<div class="w-100 mb-10">
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Up to 10 Active Users</span>
+														<i class="ki-outline ki-check-circle fs-1 text-white"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Up to 30 Project Integrations</span>
+														<i class="ki-outline ki-check-circle fs-1 text-white"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Keen Analytics Platform</span>
+														<i class="ki-outline ki-check-circle fs-1 text-white"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-white opacity-75 text-start pe-3">Targets Timelines & Files</span>
+														<i class="ki-outline ki-check-circle fs-1 text-white"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack">
+														<span class="fw-semibold fs-6 text-white opacity-75">Unlimited Projects</span>
+														<i class="ki-outline ki-cross-circle fs-1 text-white"></i>
+													</div>
+													<!--end::Item-->
+												</div>
+												<!--end::Features-->
+												<!--begin::Select-->
+												<a href="#" class="btn btn-color-primary btn-active-light-primary btn-light">Select</a>
+												<!--end::Select-->
+											</div>
+											<!--end::Option-->
+										</div>
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-xl-4">
+										<div class="d-flex h-100 align-items-center">
+											<!--begin::Option-->
+											<div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
+												<!--begin::Heading-->
+												<div class="mb-7 text-center">
+													<!--begin::Title-->
+													<h1 class="text-gray-900 mb-5 fw-boldest">Enterprise</h1>
+													<!--end::Title-->
+													<!--begin::Description-->
+													<div class="text-gray-500 fw-semibold mb-5">Best Settings for Enterprise</div>
+													<!--end::Description-->
+													<!--begin::Price-->
+													<div class="text-center">
+														<span class="mb-2 text-primary">$</span>
+														<span class="fs-3x fw-bold text-primary" data-kt-plan-price-month="999" data-kt-plan-price-annual="9999">999</span>
+														<span class="fs-7 fw-semibold opacity-50" data-kt-plan-price-month="/ Mon" data-kt-plan-price-annual="/ Ann">/ Mon</span>
+													</div>
+													<!--end::Price-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Features-->
+												<div class="w-100 mb-10">
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Up to 10 Active Users</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Up to 30 Project Integrations</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Keen Analytics Platform</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-5">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Targets Timelines & Files</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack">
+														<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Unlimited Projects</span>
+														<i class="ki-outline ki-check-circle fs-1 text-success"></i>
+													</div>
+													<!--end::Item-->
+												</div>
+												<!--end::Features-->
+												<!--begin::Select-->
+												<a href="#" class="btn btn-primary">Select</a>
+												<!--end::Select-->
+											</div>
+											<!--end::Option-->
+										</div>
+									</div>
+									<!--end::Col-->
+								</div>
+								<!--end::Row-->
+							</div>
+							<!--end::Pricing-->
+						</div>
+						<!--end::Plans-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+				<!--begin::Curve bottom-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve bottom-->
+			</div>
+			<!--end::Pricing Section-->
+			<!--begin::Testimonials Section-->
+			<div class="mt-20 mb-n20 position-relative z-index-2">
+				<!--begin::Container-->
+				<div class="container">
+					<!--begin::Heading-->
+					<div class="text-center mb-17">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-gray-900 mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">What Our Clients Say</h3>
+						<!--end::Title-->
+						<!--begin::Description-->
+						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool 
+						<br />for different amazing and great useful admin</div>
+						<!--end::Description-->
+					</div>
+					<!--end::Heading-->
+					<!--begin::Row-->
+					<div class="row g-lg-10 mb-10 mb-lg-20">
+						<!--begin::Col-->
+						<div class="col-lg-4">
+							<!--begin::Testimonial-->
+							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Wrapper-->
+								<div class="mb-7">
+									<!--begin::Rating-->
+									<div class="rating mb-6">
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+									</div>
+									<!--end::Rating-->
+									<!--begin::Title-->
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<br />and the most well structured</div>
+									<!--end::Title-->
+									<!--begin::Feedback-->
+									<div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<!--end::Feedback-->
+								</div>
+								<!--end::Wrapper-->
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="assets/media/avatars/300-1.jpg" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-6">Paul Miles</a>
+										<span class="text-muted d-block fw-bold">Development Lead</span>
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
+							</div>
+							<!--end::Testimonial-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-4">
+							<!--begin::Testimonial-->
+							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Wrapper-->
+								<div class="mb-7">
+									<!--begin::Rating-->
+									<div class="rating mb-6">
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+									</div>
+									<!--end::Rating-->
+									<!--begin::Title-->
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<br />and the most well structured</div>
+									<!--end::Title-->
+									<!--begin::Feedback-->
+									<div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<!--end::Feedback-->
+								</div>
+								<!--end::Wrapper-->
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="assets/media/avatars/300-2.jpg" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-6">Janya Clebert</a>
+										<span class="text-muted d-block fw-bold">Development Lead</span>
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
+							</div>
+							<!--end::Testimonial-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-lg-4">
+							<!--begin::Testimonial-->
+							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Wrapper-->
+								<div class="mb-7">
+									<!--begin::Rating-->
+									<div class="rating mb-6">
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+										<div class="rating-label me-2 checked">
+											<i class="ki-outline ki-star fs-5"></i>
+										</div>
+									</div>
+									<!--end::Rating-->
+									<!--begin::Title-->
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<br />and the most well structured</div>
+									<!--end::Title-->
+									<!--begin::Feedback-->
+									<div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<!--end::Feedback-->
+								</div>
+								<!--end::Wrapper-->
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="assets/media/avatars/300-16.jpg" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-gray-900 fw-bold text-hover-primary fs-6">Steave Brown</a>
+										<span class="text-muted d-block fw-bold">Development Lead</span>
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
+							</div>
+							<!--end::Testimonial-->
+						</div>
+						<!--end::Col-->
+					</div>
+					<!--end::Row-->
+					<!--begin::Highlight-->
+					<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+						<!--begin::Content-->
+						<div class="my-2 me-5">
+							<!--begin::Title-->
+							<div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">Start With Metronic Today, 
+							<span class="fw-normal">Speed Up Development!</span></div>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="fs-6 fs-lg-5 text-white fw-semibold opacity-75">Join over 100,000 Professionals Community to Stay Ahead</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Content-->
+						<!--begin::Link-->
+						<a href="https://1.envato.market/EA4JP" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">Purchase on Themeforest</a>
+						<!--end::Link-->
+					</div>
+					<!--end::Highlight-->
+				</div>
+				<!--end::Container-->
+			</div>
+			<!--end::Testimonials Section-->
+			<!--begin::Footer Section-->
+			<div class="mb-0">
+				<!--begin::Curve top-->
+				<div class="landing-curve landing-dark-color">
+					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+					</svg>
+				</div>
+				<!--end::Curve top-->
+				<!--begin::Wrapper-->
+				<div class="landing-dark-bg pt-20">
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Row-->
+						<div class="row py-10 py-lg-20">
+							<!--begin::Col-->
+							<div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+								<!--begin::Block-->
+								<div class="rounded landing-dark-border p-9 mb-10">
+									<!--begin::Title-->
+									<h2 class="text-white">Would you need a Custom License?</h2>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<span class="fw-normal fs-4 text-gray-700">Email us to 
+									<a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">support@keenthemes.com</a></span>
+									<!--end::Text-->
+								</div>
+								<!--end::Block-->
+								<!--begin::Block-->
+								<div class="rounded landing-dark-border p-9">
+									<!--begin::Title-->
+									<h2 class="text-white">How About a Custom Project?</h2>
+									<!--end::Title-->
+									<!--begin::Text-->
+									<span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service. 
+									<a href="pages/user-profile/overview.html" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a></span>
+									<!--end::Text-->
+								</div>
+								<!--end::Block-->
+							</div>
+							<!--end::Col-->
+							<!--begin::Col-->
+							<div class="col-lg-6 ps-lg-16">
+								<!--begin::Navs-->
+								<div class="d-flex justify-content-center">
+									<!--begin::Links-->
+									<div class="d-flex fw-semibold flex-column me-20">
+										<!--begin::Subtitle-->
+										<h4 class="fw-bold text-gray-500 mb-6">More for Metronic</h4>
+										<!--end::Subtitle-->
+										<!--begin::Link-->
+										<a href="https://keenthemes.com/faqs" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://preview.keenthemes.com/html/metronic/docs" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://www.youtube.com/c/KeenThemesTuts/videos" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Video Tuts</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://preview.keenthemes.com/html/metronic/docs/getting-started/changelog" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Changelog</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://devs.keenthemes.com/" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Support Forum</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://keenthemes.com/blog" class="text-white opacity-50 text-hover-primary fs-5">Blog</a>
+										<!--end::Link-->
+									</div>
+									<!--end::Links-->
+									<!--begin::Links-->
+									<div class="d-flex fw-semibold flex-column ms-lg-20">
+										<!--begin::Subtitle-->
+										<h4 class="fw-bold text-gray-500 mb-6">Stay Connected</h4>
+										<!--end::Subtitle-->
+										<!--begin::Link-->
+										<a href="https://www.facebook.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://github.com/KeenthemesHub" class="mb-6">
+											<img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://twitter.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://dribbble.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Dribbble</span>
+										</a>
+										<!--end::Link-->
+										<!--begin::Link-->
+										<a href="https://www.instagram.com/keenthemes" class="mb-6">
+											<img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
+											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
+										</a>
+										<!--end::Link-->
+									</div>
+									<!--end::Links-->
+								</div>
+								<!--end::Navs-->
+							</div>
+							<!--end::Col-->
+						</div>
+						<!--end::Row-->
+					</div>
+					<!--end::Container-->
+					<!--begin::Separator-->
+					<div class="landing-dark-separator"></div>
+					<!--end::Separator-->
+					<!--begin::Container-->
+					<div class="container">
+						<!--begin::Wrapper-->
+						<div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+							<!--begin::Copyright-->
+							<div class="d-flex align-items-center order-2 order-md-1">
+								<!--begin::Logo-->
+								<a href="landing.html">
+									<img alt="Logo" src="assets/media/logos/landing.svg" class="h-15px h-md-20px" />
+								</a>
+								<!--end::Logo image-->
+								<!--begin::Logo image-->
+								<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com">&copy; 2024 Keenthemes Inc.</span>
+								<!--end::Logo image-->
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
+								<li class="menu-item">
+									<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
+								</li>
+								<li class="menu-item mx-5">
+									<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
+								</li>
+								<li class="menu-item">
+									<a href="" target="_blank" class="menu-link px-2">Purchase</a>
+								</li>
+							</ul>
+							<!--end::Menu-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Footer Section-->
+			<!--begin::Scrolltop-->
+			<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+				<i class="ki-outline ki-arrow-up"></i>
+			</div>
+			<!--end::Scrolltop-->
+		</div>
+		<!--end::Root-->
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<i class="ki-outline ki-arrow-up"></i>
+		</div>
+		<!--end::Scrolltop-->
+		<!--begin::Modals-->
+		<!--begin::Modal - Create Campaign-->
+		<div class="modal fade" id="kt_modal_create_campaign" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-fullscreen p-9">
+				<!--begin::Modal content-->
+				<div class="modal-content modal-rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header py-7 d-flex justify-content-between">
+						<!--begin::Modal title-->
+						<h2>Create Campaign</h2>
+						<!--end::Modal title-->
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y m-5">
+						<!--begin::Stepper-->
+						<div class="stepper stepper-links d-flex flex-column" id="kt_modal_create_campaign_stepper">
+							<!--begin::Nav-->
+							<div class="stepper-nav justify-content-center py-2">
+								<!--begin::Step 1-->
+								<div class="stepper-item me-5 me-md-15 current" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Campaign Details</h3>
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div class="stepper-item me-5 me-md-15" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Creative Uploads</h3>
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div class="stepper-item me-5 me-md-15" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Audiences</h3>
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 4-->
+								<div class="stepper-item me-5 me-md-15" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Budget Estimates</h3>
+								</div>
+								<!--end::Step 4-->
+								<!--begin::Step 5-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Completed</h3>
+								</div>
+								<!--end::Step 5-->
+							</div>
+							<!--end::Nav-->
+							<!--begin::Form-->
+							<form class="mx-auto w-100 mw-600px pt-15 pb-10" novalidate="novalidate" id="kt_modal_create_campaign_stepper_form">
+								<!--begin::Step 1-->
+								<div class="current" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-15">
+											<!--begin::Title-->
+											<h2 class="fw-bold d-flex align-items-center text-gray-900">Setup Campaign Details 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Campaign name will be used as reference within your campaign reports">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></h2>
+											<!--end::Title-->
+											<!--begin::Notice-->
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
+											<!--end::Notice-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+										<div class="mb-10 fv-row">
+											<!--begin::Label-->
+											<label class="required form-label mb-3">Campaign Name</label>
+											<!--end::Label-->
+											<!--begin::Input-->
+											<input type="text" class="form-control form-control-lg form-control-solid" name="campaign_name" placeholder="" value="" />
+											<!--end::Input-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="d-block fw-semibold fs-6 mb-5">
+												<span class="required">Company Logo</span>
+												<span class="ms-1" data-bs-toggle="tooltip" title="E.g. Select a logo to represent the company that's running the campaign.">
+													<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+												</span>
+											</label>
+											<!--end::Label-->
+											<!--begin::Image input placeholder-->
+											<style>.image-input-placeholder { background-image: url('assets/media/svg/files/blank-image.svg'); } [data-bs-theme="dark"] .image-input-placeholder { background-image: url('assets/media/svg/files/blank-image-dark.svg'); }</style>
+											<!--end::Image input placeholder-->
+											<!--begin::Image input-->
+											<div class="image-input image-input-empty image-input-outline image-input-placeholder" data-kt-image-input="true">
+												<!--begin::Preview existing avatar-->
+												<div class="image-input-wrapper w-125px h-125px"></div>
+												<!--end::Preview existing avatar-->
+												<!--begin::Label-->
+												<label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+													<i class="ki-outline ki-pencil fs-7"></i>
+													<!--begin::Inputs-->
+													<input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+													<input type="hidden" name="avatar_remove" />
+													<!--end::Inputs-->
+												</label>
+												<!--end::Label-->
+												<!--begin::Cancel-->
+												<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+													<i class="ki-outline ki-cross fs-2"></i>
+												</span>
+												<!--end::Cancel-->
+												<!--begin::Remove-->
+												<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+													<i class="ki-outline ki-cross fs-2"></i>
+												</span>
+												<!--end::Remove-->
+											</div>
+											<!--end::Image input-->
+											<!--begin::Hint-->
+											<div class="form-text">Allowed file types: png, jpg, jpeg.</div>
+											<!--end::Hint-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="mb-10">
+											<!--begin::Label-->
+											<label class="required fw-semibold fs-6 mb-5">Campaign Goal</label>
+											<!--end::Label-->
+											<!--begin::Roles-->
+											<!--begin::Input row-->
+											<div class="d-flex fv-row">
+												<!--begin::Radio-->
+												<div class="form-check form-check-custom form-check-solid">
+													<!--begin::Input-->
+													<input class="form-check-input me-3" name="user_role" type="radio" value="0" id="kt_modal_update_role_option_0" checked='checked' />
+													<!--end::Input-->
+													<!--begin::Label-->
+													<label class="form-check-label" for="kt_modal_update_role_option_0">
+														<div class="fw-bold text-gray-800">Get more visitors</div>
+														<div class="text-gray-600">Increase impression traffic onto the platform</div>
+													</label>
+													<!--end::Label-->
+												</div>
+												<!--end::Radio-->
+											</div>
+											<!--end::Input row-->
+											<div class='separator separator-dashed my-5'></div>
+											<!--begin::Input row-->
+											<div class="d-flex fv-row">
+												<!--begin::Radio-->
+												<div class="form-check form-check-custom form-check-solid">
+													<!--begin::Input-->
+													<input class="form-check-input me-3" name="user_role" type="radio" value="1" id="kt_modal_update_role_option_1" />
+													<!--end::Input-->
+													<!--begin::Label-->
+													<label class="form-check-label" for="kt_modal_update_role_option_1">
+														<div class="fw-bold text-gray-800">Get more messages on chat</div>
+														<div class="text-gray-600">Increase community interaction and communication</div>
+													</label>
+													<!--end::Label-->
+												</div>
+												<!--end::Radio-->
+											</div>
+											<!--end::Input row-->
+											<div class='separator separator-dashed my-5'></div>
+											<!--begin::Input row-->
+											<div class="d-flex fv-row">
+												<!--begin::Radio-->
+												<div class="form-check form-check-custom form-check-solid">
+													<!--begin::Input-->
+													<input class="form-check-input me-3" name="user_role" type="radio" value="2" id="kt_modal_update_role_option_2" />
+													<!--end::Input-->
+													<!--begin::Label-->
+													<label class="form-check-label" for="kt_modal_update_role_option_2">
+														<div class="fw-bold text-gray-800">Get more calls</div>
+														<div class="text-gray-600">Boost telecommunication feedback to provide precise and accurate information</div>
+													</label>
+													<!--end::Label-->
+												</div>
+												<!--end::Radio-->
+											</div>
+											<!--end::Input row-->
+											<div class='separator separator-dashed my-5'></div>
+											<!--begin::Input row-->
+											<div class="d-flex fv-row">
+												<!--begin::Radio-->
+												<div class="form-check form-check-custom form-check-solid">
+													<!--begin::Input-->
+													<input class="form-check-input me-3" name="user_role" type="radio" value="3" id="kt_modal_update_role_option_3" />
+													<!--end::Input-->
+													<!--begin::Label-->
+													<label class="form-check-label" for="kt_modal_update_role_option_3">
+														<div class="fw-bold text-gray-800">Get more likes</div>
+														<div class="text-gray-600">Increase positive interactivity on social media platforms</div>
+													</label>
+													<!--end::Label-->
+												</div>
+												<!--end::Radio-->
+											</div>
+											<!--end::Input row-->
+											<div class='separator separator-dashed my-5'></div>
+											<!--begin::Input row-->
+											<div class="d-flex fv-row">
+												<!--begin::Radio-->
+												<div class="form-check form-check-custom form-check-solid">
+													<!--begin::Input-->
+													<input class="form-check-input me-3" name="user_role" type="radio" value="4" id="kt_modal_update_role_option_4" />
+													<!--end::Input-->
+													<!--begin::Label-->
+													<label class="form-check-label" for="kt_modal_update_role_option_4">
+														<div class="fw-bold text-gray-800">Lead generation</div>
+														<div class="text-gray-600">Collect contact information for potential customers</div>
+													</label>
+													<!--end::Label-->
+												</div>
+												<!--end::Radio-->
+											</div>
+											<!--end::Input row-->
+											<!--end::Roles-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-12">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Upload Files</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<a href="#" class="link-primary">Campaign Guidelines</a></div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Dropzone-->
+											<div class="dropzone" id="kt_modal_create_campaign_files_upload">
+												<!--begin::Message-->
+												<div class="dz-message needsclick">
+													<!--begin::Icon-->
+													<i class="ki-outline ki-file-up fs-3hx text-primary"></i>
+													<!--end::Icon-->
+													<!--begin::Info-->
+													<div class="ms-4">
+														<h3 class="dfs-3 fw-bold text-gray-900 mb-1">Drop campaign files here or click to upload.</h3>
+														<span class="fw-semibold fs-4 text-muted">Upload up to 10 files</span>
+													</div>
+													<!--end::Info-->
+												</div>
+											</div>
+											<!--end::Dropzone-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Uploaded File</label>
+											<!--End::Label-->
+											<!--begin::Files-->
+											<div class="mh-300px scroll-y me-n7 pe-7">
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/pdf.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Product Specifications</a>
+															<div class="fw-semibold text-muted">230kb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/tif.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign Creative Poster</a>
+															<div class="fw-semibold text-muted">2.4mb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/folder-document.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign Landing Page Source</a>
+															<div class="fw-semibold text-muted">1.12mb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/css.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Landing Page Styling</a>
+															<div class="fw-semibold text-muted">85kb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4 border border-top-0 border-left-0 border-right-0 border-dashed">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/ai.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Design Source Files</a>
+															<div class="fw-semibold text-muted">48mb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+												<!--begin::File-->
+												<div class="d-flex flex-stack py-4">
+													<div class="d-flex align-items-center">
+														<!--begin::Avatar-->
+														<div class="symbol symbol-35px">
+															<img src="assets/media/svg/files/doc.svg" alt="icon" />
+														</div>
+														<!--end::Avatar-->
+														<!--begin::Details-->
+														<div class="ms-6">
+															<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Campaign Plan Document</a>
+															<div class="fw-semibold text-muted">27kb</div>
+														</div>
+														<!--end::Details-->
+													</div>
+													<!--begin::Menu-->
+													<div class="min-w-100px">
+														<select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true" data-placeholder="Edit">
+															<option></option>
+															<option value="1">Remove</option>
+															<option value="2">Modify</option>
+															<option value="3">Select</option>
+														</select>
+													</div>
+													<!--end::Menu-->
+												</div>
+												<!--end::File-->
+											</div>
+											<!--end::Files-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-12">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Configure Audiences</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<a href="#" class="link-primary">Campaign Guidelines</a></div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Gender 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Show your ads to either men or women, or select 'All' for both">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--End::Label-->
+											<!--begin::Row-->
+											<div class="row g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button='true']">
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Option-->
+													<label class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6" data-kt-button="true">
+														<!--begin::Radio-->
+														<span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+															<input class="form-check-input" type="radio" name="campaign_gender" value="1" checked="checked" />
+														</span>
+														<!--end::Radio-->
+														<!--begin::Info-->
+														<span class="ms-5">
+															<span class="fs-4 fw-bold text-gray-800 d-block">All</span>
+														</span>
+														<!--end::Info-->
+													</label>
+													<!--end::Option-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Option-->
+													<label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+														<!--begin::Radio-->
+														<span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+															<input class="form-check-input" type="radio" name="campaign_gender" value="2" />
+														</span>
+														<!--end::Radio-->
+														<!--begin::Info-->
+														<span class="ms-5">
+															<span class="fs-4 fw-bold text-gray-800 d-block">Male</span>
+														</span>
+														<!--end::Info-->
+													</label>
+													<!--end::Option-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Option-->
+													<label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
+														<!--begin::Radio-->
+														<span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+															<input class="form-check-input" type="radio" name="campaign_gender" value="3" />
+														</span>
+														<!--end::Radio-->
+														<!--begin::Info-->
+														<span class="ms-5">
+															<span class="fs-4 fw-bold text-gray-800 d-block">Female</span>
+														</span>
+														<!--end::Info-->
+													</label>
+													<!--end::Option-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Age 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Select the minimum and maximum age of the people who will find your ad relevant.">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--End::Label-->
+											<!--begin::Slider-->
+											<div class="d-flex flex-stack">
+												<div id="kt_modal_create_campaign_age_min" class="fs-7 fw-semibold text-muted"></div>
+												<div id="kt_modal_create_campaign_age_slider" class="noUi-sm w-100 ms-5 me-8"></div>
+												<div id="kt_modal_create_campaign_age_max" class="fs-7 fw-semibold text-muted"></div>
+											</div>
+											<!--end::Slider-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Location 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Enter one or more location points for more specific targeting.">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--End::Label-->
+											<!--begin::Tagify-->
+											<input class="form-control d-flex align-items-center" value="" id="kt_modal_create_campaign_location" data-kt-flags-path="assets/media/flags/" />
+											<!--end::Tagify-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 4-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-12">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Budget Estimates</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="text-muted fw-semibold fs-4">If you need more info, please check 
+											<a href="#" class="link-primary">Campaign Guidelines</a></div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Campaign Duration 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Choose how long you want your ad to run for">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--end::Label-->
+											<!--begin::Duration option-->
+											<div class="d-flex gap-9 mb-7">
+												<!--begin::Button-->
+												<button type="button" class="btn btn-outline btn-outline-dashed btn-active-light-primary active" id="kt_modal_create_campaign_duration_all">Continuous duration
+												<br />
+												<span class="fs-7">Your ad will run continuously for a daily budget.</span></button>
+												<!--end::Button-->
+												<!--begin::Button-->
+												<button type="button" class="btn btn-outline btn-outline-dashed btn-active-light-primary btn-outline-default" id="kt_modal_create_campaign_duration_fixed">Fixed duration
+												<br />
+												<span class="fs-7">Your ad will run on the specified dates only.</span></button>
+												<!--end::Button-->
+											</div>
+											<!--end::Duration option-->
+											<!--begin::Datepicker-->
+											<input class="form-control form-control-solid d-none" placeholder="Pick date & time" id="kt_modal_create_campaign_datepicker" />
+											<!--end::Datepicker-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Daily Budget 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Choose the budget allocated for each day. Higher budget will generate better results">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--end::Label-->
+											<!--begin::Slider-->
+											<div class="d-flex flex-column text-center">
+												<div class="d-flex align-items-start justify-content-center mb-7">
+													<span class="fw-bold fs-4 mt-1 me-2">$</span>
+													<span class="fw-bold fs-3x" id="kt_modal_create_campaign_budget_label"></span>
+													<span class="fw-bold fs-3x">.00</span>
+												</div>
+												<div id="kt_modal_create_campaign_budget_slider" class="noUi-sm"></div>
+											</div>
+											<!--end::Slider-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 4-->
+								<!--begin::Step 5-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-12 text-center">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Campaign Created!</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="fw-semibold text-muted fs-4">You will receive an email with with the summary of your newly created campaign!</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Actions-->
+										<div class="d-flex flex-center pb-20">
+											<button id="kt_modal_create_campaign_create_new" type="button" class="btn btn-lg btn-light me-3" data-kt-element="complete-start">Create New Campaign</button>
+											<a href="" class="btn btn-lg btn-primary" data-bs-toggle="tooltip" title="Coming Soon">View Campaign</a>
+										</div>
+										<!--end::Actions-->
+										<!--begin::Illustration-->
+										<div class="text-center px-4">
+											<img src="assets/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px" />
+										</div>
+										<!--end::Illustration-->
+									</div>
+								</div>
+								<!--end::Step 5-->
+								<!--begin::Actions-->
+								<div class="d-flex flex-stack pt-10">
+									<!--begin::Wrapper-->
+									<div class="me-2">
+										<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous" data-kt-stepper-state="hide-on-last-step">
+										<i class="ki-outline ki-arrow-left fs-3 me-1"></i>Back</button>
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Wrapper-->
+									<div>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
+											<span class="indicator-label">Submit 
+											<i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i></span>
+											<span class="indicator-progress">Please wait... 
+											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+										</button>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue 
+										<i class="ki-outline ki-arrow-right fs-3 ms-1 me-0"></i></button>
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Actions-->
+							</form>
+							<!--end::Form-->
+						</div>
+						<!--end::Stepper-->
+					</div>
+					<!--begin::Modal body-->
+				</div>
+			</div>
+		</div>
+		<!--end::Modal - Create Campaign-->
+		<!--begin::Modal - New Target-->
+		<div class="modal fade" id="kt_modal_new_target" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+						<!--begin:Form-->
+						<form id="kt_modal_new_target_form" class="form" action="#">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<!--begin::Title-->
+								<h1 class="mb-3">Set First Target</h1>
+								<!--end::Title-->
+								<!--begin::Description-->
+								<div class="text-muted fw-semibold fs-5">If you need more info, please check 
+								<a href="#" class="fw-bold link-primary">Project Guidelines</a>.</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+									<span class="required">Target Title</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference">
+										<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="row g-9 mb-8">
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-semibold mb-2">Assign</label>
+									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Team Member" name="target_assign">
+										<option value="">Select user...</option>
+										<option value="1">Karina Clark</option>
+										<option value="2">Robert Doe</option>
+										<option value="3">Niel Owen</option>
+										<option value="4">Olivia Wild</option>
+										<option value="5">Sean Bean</option>
+									</select>
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-semibold mb-2">Due Date</label>
+									<!--begin::Input-->
+									<div class="position-relative d-flex align-items-center">
+										<!--begin::Icon-->
+										<i class="ki-outline ki-calendar-8 fs-2 position-absolute mx-4"></i>
+										<!--end::Icon-->
+										<!--begin::Datepicker-->
+										<input class="form-control form-control-solid ps-12" placeholder="Select a date" name="due_date" />
+										<!--end::Datepicker-->
+									</div>
+									<!--end::Input-->
+								</div>
+								<!--end::Col-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8">
+								<label class="fs-6 fw-semibold mb-2">Target Details</label>
+								<textarea class="form-control form-control-solid" rows="3" name="target_details" placeholder="Type Target Details"></textarea>
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+									<span class="required">Tags</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Specify a target priorty">
+										<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<input class="form-control form-control-solid" value="Important, Urgent" name="tags" />
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-stack mb-8">
+								<!--begin::Label-->
+								<div class="me-5">
+									<label class="fs-6 fw-semibold">Adding Users by Team Members</label>
+									<div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning</div>
+								</div>
+								<!--end::Label-->
+								<!--begin::Switch-->
+								<label class="form-check form-switch form-check-custom form-check-solid">
+									<input class="form-check-input" type="checkbox" value="1" checked="checked" />
+									<span class="form-check-label fw-semibold text-muted">Allowed</span>
+								</label>
+								<!--end::Switch-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="mb-15 fv-row">
+								<!--begin::Wrapper-->
+								<div class="d-flex flex-stack">
+									<!--begin::Label-->
+									<div class="fw-semibold me-5">
+										<label class="fs-6">Notifications</label>
+										<div class="fs-7 text-muted">Allow Notifications by Phone or Email</div>
+									</div>
+									<!--end::Label-->
+									<!--begin::Checkboxes-->
+									<div class="d-flex align-items-center">
+										<!--begin::Checkbox-->
+										<label class="form-check form-check-custom form-check-solid me-10">
+											<input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" checked="checked" />
+											<span class="form-check-label fw-semibold">Email</span>
+										</label>
+										<!--end::Checkbox-->
+										<!--begin::Checkbox-->
+										<label class="form-check form-check-custom form-check-solid">
+											<input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="phone" />
+											<span class="form-check-label fw-semibold">Phone</span>
+										</label>
+										<!--end::Checkbox-->
+									</div>
+									<!--end::Checkboxes-->
+								</div>
+								<!--end::Wrapper-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Actions-->
+							<div class="text-center">
+								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Cancel</button>
+								<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
+									<span class="indicator-label">Submit</span>
+									<span class="indicator-progress">Please wait... 
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end:Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - New Target-->
+		<!--begin::Modal - New Card-->
+		<div class="modal fade" id="kt_modal_new_card" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content">
+					<!--begin::Modal header-->
+					<div class="modal-header">
+						<!--begin::Modal title-->
+						<h2>Add New Card</h2>
+						<!--end::Modal title-->
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--end::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+						<!--begin::Form-->
+						<form id="kt_modal_new_card_form" class="form" action="#">
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-7 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+									<span class="required">Name On Card</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Specify a card holder's name">
+										<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="Max Doe" />
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-7 fv-row">
+								<!--begin::Label-->
+								<label class="required fs-6 fw-semibold form-label mb-2">Card Number</label>
+								<!--end::Label-->
+								<!--begin::Input wrapper-->
+								<div class="position-relative">
+									<!--begin::Input-->
+									<input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="4111 1111 1111 1111" />
+									<!--end::Input-->
+									<!--begin::Card logos-->
+									<div class="position-absolute translate-middle-y top-50 end-0 me-5">
+										<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
+										<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
+										<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
+									</div>
+									<!--end::Card logos-->
+								</div>
+								<!--end::Input wrapper-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="row mb-10">
+								<!--begin::Col-->
+								<div class="col-md-8 fv-row">
+									<!--begin::Label-->
+									<label class="required fs-6 fw-semibold form-label mb-2">Expiration Date</label>
+									<!--end::Label-->
+									<!--begin::Row-->
+									<div class="row fv-row">
+										<!--begin::Col-->
+										<div class="col-6">
+											<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+												<option></option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-6">
+											<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
+												<option></option>
+												<option value="2024">2024</option>
+												<option value="2025">2025</option>
+												<option value="2026">2026</option>
+												<option value="2027">2027</option>
+												<option value="2028">2028</option>
+												<option value="2029">2029</option>
+												<option value="2030">2030</option>
+												<option value="2031">2031</option>
+												<option value="2032">2032</option>
+												<option value="2033">2033</option>
+												<option value="2034">2034</option>
+											</select>
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-md-4 fv-row">
+									<!--begin::Label-->
+									<label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+										<span class="required">CVV</span>
+										<span class="ms-1" data-bs-toggle="tooltip" title="Enter a card CVV code">
+											<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+										</span>
+									</label>
+									<!--end::Label-->
+									<!--begin::Input wrapper-->
+									<div class="position-relative">
+										<!--begin::Input-->
+										<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
+										<!--end::Input-->
+										<!--begin::CVV icon-->
+										<div class="position-absolute translate-middle-y top-50 end-0 me-3">
+											<i class="ki-outline ki-credit-cart fs-2hx"></i>
+										</div>
+										<!--end::CVV icon-->
+									</div>
+									<!--end::Input wrapper-->
+								</div>
+								<!--end::Col-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-stack">
+								<!--begin::Label-->
+								<div class="me-5">
+									<label class="fs-6 fw-semibold form-label">Save Card for further billing?</label>
+									<div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning</div>
+								</div>
+								<!--end::Label-->
+								<!--begin::Switch-->
+								<label class="form-check form-switch form-check-custom form-check-solid">
+									<input class="form-check-input" type="checkbox" value="1" checked="checked" />
+									<span class="form-check-label fw-semibold text-muted">Save Card</span>
+								</label>
+								<!--end::Switch-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Actions-->
+							<div class="text-center pt-15">
+								<button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">Discard</button>
+								<button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
+									<span class="indicator-label">Submit</span>
+									<span class="indicator-progress">Please wait... 
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end::Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - New Card-->
+		<!--begin::Modal - New Target-->
+		<div class="modal fade" id="kt_modal_bidding" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-kt-modal-action-type="close">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+						<!--begin:Form-->
+						<form id="kt_modal_bidding_form" class="form" action="#">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<!--begin::Title-->
+								<h1 class="mb-3">Place your bids</h1>
+								<!--end::Title-->
+								<!--begin::Description-->
+								<div class="text-muted fw-semibold fs-5">If you need more info, please check 
+								<a href="#" class="fw-bold link-primary">Bidding Guidelines</a>.</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+									<span class="required">Bid Amount</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Specify the bid amount to place in.">
+										<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<!--begin::Bid options-->
+								<div class="d-flex flex-stack gap-5 mb-3">
+									<button type="button" class="btn btn-light-primary w-100" data-kt-modal-bidding="option">10</button>
+									<button type="button" class="btn btn-light-primary w-100" data-kt-modal-bidding="option">50</button>
+									<button type="button" class="btn btn-light-primary w-100" data-kt-modal-bidding="option">100</button>
+								</div>
+								<!--begin::Bid options-->
+								<input type="text" class="form-control form-control-solid" placeholder="Enter Bid Amount" name="bid_amount" />
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="fv-row mb-8">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+									<span class="required">Currency Type</span>
+									<span class="ms-1" data-bs-toggle="tooltip" title="Select the currency type.">
+										<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+									</span>
+								</label>
+								<!--end::Label-->
+								<!--begin::Select2-->
+								<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Currency Type" name="currency_type">
+									<option value=""></option>
+									<option value="dollar" selected="selected">Dollar</option>
+									<option value="crypto">Crypto</option>
+								</select>
+								<!--end::Select2-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="fv-row mb-8">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-semibold mb-2">
+									<span>Currency</span>
+								</label>
+								<!--end::Label-->
+								<!--begin::Dollar type-->
+								<div class="" data-kt-modal-bidding-type="dollar">
+									<!--begin::Select2-->
+									<select name="currency_dollar" aria-label="Select a Currency" data-placeholder="Select a currency.." class="form-select form-select-solid form-select-lg">
+										<option data-kt-bidding-modal-option-icon="flags/united-states.svg" value="USD" selected="selected">
+										<b>USD</b>&nbsp;-&nbsp;USA dollar</option>
+										<option data-kt-bidding-modal-option-icon="flags/united-kingdom.svg" value="GBP">
+										<b>GBP</b>&nbsp;-&nbsp;British pound</option>
+										<option data-kt-bidding-modal-option-icon="flags/australia.svg" value="AUD">
+										<b>AUD</b>&nbsp;-&nbsp;Australian dollar</option>
+										<option data-kt-bidding-modal-option-icon="flags/japan.svg" value="JPY">
+										<b>JPY</b>&nbsp;-&nbsp;Japanese yen</option>
+										<option data-kt-bidding-modal-option-icon="flags/sweden.svg" value="SEK">
+										<b>SEK</b>&nbsp;-&nbsp;Swedish krona</option>
+										<option data-kt-bidding-modal-option-icon="flags/canada.svg" value="CAD">
+										<b>CAD</b>&nbsp;-&nbsp;Canadian dollar</option>
+										<option data-kt-bidding-modal-option-icon="flags/switzerland.svg" value="CHF">
+										<b>CHF</b>&nbsp;-&nbsp;Swiss franc</option>
+									</select>
+									<!--end::Select2-->
+								</div>
+								<!--end::Dollar type-->
+								<!--begin::Crypto type-->
+								<div class="d-none" data-kt-modal-bidding-type="crypto">
+									<!--begin::Select2-->
+									<select name="currency_crypto" aria-label="Select a Coin" data-placeholder="Select a currency.." class="form-select form-select-solid form-select-lg">
+										<option data-kt-bidding-modal-option-icon="svg/coins/bitcoin.svg" value="1" selected="selected">Bitcoin</option>
+										<option data-kt-bidding-modal-option-icon="svg/coins/binance.svg" value="2">Binance</option>
+										<option data-kt-bidding-modal-option-icon="svg/coins/chainlink.svg" value="3">Chainlink</option>
+										<option data-kt-bidding-modal-option-icon="svg/coins/coin.svg" value="4">Coin</option>
+										<option data-kt-bidding-modal-option-icon="svg/coins/ethereum.svg" value="5">Ethereum</option>
+										<option data-kt-bidding-modal-option-icon="svg/coins/filecoin.svg" value="6">Filecoin</option>
+									</select>
+									<!--end::Select2-->
+								</div>
+								<!--end::Crypto type-->
+							</div>
+							<!--end::Input group-->
+							<!--begin::Notice-->
+							<!--begin::Notice-->
+							<div class="notice d-flex bg-light-primary rounded border-primary border border-dashed mb-9 p-6">
+								<!--begin::Icon-->
+								<i class="ki-outline ki-wallet fs-2tx text-primary me-4"></i>
+								<!--end::Icon-->
+								<!--begin::Wrapper-->
+								<div class="d-flex flex-stack flex-grow-1">
+									<!--begin::Content-->
+									<div class="fw-semibold">
+										<h4 class="text-gray-900 fw-bold">Top up funds</h4>
+										<div class="fs-6 text-gray-700">Not enough funds in your wallet? 
+										<a href="utilities/modals/wizards/top-up-wallet.html" class="text-bolder">Top up wallet</a>.</div>
+									</div>
+									<!--end::Content-->
+								</div>
+								<!--end::Wrapper-->
+							</div>
+							<!--end::Notice-->
+							<!--end::Notice-->
+							<!--begin::Actions-->
+							<div class="text-center">
+								<button type="reset" class="btn btn-light me-3" data-kt-modal-action-type="cancel">Cancel</button>
+								<button type="submit" class="btn btn-primary" data-kt-modal-action-type="submit">
+									<span class="indicator-label">Submit</span>
+									<span class="indicator-progress">Please wait... 
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end:Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - New Target-->
+		<!--begin::Modal - Invite Friends-->
+		<div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+						<!--begin::Heading-->
+						<div class="text-center mb-13">
+							<!--begin::Title-->
+							<h1 class="mb-3">Invite a Friend</h1>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<div class="text-muted fw-semibold fs-5">If you need more info, please check out 
+							<a href="#" class="link-primary fw-bold">FAQ Page</a>.</div>
+							<!--end::Description-->
+						</div>
+						<!--end::Heading-->
+						<!--begin::Google Contacts Invite-->
+						<div class="btn btn-light-primary fw-bold w-100 mb-8">
+						<img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg" class="h-20px me-3" />Invite Gmail Contacts</div>
+						<!--end::Google Contacts Invite-->
+						<!--begin::Separator-->
+						<div class="separator d-flex flex-center mb-8">
+							<span class="text-uppercase bg-body fs-7 fw-semibold text-muted px-3">or</span>
+						</div>
+						<!--end::Separator-->
+						<!--begin::Textarea-->
+						<textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here"></textarea>
+						<!--end::Textarea-->
+						<!--begin::Users-->
+						<div class="mb-10">
+							<!--begin::Heading-->
+							<div class="fs-6 fw-semibold mb-2">Your Invitations</div>
+							<!--end::Heading-->
+							<!--begin::List-->
+							<div class="mh-300px scroll-y me-n7 pe-7">
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Smith</a>
+											<div class="fw-semibold text-muted">smith@kpmg.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">M</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
+											<div class="fw-semibold text-muted">melody@altbox.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-1.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max Smith</a>
+											<div class="fw-semibold text-muted">max@kt.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-5.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean Bean</a>
+											<div class="fw-semibold text-muted">sean@dellito.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-25.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian Cox</a>
+											<div class="fw-semibold text-muted">brian@exchange.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-warning text-warning fw-semibold">C</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela Collins</a>
+											<div class="fw-semibold text-muted">mik@pex.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-9.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis Mitcham</a>
+											<div class="fw-semibold text-muted">f.mit@kpmg.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">O</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia Wild</a>
+											<div class="fw-semibold text-muted">olivia@corpmail.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-primary text-primary fw-semibold">N</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil Owen</a>
+											<div class="fw-semibold text-muted">owen.neil@gmail.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-23.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan Wilson</a>
+											<div class="fw-semibold text-muted">dam@consilting.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">E</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma Bold</a>
+											<div class="fw-semibold text-muted">emma@intenso.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana Crown</a>
+											<div class="fw-semibold text-muted">ana.cf@limtel.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-info text-info fw-semibold">A</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert Doe</a>
+											<div class="fw-semibold text-muted">robert@benko.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-13.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John Miller</a>
+											<div class="fw-semibold text-muted">miller@mapple.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-success text-success fw-semibold">L</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy Kunic</a>
+											<div class="fw-semibold text-muted">lucy.m@fentech.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2" selected="selected">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4 border-bottom border-gray-300 border-bottom-dashed">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<img alt="Pic" src="assets/media/avatars/300-21.jpg" />
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan Wilder</a>
+											<div class="fw-semibold text-muted">ethan@loop.com.au</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1" selected="selected">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+								<!--begin::User-->
+								<div class="d-flex flex-stack py-4">
+									<!--begin::Details-->
+									<div class="d-flex align-items-center">
+										<!--begin::Avatar-->
+										<div class="symbol symbol-35px symbol-circle">
+											<span class="symbol-label bg-light-danger text-danger fw-semibold">M</span>
+										</div>
+										<!--end::Avatar-->
+										<!--begin::Details-->
+										<div class="ms-5">
+											<a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody Macy</a>
+											<div class="fw-semibold text-muted">melody@altbox.com</div>
+										</div>
+										<!--end::Details-->
+									</div>
+									<!--end::Details-->
+									<!--begin::Access menu-->
+									<div class="ms-2 w-100px">
+										<select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+											<option value="1">Guest</option>
+											<option value="2">Owner</option>
+											<option value="3" selected="selected">Can Edit</option>
+										</select>
+									</div>
+									<!--end::Access menu-->
+								</div>
+								<!--end::User-->
+							</div>
+							<!--end::List-->
+						</div>
+						<!--end::Users-->
+						<!--begin::Notice-->
+						<div class="d-flex flex-stack">
+							<!--begin::Label-->
+							<div class="me-5 fw-semibold">
+								<label class="fs-6">Adding Users by Team Members</label>
+								<div class="fs-7 text-muted">If you need more info, please check budget planning</div>
+							</div>
+							<!--end::Label-->
+							<!--begin::Switch-->
+							<label class="form-check form-switch form-check-custom form-check-solid">
+								<input class="form-check-input" type="checkbox" value="1" checked="checked" />
+								<span class="form-check-label fw-semibold text-muted">Allowed</span>
+							</label>
+							<!--end::Switch-->
+						</div>
+						<!--end::Notice-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - Invite Friend-->
+		<!--begin::Modal - Create Campaign-->
+		<div class="modal fade" id="kt_modal_top_up_wallet" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-fullscreen p-9">
+				<!--begin::Modal content-->
+				<div class="modal-content modal-rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header py-7 d-flex justify-content-between">
+						<!--begin::Modal title-->
+						<h2>Top Up Wallet</h2>
+						<!--end::Modal title-->
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-kt-modal-action-type="close">
+							<i class="ki-outline ki-cross fs-1"></i>
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y m-5">
+						<!--begin::Stepper-->
+						<div class="stepper stepper-links d-flex flex-column gap-5" id="kt_modal_top_up_wallet_stepper">
+							<!--begin::Nav-->
+							<div class="stepper-nav justify-content-center py-2">
+								<!--begin::Step 1-->
+								<div class="stepper-item current" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Deposit Amount</h3>
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Currency</h3>
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Authentication</h3>
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 4-->
+								<div class="stepper-item" data-kt-stepper-element="nav">
+									<h3 class="stepper-title">Completed</h3>
+								</div>
+								<!--end::Step 4-->
+							</div>
+							<!--end::Nav-->
+							<!--begin::Form-->
+							<form class="mx-auto w-100 mw-600px pt-15 pb-10" novalidate="novalidate" id="kt_modal_top_up_wallet_stepper_form">
+								<!--begin::Step 1-->
+								<div class="current" data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-15">
+											<!--begin::Title-->
+											<h2 class="fw-bold d-flex align-items-center text-gray-900">Set Amount to Top Up 
+											<span class="ms-1" data-bs-toggle="tooltip" title="You will be charged the set amount from your selected payment option">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></h2>
+											<!--end::Title-->
+											<!--begin::Notice-->
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
+											<!--end::Notice-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Input group-->
+										<div class="mb-10 fv-row">
+											<!--begin::Label-->
+											<label class="form-label mb-3">
+												<span class="required">Top Up Amount</span>
+											</label>
+											<!--end::Label-->
+											<!--begin::Input-->
+											<input type="text" class="form-control form-control-lg form-control-solid" name="top_up_amount" placeholder="" value="" autocomplete="off" />
+											<!--end::Input-->
+										</div>
+										<!--end::Input group-->
+										<!--begin::Input group-->
+										<div class="mb-10">
+											<!--begin::Label-->
+											<label class="required fw-semibold fs-6 mb-5">Currency Type</label>
+											<!--end::Label-->
+											<!--begin::Row-->
+											<div class="row row-cols-1 row-cols-md-2 g-5">
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Option-->
+													<input type="radio" class="btn-check" name="currency_type" value="dollar" id="kt_radio_buttons_2_option_1" checked="checked" />
+													<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center h-100" for="kt_radio_buttons_2_option_1">
+														<i class="ki-outline ki-dollar fs-3hx text-primary"></i>
+														<span class="d-block fw-semibold text-start">
+															<span class="text-gray-900 fw-bold d-block fs-3">Cash</span>
+															<span class="text-muted fw-semibold fs-6">Top up wallet using cash from one of your saved payment options.</span>
+														</span>
+													</label>
+													<!--end::Option-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Option-->
+													<input type="radio" class="btn-check" name="currency_type" value="crypto" id="kt_radio_buttons_2_option_2" />
+													<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center h-100" for="kt_radio_buttons_2_option_2">
+														<i class="ki-outline ki-bitcoin fs-3hx text-primary"></i>
+														<span class="d-block fw-semibold text-start">
+															<span class="text-gray-900 fw-bold d-block fs-3">Crypto</span>
+															<span class="text-muted fw-semibold fs-6">Top up wallet using a crypto currency.</span>
+														</span>
+													</label>
+													<!--end::Option-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 1-->
+								<!--begin::Step 2-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-12">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Currency</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check 
+											<a href="#" class="link-primary">Top Up Guidelines</a></div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Dollar options-->
+										<div class="" data-kt-modal-top-up-wallet-option="dollar">
+											<!--begin::Input group-->
+											<div class="fv-row mb-10">
+												<!--begin::Label-->
+												<label class="required fs-6 fw-semibold mb-2">Select a payment method</label>
+												<!--End::Label-->
+												<!--begin::Row-->
+												<div class="row row-cols-1 row-cols-md-2 g-5">
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="payment_methods" value="dollar" id="kt_modal_top_up_wallet_payment_method_option_0" checked="checked" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-start gap-5 h-100" for="kt_modal_top_up_wallet_payment_method_option_0">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Card details-->
+															<div class="d-flex align-items-start flex-column gap-3">
+																<div class="d-flex align-items-center">
+																	<!--begin::Card name-->
+																	<span>Personal</span>
+																	<!--end::Card name-->
+																	<!--begin::Badge-->
+																	<div class="badge badge-primary ms-5">Primary</div>
+																	<!--end::Badge-->
+																</div>
+																<!--begin::Card number-->
+																<div class="text-gray-900 fw-bold">**** 8742</div>
+																<!--end::Card number-->
+																<!--begin::Card expiry-->
+																<div class="text-muted">exp 01/23</div>
+																<!--end::Card expiry-->
+															</div>
+															<!--end::Card details-->
+														</label>
+														<!--end::Option-->
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="payment_methods" value="dollar" id="kt_modal_top_up_wallet_payment_method_option_1" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-start gap-5 h-100" for="kt_modal_top_up_wallet_payment_method_option_1">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/card-logos/visa.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Card details-->
+															<div class="d-flex align-items-start flex-column gap-3">
+																<div class="d-flex align-items-center">
+																	<!--begin::Card name-->
+																	<span>Family</span>
+																	<!--end::Card name-->
+																</div>
+																<!--begin::Card number-->
+																<div class="text-gray-900 fw-bold">**** 1141</div>
+																<!--end::Card number-->
+																<!--begin::Card expiry-->
+																<div class="text-muted">exp 05/24</div>
+																<!--end::Card expiry-->
+															</div>
+															<!--end::Card details-->
+														</label>
+														<!--end::Option-->
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="payment_methods" value="dollar" id="kt_modal_top_up_wallet_payment_method_option_2" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-start gap-5 h-100" for="kt_modal_top_up_wallet_payment_method_option_2">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Card details-->
+															<div class="d-flex align-items-start flex-column gap-3">
+																<div class="d-flex align-items-center">
+																	<!--begin::Card name-->
+																	<span>Company</span>
+																	<!--end::Card name-->
+																</div>
+																<!--begin::Card number-->
+																<div class="text-gray-900 fw-bold">**** 8839</div>
+																<!--end::Card number-->
+																<!--begin::Card expiry-->
+																<div class="text-muted">exp 07/24</div>
+																<!--end::Card expiry-->
+															</div>
+															<!--end::Card details-->
+														</label>
+														<!--end::Option-->
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Add new card-->
+														<a href="utilities/modals/forms/new-card.html" class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100">
+															<!--begin::Icon-->
+															<i class="ki-outline ki-plus-circle fs-3hx text-primary"></i>
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Add New Card</div>
+															<!--end::Label-->
+														</a>
+														<!--end::Add new card-->
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Input group-->
+										</div>
+										<!--end::Dollar options-->
+										<!--begin::Crypto options-->
+										<div class="d-none" data-kt-modal-top-up-wallet-option="crypto">
+											<!--begin::Input group-->
+											<div class="mb-10">
+												<!--begin::Label-->
+												<label class="required fs-6 fw-semibold mb-2">Select a coin</label>
+												<!--End::Label-->
+												<!--begin::Row-->
+												<div class="row row-cols-2 row-cols-md-4 g-5">
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_0" checked="checked" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_0">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/binance.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Binance</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_1" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_1">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/bitcoin.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Bitcoin</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_2" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_2">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/chainlink.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Chainlink</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_3" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_3">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/coin.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Coin</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_4" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_4">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/ethereum.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Ethereum</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col">
+														<!--begin::Option-->
+														<input type="radio" class="btn-check" name="select_coin" value="dollar" id="kt_modal_top_up_wallet_coin_option_5" />
+														<label class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex flex-column flex-center gap-5 h-100" for="kt_modal_top_up_wallet_coin_option_5">
+															<!--begin::Icon-->
+															<img src="assets/media/svg/coins/filecoin.svg" alt="" class="w-50px" />
+															<!--end::Icon-->
+															<!--begin::Label-->
+															<div class="fs-5 fw-bold">Filecoin</div>
+															<!--end::Label-->
+														</label>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Input group-->
+										</div>
+										<!--end::Crypto options-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 2-->
+								<!--begin::Step 3-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-10 pb-lg-12">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Authentication</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check 
+											<a href="#" class="link-primary">Top Up Guidelines</a></div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Secret key-->
+										<div class="d-flex flex-column mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Secret Key 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Please ensure that your secret key matches your saved image and keyword">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--end::Label-->
+											<div class="d-flex align-items-center gap-5">
+												<!--begin::Image-->
+												<div class="symbol symbol-100px symbol-circle">
+													<img src="assets/media/avatars/300-11.jpg" alt="Secret Image" />
+												</div>
+												<!--end::Image-->
+												<!--begin::Keyword-->
+												<div class="fw-bold fs-5">my_secret_key</div>
+												<!--end::Keyword-->
+											</div>
+										</div>
+										<!--end::Secret key-->
+										<!--begin::Input group-->
+										<div class="fv-row mb-10">
+											<!--begin::Label-->
+											<label class="fs-6 fw-semibold mb-2">Enter Password 
+											<span class="ms-1" data-bs-toggle="tooltip" title="Please enter your password to authenticate the wallet top up">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span></label>
+											<!--End::Label-->
+											<!--begin::Input-->
+											<input type="password" class="form-control form-control-lg form-control-solid" name="top_up_password" placeholder="" value="" autocomplete="off" />
+											<!--end::Input-->
+										</div>
+										<!--end::Input group-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Step 3-->
+								<!--begin::Step 5-->
+								<div data-kt-stepper-element="content">
+									<!--begin::Wrapper-->
+									<div class="w-100">
+										<!--begin::Heading-->
+										<div class="pb-12 text-center">
+											<!--begin::Title-->
+											<h1 class="fw-bold text-gray-900">Successful Top Up!</h1>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="fw-semibold text-muted fs-4">You will receive an email with with the summary of your latest top up!</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Actions-->
+										<div class="d-flex flex-center pb-20">
+											<button id="kt_modal_top_up_wallet_create_new" type="button" class="btn btn-lg btn-light me-3" data-kt-element="complete-start">Top Up Wallet</button>
+											<a href="" class="btn btn-lg btn-primary" data-bs-toggle="tooltip" title="Coming Soon">View Wallet</a>
+										</div>
+										<!--end::Actions-->
+										<!--begin::Illustration-->
+										<div class="text-center px-4">
+											<img src="assets/media/illustrations/sketchy-1/9.png" alt="" class="mww-100 mh-350px" />
+										</div>
+										<!--end::Illustration-->
+									</div>
+								</div>
+								<!--end::Step 5-->
+								<!--begin::Actions-->
+								<div class="d-flex flex-stack pt-10">
+									<!--begin::Wrapper-->
+									<div class="me-2">
+										<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+										<i class="ki-outline ki-arrow-left fs-3 me-1"></i>Back</button>
+									</div>
+									<!--end::Wrapper-->
+									<!--begin::Wrapper-->
+									<div>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
+											<span class="indicator-label">Submit 
+											<i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i></span>
+											<span class="indicator-progress">Please wait... 
+											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+										</button>
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue 
+										<i class="ki-outline ki-arrow-right fs-3 ms-1 me-0"></i></button>
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--end::Actions-->
+							</form>
+							<!--end::Form-->
+						</div>
+						<!--end::Stepper-->
+					</div>
+					<!--begin::Modal body-->
+				</div>
+			</div>
+		</div>
+		<!--end::Modal - Create Campaign-->
+		<!--end::Modals-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Vendors Javascript(used for this page only)-->
+		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/custom/landing.js"></script>
+		<script src="assets/js/custom/pages/pricing/general.js"></script>
+		<script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
+		<script src="assets/js/custom/utilities/modals/new-target.js"></script>
+		<script src="assets/js/custom/utilities/modals/new-card.js"></script>
+		<script src="assets/js/custom/utilities/modals/bidding.js"></script>
+		<script src="assets/js/custom/utilities/modals/top-up-wallet.js"></script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+</html>

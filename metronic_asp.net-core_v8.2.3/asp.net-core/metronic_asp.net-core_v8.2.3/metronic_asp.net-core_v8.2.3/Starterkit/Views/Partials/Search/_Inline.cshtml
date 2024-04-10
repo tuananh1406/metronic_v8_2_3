@@ -1,0 +1,23 @@
+<!--begin::Search-->
+<div id="kt_header_search" class="header-search d-flex align-items-center w-lg-250px" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="lg" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-menu-attach="parent">
+	<!--begin::Tablet and mobile search toggle-->
+	<div data-kt-search-element="toggle" class="search-toggle-mobile d-flex d-lg-none align-items-center">
+		<div class="d-flex btn btn-custom btn-outline btn-icon btn-icon-gray-700 btn-active-icon-primary">@Html.Raw(KTTheme.GetIcon("magnifier", "fs-1 "))</div>
+	</div>
+	<!--end::Tablet and mobile search toggle-->
+	<partial name="~/Views/Partials/Search/Partials/_FormInline.cshtml" />
+	<!--begin::Menu-->
+	<div data-kt-search-element="content" class="menu menu-sub menu-sub-dropdown py-7 px-7 overflow-hidden w-300px w-md-350px">
+		<!--begin::Wrapper-->
+		<div data-kt-search-element="wrapper">
+			<partial name="~/Views/Partials/Search/Partials/_Results.cshtml" />
+			<partial name="~/Views/Partials/Search/Partials/_Main.cshtml" />
+			<partial name="~/Views/Partials/Search/Partials/_Empty.cshtml" />
+		</div>
+		<!--end::Wrapper-->
+		<partial name="~/Views/Partials/Search/Partials/_AdvancedOptions.cshtml" />
+		<partial name="~/Views/Partials/Search/Partials/_Preferences.cshtml" />
+	</div>
+	<!--end::Menu-->
+</div>
+<!--end::Search-->

@@ -1,0 +1,45 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {   
+    margin-top: $app-content-padding-y;     
+    margin-left: 0 !important;  
+
+    .nav-item {
+        .nav-link {               
+            border: 1px dashed var(--#{$prefix}gray-300) !important; 
+            
+            &.active{
+                border: none !important;
+            }
+
+            &:hover{
+                border: none !important;
+            }                       
+        }
+    }    
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-sidebar {    
+        background-color: transparent;
+        margin-top: $app-content-padding-y;     
+        margin-left: 0 !important;            
+
+        .hover-scroll-y {
+            @include scrollbar-color(var(--#{$prefix}gray-200), var(--#{$prefix}gray-300));    
+        }
+    }    
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar {  
+        margin-top: 0;         
+        padding-top: $app-content-padding-y;       
+        align-items: center;  
+    } 
+}

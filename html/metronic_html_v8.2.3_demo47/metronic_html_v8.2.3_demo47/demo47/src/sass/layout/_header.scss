@@ -1,0 +1,99 @@
+//
+// Layout
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+			// Root links
+			& > .menu-item {
+				// Customize menu link default state       
+				@include menu-link-default-state( 
+					$title-color: var(--#{$prefix}gray-700), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link hover state       
+				@include menu-link-hover-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color:  null, 
+					$bg-color: null,
+					$all-links: false
+				);
+
+				// Customize menu link here state       
+				@include menu-link-here-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: null,
+					$bullet-color: null, 
+					$arrow-color:  null,
+					$bg-color: var(--#{$prefix}gray-200), 
+					$all-links: false
+				);
+
+				// Customize menu link show state       
+				@include menu-link-show-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null,
+					$all-links: false
+				);
+
+				// Customize menu link active state       
+				@include menu-link-active-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				& > .menu-link {
+					padding: 0.45rem 1.5rem;				 
+
+					.menu-title {
+						font-size: 1.3rem;
+						font-weight: $font-weight-bold;							
+					}
+				}
+
+				margin-right: 0.5rem; 	
+			}
+		}
+    } 
+
+	.app-navbar {
+		.header-search {
+			.search-input {
+				background: var(--#{$prefix}app-header-base-search-bg-color);
+				border: 0; 
+				height: 40px;
+
+				@include placeholder(var(--#{$prefix}gray-600));
+			}
+
+			.search-icon {						 				 			 
+				color: var(--#{$prefix}gray-700); 
+			}
+		}      
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		[data-kt-app-header-fixed-mobile] & {
+			box-shadow: var(--#{$prefix}box-shadow-xs);	
+		}		
+	}
+}

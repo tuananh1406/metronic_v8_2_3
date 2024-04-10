@@ -1,0 +1,68 @@
+@{
+	// Master layout
+	Layout = "~/Views/Layout/Master.cshtml";
+
+	// Layout options
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-layout", "dark-sidebar");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-header-fixed", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-fixed", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-hoverable", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-push-header", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-push-toolbar", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-push-footer", "true");
+	KTTheme.AddHtmlAttribute("body", "data-kt-app-toolbar-enabled", "true");
+	KTTheme.AddHtmlClass("body", "app-default");
+
+	if(Context.Request.Cookies["sidebar_minimize_state"] != null && String.Equals(Convert.ToString((Context.Request.Cookies["sidebar_minimize_state"])), "on")){
+        KTTheme.AddHtmlAttribute("body", "data-kt-app-sidebar-minimize", "on");
+        KTTheme.AddHtmlAttribute("sidebar-toggle", "data-kt-toggle-state", "active");
+        KTTheme.AddHtmlClass("sidebar-toggle", "active");
+    }
+
+	// Global vendors and javascript files
+	KTTheme.AddVendor("datatables");
+	KTTheme.AddJavascriptFile("js/widgets.bundle.js");
+	KTTheme.AddJavascriptFile("js/custom/apps/chat/chat.js");
+	KTTheme.AddJavascriptFile("js/custom/utilities/modals/upgrade-plan.js");
+	KTTheme.AddJavascriptFile("js/custom/utilities/modals/create-app.js");
+	KTTheme.AddJavascriptFile("js/custom/utilities/modals/users-search.js");
+	KTTheme.AddJavascriptFile("js/custom/utilities/modals/new-target.js");
+}
+
+<!--begin::Root-->
+<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+	<!--begin::Page-->
+	<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+		<partial name='Partials/SidebarLayout/_header.cshtml' />
+		<!--begin::Wrapper-->
+		<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+			<partial name='Partials/SidebarLayout/_sidebar.cshtml' />
+			<!--begin::Main-->
+			<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+				<!--begin::Content wrapper-->
+				<div class="d-flex flex-column flex-column-fluid">
+					<partial name='Partials/SidebarLayout/_toolbar.cshtml' />
+					<!--begin::Content-->
+                    <div id="kt_app_content" class="app-content flex-column-fluid">
+                    	<!--begin::Content container-->
+                    	<div id="kt_app_content_container" class="app-container container-fluid">
+                    		@RenderBody()
+                    	</div>
+                    	<!--end::Content container-->
+                    </div>
+                    <!--end::Content-->
+				</div>
+				<!--end::Content wrapper-->
+				<partial name='Partials/SidebarLayout/_footer.cshtml' />
+			</div>
+			<!--end:::Main-->
+		</div>
+		<!--end::Wrapper-->
+	</div>
+	<!--end::Page-->
+</div>
+<!--end::Root-->
+
+<partial name="~/Views/Partials/_Drawers.cshtml" />
+<partial name="~/Views/Partials/_Modals.cshtml" />
+<partial name="~/Views/Partials/_Scrolltop.cshtml" />

@@ -1,0 +1,53 @@
+//
+// Header
+//
+
+// General
+
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+		.app-container {
+			[data-kt-app-header-sticky="on"] & {
+				margin-top: 0;	
+			}
+		}
+		
+		.header-search {
+			.search-input {
+				@include placeholder($gray-500);
+				background-color: transparent;	
+				border: 0;
+				padding-left: 0 !important;
+				margin-left: 26px !important;
+			}	
+
+			.search-icon {
+				margin-left: 0 !important;
+				color: $gray-500;
+			}
+		}
+
+		[data-kt-app-header-sticky="on"]
+
+		.header { [data-kt-app-header-sticky="on"] & { 
+			border-bottom: var(--#{$prefix}app-separator-border);
+		}}
+	}
+}
+
+.app-header {
+	.app-navbar {
+		.badge.badge-custom {
+			color: var(--#{$prefix}white); 
+			background-color: var(--#{$prefix}gray-600); 
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+
+
+

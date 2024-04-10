@@ -1,0 +1,79 @@
+<!-- Search toolbar -->
+<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass">
+  <div class="btn btn-icon btn-active-light-primary btn-custom btn-custom" [ngClass]="toolbarButtonHeightClass"
+    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+    data-kt-menu-flip="bottom">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen021.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <app-search-result-inner></app-search-result-inner>
+</div>
+
+<!-- Activities -->
+<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass">
+  <!-- begin::Drawer toggle -->
+  <div class="btn btn-icon btn-active-light-primary btn-custom" [ngClass]="toolbarButtonHeightClass"
+    id="kt_activities_toggle">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen032.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <!-- end::Drawer toggle -->
+</div>
+
+<!-- NOTIFICATIONS -->
+<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass">
+  <div class="btn btn-icon btn-active-light-primary btn-custom position-relative" [ngClass]="toolbarButtonHeightClass"
+    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+    data-kt-menu-flip="bottom">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen022.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <app-notifications-inner></app-notifications-inner>
+</div>
+
+<!-- CHAT -->
+<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass">
+  <!-- begin::Menu wrapper -->
+  <div class="btn btn-icon btn-active-light-primary btn-custom position-relative" [ngClass]="toolbarButtonHeightClass"
+    id="kt_drawer_chat_toggle">
+    <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+    <span class="
+        bullet bullet-dot
+        bg-success
+        h-6px
+        w-6px
+        position-absolute
+        translate-middle
+        top-0
+        start-50
+        animation-blink
+      "></span>
+  </div>
+  <!-- end::Menu wrapper -->
+</div>
+
+<!-- Quick links -->
+<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass">
+  <div class="btn btn-icon btn-active-light-primary btn-custom" [ngClass]="toolbarButtonHeightClass"
+    data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end"
+    data-kt-menu-flip="bottom">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen025.svg'" class="svg-icon"
+      [ngClass]="toolbarButtonIconSizeClass"></span>
+  </div>
+  <app-quick-links-inner></app-quick-links-inner>
+</div>
+
+
+<!-- begin::Theme mode -->
+<app-theme-mode-switcher
+  class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline w-40px h-40px"
+  [ngClass]="toolbarButtonMarginClass"
+  toggleBtnClass="{`btn btn-icon btn-active-light-primary btn-custom ${toolbarButtonHeightClass}`}">
+</app-theme-mode-switcher>
+<!-- end::Theme mode -->

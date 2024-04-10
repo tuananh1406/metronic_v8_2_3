@@ -1,0 +1,45 @@
+//
+// Content
+//
+
+// General
+.app-content {    
+    background-color: var(--#{$prefix}gray-100);    
+} 
+
+.app-header-separator {
+    @include border-top-radius($app-content-border-radius);
+    background-color: var(--#{$prefix}gray-100); 
+    height: $app-content-top-offset;
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-content {    
+        @include border-bottom-radius($app-content-border-radius);
+        padding-top: $app-content-padding-y - $app-content-top-offset;
+
+        [data-kt-app-sidebar-panel-enabled="true"] & {
+            @include border-bottom-start-radius(0);
+        }
+    } 
+
+    .app-header-separator {
+        transition: margin $app-general-transition-duration $app-general-transition-timing;
+        margin-right: $app-container-padding-x;
+        margin-left: $app-sidebar-base-width;
+
+        .app-sidebar-panel-top {
+            width: $app-sidebar-panel-base-width;
+            @include border-top-start-radius($app-content-border-radius);	
+            background-color: var(--#{$prefix}app-sidebar-panel-base-bg-color);    
+        }
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header-separator {
+        display: none !important;
+    }
+}

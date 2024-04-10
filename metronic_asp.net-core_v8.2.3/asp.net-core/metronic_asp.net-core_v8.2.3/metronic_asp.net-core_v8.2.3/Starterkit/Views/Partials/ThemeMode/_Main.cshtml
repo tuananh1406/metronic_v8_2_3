@@ -1,0 +1,15 @@
+@{
+    var btnClass = ViewData["ToggleBtnClass"];
+    var menuPlacement = ViewData.ContainsKey("MenuPlacement") ? ViewData["MenuPlacement"] : "bottom-end";
+    var iconClass = ViewData.ContainsKey("ToggleBtnIconClass") ? ViewData["ToggleBtnIconClass"] : "fs-1";
+    var trigger = ViewData.ContainsKey("MenuTrigger") ? ViewData["MenuTrigger"] : "{default:'click', lg: 'hover'}";
+}
+
+
+<!--begin::Menu toggle-->
+<a href="#" class="@btnClass" data-kt-menu-trigger="@trigger" data-kt-menu-attach="parent" data-kt-menu-placement="@menuPlacement">
+    @Html.Raw(KTTheme.GetIcon("night-day", "theme-light-show "+iconClass))
+    @Html.Raw(KTTheme.GetIcon("moon", "theme-dark-show "+iconClass))</a>
+<!--begin::Menu toggle-->
+
+<partial name="~/Views/Partials/ThemeMode/__Menu.cshtml" />

@@ -1,0 +1,13 @@
+//
+// Root
+//
+
+@include color-mode(light) {
+    --#{$prefix}header-link-bg-color: #{$app-header-base-link-bg-color};    
+    --#{$prefix}sidebar-navbar-bg-color: #{$app-sidebar-base-navbar-bg-color};
+}
+
+@include color-mode(dark) {
+	--#{$prefix}header-link-bg-color: #{$app-header-base-link-bg-color-dark};    
+    --#{$prefix}sidebar-navbar-bg-color: #{$app-sidebar-base-navbar-bg-color-dark};
+}

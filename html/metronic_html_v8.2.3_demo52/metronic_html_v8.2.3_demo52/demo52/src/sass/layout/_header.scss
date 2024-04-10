@@ -1,0 +1,37 @@
+//
+// Header
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+        .app-header-logo {
+            width: var(--#{$prefix}app-sidebar-width-actual);
+        }
+	}
+
+    .app-header-navbar {
+        padding-right: $app-container-padding-x;
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header {
+        padding-left: $app-container-padding-x-mobile;
+        padding-right: $app-container-padding-x-mobile;        
+
+        .app-header-navbar {
+            display: none !important;
+        }
+
+        .app-header-logo {
+            width: 100%;
+        }
+    }
+
+    .app-header-navbar {
+        padding-left: $app-container-padding-x-mobile;
+        padding-right: $app-container-padding-x-mobile;
+    }
+}

@@ -1,0 +1,19 @@
+//
+// Sidebar panel
+//
+
+.app-sidebar-panel {
+	.app-sidebar-panel-timeline {
+		margin-bottom: 11px; left: 12px;
+	}
+}
+
+.app-sidebar-panel-toggle {
+	margin-left: -11px;	
+}
+
+[dir="rtl"] {
+	.app-sidebar-panel-toggle svg {
+		transform: rotate(180deg);	
+	}
+}

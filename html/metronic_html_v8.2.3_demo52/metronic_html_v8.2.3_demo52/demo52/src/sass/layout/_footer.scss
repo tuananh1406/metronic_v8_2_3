@@ -1,0 +1,17 @@
+//
+// Footer
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-footer {
+        .app-container.container-fluid {
+			padding-left: 0 !important;	
+			padding-right: 0 !important;	
+		}
+
+		[data-kt-app-sidebar-panel-enabled="true"] & {
+			margin-left: -#{$app-sidebar-panel-base-width};	
+		}
+    }
+}

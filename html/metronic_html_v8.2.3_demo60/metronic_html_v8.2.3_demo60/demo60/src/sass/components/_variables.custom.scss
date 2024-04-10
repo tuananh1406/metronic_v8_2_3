@@ -1,0 +1,34 @@
+//
+// To make future updates easier consider overriding the global variables from _variables.bootstrap.scss and _variables.custom.scss for current demo in this file.
+// Note that this file is included first and variables defined in _variables.bootstrap.scss and _variables.custom.scss
+// are not accessible in this file but you can override any global variable as shown below:
+//
+
+// Theme colors
+// Primary colors
+$primary:							#FF6F1E !default;
+$primary-active:					#F15700 !default;
+$primary-light: 					#FFF5EF !default;
+$primary-clarity: 					rgba(#FF6F1E, 0.2);
+
+$primary-dark:						#D74E00 !default;
+$primary-active-dark:				#F35700 !default;
+$primary-light-dark: 				#272320 !default;
+$primary-clarity-dark: 				rgba(#D74E00, 0.2);
+
+// Info colors
+$info:								#1B84FF !default;
+$info-active:						#056EE9 !default;
+$info-light: 						#EEF6FF !default;
+$info-clarity: 						rgba(#1B84FF, 0.2);
+
+$info-dark:							#006AE6 !default;
+$info-active-dark:					#107EFF !default;
+$info-light-dark: 					#172331 !default;
+$info-clarity-dark: 				rgba(#006AE6, 0.2);
+
+// Border Radiues
+$border-radius-sm:            		.55rem;
+$border-radius:               		.75rem;
+$border-radius-lg:            		1rem;
+$border-radius-xl:                  1.25rem;

@@ -1,0 +1,141 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    @include app-layout-transition(padding);
+    flex-direction: column;
+
+    .menu {
+        // General items
+        .menu-item {
+            .menu-link {
+                .menu-title {
+                    font-size: 1.1rem;
+                    font-weight: $font-weight-semibold;
+                }
+
+                &.active {
+                    .bullet-dot {
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+
+            > .menu-sub {
+                margin-left: 0.5rem; 
+
+                .menu-item {
+                    .menu-link {
+                        .bullet-dot {
+                            margin-left: 0.5rem !important;  
+                        }  
+                        
+                        .menu-title {
+                            margin-left: 0.3rem !important;  
+                        }
+                    }
+                }                
+            } 
+
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-600), 
+                $icon-color: var(--#{$prefix}gray-500),   
+                $bullet-color: var(--#{$prefix}gray-500),  
+                $arrow-color: var(--#{$prefix}gray-500),  
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-600),   
+                $bullet-color: var(--#{$prefix}gray-600),  
+                $arrow-color: var(--#{$prefix}gray-600),  
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-600),   
+                $bullet-color: var(--#{$prefix}gray-600),  
+                $arrow-color: var(--#{$prefix}gray-600), 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-600),   
+                $bullet-color: var(--#{$prefix}gray-600),  
+                $arrow-color: var(--#{$prefix}gray-600), 
+                $bg-color: null,
+                $all-links: false
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}primary), 
+                $icon-color: var(--#{$prefix}primary), 
+                $bullet-color: var(--#{$prefix}primary), 
+                $arrow-color: var(--#{$prefix}primary), 
+                $bg-color: var(--#{$prefix}primary-light), 
+                $all-links: false
+            ); 
+        }
+
+        // Root items
+        > .menu-item {
+            > .menu-link {
+                .menu-title {
+                    font-size: 1.1rem;
+                }
+            }
+
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-700), 
+                $icon-color: null,
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: null,
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: null,
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: null,
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+        }
+    }
+} 
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar {
+        background-color: var(--#{$prefix}body-bg),
+    }
+}

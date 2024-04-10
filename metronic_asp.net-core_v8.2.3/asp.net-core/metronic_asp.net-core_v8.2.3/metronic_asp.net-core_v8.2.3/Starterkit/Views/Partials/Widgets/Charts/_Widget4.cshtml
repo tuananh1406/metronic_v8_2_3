@@ -1,0 +1,49 @@
+<!--begin::Chart widget 4-->
+<div class="card card-flush overflow-hidden h-md-100">
+	<!--begin::Header-->
+	<div class="card-header py-5">
+		<!--begin::Title-->
+		<h3 class="card-title align-items-start flex-column">
+			<span class="card-label fw-bold text-gray-900">Discounted Product Sales</span>
+			<span class="text-gray-500 mt-1 fw-semibold fs-6">Users from all channels</span>
+		</h3>
+		<!--end::Title-->
+		<!--begin::Toolbar-->
+		<div class="card-toolbar">
+			<!--begin::Menu-->
+			<button class="btn btn-icon btn-color-gray-500 btn-active-color-primary justify-content-end" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">@Html.Raw(KTTheme.GetIcon("dots-square", "fs-1"))</button>
+			<partial name="~/Views/Partials/Menus/_Menu2.cshtml" />
+			<!--end::Menu-->
+		</div>
+		<!--end::Toolbar-->
+	</div>
+	<!--end::Header-->
+	<!--begin::Card body-->
+	<div class="card-body d-flex justify-content-between flex-column pb-1 px-0">
+		<!--begin::Info-->
+		<div class="px-9 mb-5">
+			<!--begin::Statistics-->
+			<div class="d-flex align-items-center mb-2">
+				<!--begin::Currency-->
+				<span class="fs-4 fw-semibold text-gray-500 align-self-start me-1">$</span>
+				<!--end::Currency-->
+				<!--begin::Value-->
+				<span class="fs-2hx fw-bold text-gray-800 me-2 lh-1 ls-n2">3,706</span>
+				<!--end::Value-->
+				<!--begin::Label-->
+				<span class="badge badge-light-success fs-base">@Html.Raw(KTTheme.GetIcon("arrow-down", "fs-5 text-success ms-n1")) 4.5%</span>
+				<!--end::Label-->
+			</div>
+			<!--end::Statistics-->
+			<!--begin::Description-->
+			<span class="fs-6 fw-semibold text-gray-500">Total Discounted Sales This Month</span>
+			<!--end::Description-->
+		</div>
+		<!--end::Info-->
+		<!--begin::Chart-->
+		<div id="kt_charts_widget_4" class="min-h-auto ps-4 pe-6" style="height: 300px"></div>
+		<!--end::Chart-->
+	</div>
+	<!--end::Card body-->
+</div>
+<!--end::Chart widget 4-->

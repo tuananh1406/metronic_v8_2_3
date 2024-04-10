@@ -1,0 +1,33 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Reboot
+    --#{$prefix}app-bg-color: #{$app-bg-color};
+    --#{$prefix}app-blank-bg-color: #{$app-blank-bg-color};
+
+    // Header base     
+    --#{$prefix}app-header-base-bg-color-mobile: #{$app-header-base-bg-color-mobile};     
+    --#{$prefix}app-header-base-box-shadow-mobile: #{$app-header-base-box-shadow-mobile};
+
+    // Sidebar base
+    --#{$prefix}app-sidebar-base-bg-color: #{$app-sidebar-base-bg-color};   
+    --#{$prefix}app-sidebar-base-menu-link-icon: #{$app-sidebar-base-menu-link-icon};     
+}
+
+// Dark mode
+@include color-mode(dark) {
+	// Reboot
+    --#{$prefix}app-bg-color: #{$app-bg-color-dark};
+    --#{$prefix}app-blank-bg-color: #{$app-blank-bg-color-dark};
+
+    // Header base     
+    --#{$prefix}app-header-base-bg-color-mobile: #{$app-header-base-bg-color-mobile-dark};     
+    --#{$prefix}app-header-base-box-shadow-mobile: #{$app-header-base-box-shadow-mobile-dark};
+
+    // Sidebar base
+    --#{$prefix}app-sidebar-base-bg-color: #{$app-sidebar-base-bg-color-dark};        
+    --#{$prefix}app-sidebar-base-menu-link-icon: #{$app-sidebar-base-menu-link-icon-dark};     
+}

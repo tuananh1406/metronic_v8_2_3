@@ -1,0 +1,10 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+
+    globals:
+        # Keenthemes theme layout helper class
+        theme: '@App\Service\ThemeHelper'
+
+when@test:
+    twig:
+        strict_variables: true

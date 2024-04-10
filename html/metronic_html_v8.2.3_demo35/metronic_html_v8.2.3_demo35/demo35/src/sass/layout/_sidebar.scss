@@ -1,0 +1,10 @@
+//
+// Secondary
+//
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar-menu {
+        border-radius: 0 !important;
+    } 
+}

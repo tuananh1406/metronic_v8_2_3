@@ -1,0 +1,83 @@
+<ng-container *ngIf="showSearch$ | async">
+
+  <!--begin::Quick Search-->
+  <form id="kt_sidebar_search_form" action="" class="w-100 position-relative mb-5 mb-lg-10" autocomplete="off">
+    <!--begin::Hidden input(Added to disable form autocomplete)-->
+    <input type="hidden" />
+    <!--end::Hidden input-->
+
+    <!--begin::Icon-->
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen021.svg'"
+      class="svg-icon svg-icon-2 svg-icon-gray-700 position-absolute top-50 translate-middle-y ms-4"></span>
+    <!--end::Icon-->
+
+    <!--begin::Input-->
+    <input type="text" class="form-control bg-transparent ps-13 fs-7 h-40px" name="search" value=""
+      placeholder="Search" />
+    <!--end::Input-->
+  </form>
+  <!--end::Quick Search-->
+</ng-container>
+
+<!--begin::Popular Questions-->
+<div class="card bg-light mb-5 mb-lg-10 shadow-none border-0">
+  <!--begin::Header-->
+  <div class="card-header align-items-center border-0">
+    <!--begin::Title-->
+    <h3 class="card-title fw-bolder text-gray-900 fs-3">Popular Questions</h3>
+    <!--end::Title-->
+  </div>
+  <!--end::Header-->
+
+  <!--begin::Body-->
+  <div class="card-body pt-0">
+    <!--begin::Item-->
+    <div *ngFor="let title of questions" class="d-flex mb-5">
+      <!--begin::Arrow-->
+      <span [inlineSVG]="'./assets/media/icons/duotune/general/gen057.svg'"
+        class="svg-icon svg-icon-2 mt-0 me-2"></span>
+      <!--end::Arrow-->
+
+      <!--begin::Title-->
+      <a routerLink="/apps/tickets-system/replies" class="text-gray-700 text-hover-primary fs-6 fw-bold">
+        {{title}}
+      </a>
+      <!--end::Title-->
+    </div>
+    <!--end::Item-->
+  </div>
+  <!--end: Card Body-->
+</div>
+<!--end::Popular Questions-->
+
+<!--begin::Popular Questions-->
+<div class="card bg-light mb-5 mb-lg-10 shadow-none border-0">
+  <!--begin::Header-->
+  <div class="card-header align-items-center border-0">
+    <!--begin::Title-->
+    <h3 class="card-title fw-bolder text-gray-900 fs-3">Latest Tutorials</h3>
+    <!--end::Title-->
+  </div>
+  <!--end::Header-->
+
+  <!--begin::Body-->
+  <div class="card-body pt-0">
+    <!--begin::Item-->
+    <div *ngFor="let t of tutorials" class="d-flex mb-5">
+      <!--begin::Arrow-->
+      <span [inlineSVG]="'./assets/media/icons/duotune/general/gen057.svg'"
+        class="svg-icon svg-icon-2 mt-0 me-2"></span>
+
+      <!--end::Arrow-->
+
+      <!--begin::Title-->
+      <a routerLink="/apps/tickets-system/replies" class="text-gray-700 text-hover-primary fs-6 fw-bold">
+        {{t}}
+      </a>
+      <!--end::Title-->
+    </div>
+    <!--end::Item-->
+  </div>
+  <!--end: Card Body-->
+</div>
+<!--end::Popular Questions-->

@@ -1,0 +1,1130 @@
+<div id="kt_sidebar" class="sidebar" data-kt-drawer="true" data-kt-drawer-name="sidebar" data-kt-drawer-activate="{default: true, xxl: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '400px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_sidebar_toggler">
+  <!--begin::Sidebar Content-->
+  <div class="d-flex flex-column sidebar-body px-5 py-10" id="kt_sidebar_body">
+    <!--begin::Sidebar Nav-->
+    <ul class="sidebar-nav nav nav-tabs mb-10" id="kt_sidebar_tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" data-kt-countup-tabs="true" href="#kt_sidebar_tab_1" [ngClass]="activeClass('kt_sidebar_tab_1')" (click)="setTab($event, 'kt_sidebar_tab_1')">
+          <app-keenicon name="abstract-36"></app-keenicon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" data-kt-countup-tabs="true" href="#kt_sidebar_tab_2" [ngClass]="activeClass('kt_sidebar_tab_2')" (click)="setTab($event, 'kt_sidebar_tab_2')">
+          <app-keenicon name="abstract-41"></app-keenicon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" data-kt-countup-tabs="true" href="#kt_sidebar_tab_3" [ngClass]="activeClass('kt_sidebar_tab_3')" (click)="setTab($event, 'kt_sidebar_tab_3')">
+          <app-keenicon name="abstract-35"></app-keenicon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" data-kt-countup-tabs="true" href="#kt_sidebar_tab_4" [ngClass]="activeClass('kt_sidebar_tab_4')" (click)="setTab($event, 'kt_sidebar_tab_4')">
+          <app-keenicon name="setting-2"></app-keenicon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" data-kt-countup-tabs="true" href="#kt_sidebar_tab_5" [ngClass]="activeClass('kt_sidebar_tab_5')" (click)="setTab($event, 'kt_sidebar_tab_5')">
+          <app-keenicon name="abstract-25"></app-keenicon>
+        </a>
+      </li>
+    </ul>
+    <!--end::Sidebar Nav-->
+    <!--begin::Sidebar Content-->
+    <div id="kt_sidebar_content">
+      <div class="hover-scroll-y" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-offset="0px" data-kt-scroll-dependencies="#kt_sidebar_tabs" data-kt-scroll-wrappers="#kt_sidebar_content, #kt_sidebar_body" style="height: 800px;">
+        <!--begin::Tab content-->
+        <div class="tab-content px-5 px-xxl-10">
+          <!--begin::Tab pane-->
+          <div class="tab-pane fade" id="kt_sidebar_tab_1" role="tabpanel" [ngClass]="activeClass('kt_sidebar_tab_1')">
+            <!--begin::Statistics Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-10">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bold text-white fs-3">Assigned Tasks</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bold mb-1 counted" data-kt-countup="true" data-kt-countup-value="100" data-kt-countup-prefix="" data-kt-initialized="1">100</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Pending</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bold mb-1 counted" data-kt-countup="true" data-kt-countup-value="210" data-kt-countup-prefix="" data-kt-initialized="1">210</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Completed</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bold mb-1 counted" data-kt-countup="true" data-kt-countup-value="10" data-kt-countup-prefix="" data-kt-initialized="1">10</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">On Hold</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bold mb-1 counted" data-kt-countup="true" data-kt-countup-value="55" data-kt-countup-prefix="" data-kt-initialized="1">55</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">In Progress</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Card Body-->
+            </div>
+            <!--end::Statistics Widget-->
+            <!--begin::Tasks Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-5">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Latest Tasks</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body py-0">
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs027.svg'" class="svg-icon svg-icon-2x svg-icon-success"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Project Briefing</a>
+                    <span class="sidebar-text-muted fw-bold">Project Manager</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/art/art005.svg'" class="svg-icon svg-icon-2x svg-icon-warning"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Concept Design</a>
+                    <span class="sidebar-text-muted fw-bold">Art Director</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon svg-icon-2x svg-icon-primary"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Functional Logics</a>
+                    <span class="sidebar-text-muted fw-bold">Lead Developer</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/coding/cod008.svg'" class="svg-icon svg-icon-2x svg-icon-danger"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Development</a>
+                    <span class="sidebar-text-muted fw-bold">DevOps</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/general/gen049.svg'" class="svg-icon svg-icon-2x svg-icon-info"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Testing</a>
+                    <span class="sidebar-text-muted fw-bold">QA Managers</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+              </div>
+              <!--end::Body-->
+            </div>
+            <!--end::Tasks Widget-->
+          </div>
+          <!--end::Tab pane-->
+          <!--begin::Tab pane-->
+          <div class="tab-pane fade" id="kt_sidebar_tab_2" role="tabpanel" [ngClass]="activeClass('kt_sidebar_tab_2')">
+            <!--begin::Statistics Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-10">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Customer Orders</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="40" data-kt-countup-prefix="">40</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">In Process</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="110" data-kt-countup-prefix="">110</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Delivered</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="29" data-kt-countup-prefix="">29</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">On Hold</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="15" data-kt-countup-prefix="">15</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">In Progress</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Card Body-->
+            </div>
+            <!--end::Statistics Widget-->
+            <!--begin::Best Sellers Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-5">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Latest Orders</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body py-0">
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-20.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Premium Coffee</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">Arabica Specialty Brand</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-25.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Light Sneakers</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">The Best Lightweight Sneakers</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-24.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Red Boots</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">All Season Boots</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-19.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Wall Decoration</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">Creative &amp; Easy To Install</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-27.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Home Confort</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">Smart Air Purifier</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+              </div>
+              <!--end: Card Body-->
+            </div>
+            <!--end::Best Sellers Widget-->
+          </div>
+          <!--end::Tab pane-->
+          <!--begin::Tab pane-->
+          <div class="tab-pane fade" id="kt_sidebar_tab_3" role="tabpanel" [ngClass]="activeClass('kt_sidebar_tab_3')">
+            <!--begin::Statistics Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-10">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Support Tickets</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="28" data-kt-countup-prefix="">28</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Pending</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="204" data-kt-countup-prefix="">204</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Completed</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="76" data-kt-countup-prefix="">76</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">On Hold</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="9" data-kt-countup-prefix="">9</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">In Progress</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Card Body-->
+            </div>
+            <!--end::Statistics Widget-->
+            <!--begin::Best Sellers Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-5">
+              <!--begin::Header-->
+              <div class="card-header align-items-center">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Best Sellers</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <!--begin::Svg Icon | path: icons/duotune/general/gen024.svg-->
+                    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen024.svg'" class="svg-icon svg-icon-2"></span>
+                    <!--end::Svg Icon-->
+                  </button>
+                  <!--begin::Menu 3-->
+                  <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px py-3" data-kt-menu="true">
+                    <!--begin::Heading-->
+                    <div class="menu-item px-3">
+                      <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">Payments</div>
+                    </div>
+                    <!--end::Heading-->
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link px-3">Create Invoice</a>
+                    </div>
+                    <!--end::Menu item-->
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link flex-stack px-3">Create Payment
+                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="" data-bs-original-title="Specify a target name for future usage and reference" aria-label="Specify a target name for future usage and reference"></i></a>
+                    </div>
+                    <!--end::Menu item-->
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3">
+                      <a href="#" class="menu-link px-3">Generate Bill</a>
+                    </div>
+                    <!--end::Menu item-->
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-end">
+                      <a href="#" class="menu-link px-3">
+                        <span class="menu-title">Subscription</span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <!--begin::Menu sub-->
+                      <div class="menu-sub menu-sub-dropdown w-175px py-4">
+                        <!--begin::Menu item-->
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link px-3">Plans</a>
+                        </div>
+                        <!--end::Menu item-->
+                        <!--begin::Menu item-->
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link px-3">Billing</a>
+                        </div>
+                        <!--end::Menu item-->
+                        <!--begin::Menu item-->
+                        <div class="menu-item px-3">
+                          <a href="#" class="menu-link px-3">Statements</a>
+                        </div>
+                        <!--end::Menu item-->
+                        <!--begin::Menu separator-->
+                        <div class="separator my-2"></div>
+                        <!--end::Menu separator-->
+                        <!--begin::Menu item-->
+                        <div class="menu-item px-3">
+                          <div class="menu-content px-3">
+                            <!--begin::Switch-->
+                            <label class="form-check form-switch form-check-custom form-check-solid">
+                              <!--begin::Input-->
+                              <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications">
+                              <!--end::Input-->
+                              <!--end::Label-->
+                              <span class="form-check-label text-muted fs-6">Recuring</span>
+                              <!--end::Label-->
+                            </label>
+                            <!--end::Switch-->
+                          </div>
+                        </div>
+                        <!--end::Menu item-->
+                      </div>
+                      <!--end::Menu sub-->
+                    </div>
+                    <!--end::Menu item-->
+                    <!--begin::Menu item-->
+                    <div class="menu-item px-3 my-1">
+                      <a href="#" class="menu-link px-3">Settings</a>
+                    </div>
+                    <!--end::Menu item-->
+                  </div>
+                  <!--end::Menu 3-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-1.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Spotify App</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">HTML, SASS, Bootstrap</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-2.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Fitnes Drive</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">Angular, Typescript, Bootstrap</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-3.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Taskify App</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">HTML, CSS. jQuery</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-5.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Calendr App</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">React, MangoDb. Node</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center">
+                  <!--begin::Image-->
+                  <div class="symbol symbol-40px symbol-2by3 me-4">
+                    <img src="./assets/media/stock/600x400/img-6.jpg" alt="" class="mw-100">
+                  </div>
+                  <!--end::Image-->
+                  <!--begin::Title-->
+                  <div class="d-flex flex-column flex-grow-1 my-lg-0 my-2 pe-3">
+                    <a href="#" class="text-white fw-bold text-hover-primary fs-6">Stocked SaaS</a>
+                    <span class="sidebar-text-muted fw-bold fs-7 my-1">PHP, Laravel, Oracle</span>
+                  </div>
+                  <!--end::Title-->
+                </div>
+                <!--end::Item-->
+              </div>
+              <!--end: Card Body-->
+            </div>
+            <!--end::Best Sellers Widget-->
+          </div>
+          <!--end::Tab pane-->
+          <!--begin::Tab pane-->
+          <div class="tab-pane fade" id="kt_sidebar_tab_4" role="tabpanel" [ngClass]="activeClass('kt_sidebar_tab_4')">
+            <!--begin::Statistics Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-10">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Notifcations</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="5" data-kt-countup-prefix="">5</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">System Alert</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="10" data-kt-countup-prefix="">10</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Server Failure</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="40" data-kt-countup-prefix="">40</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">User Feedback</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="3" data-kt-countup-prefix="">3</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Backup</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Card Body-->
+            </div>
+            <!--end::Statistics Widget-->
+            <!--begin::Tasks Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-5">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Latest Tasks</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <!-- begin::Menu -->
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen024.svg'" class="svg-icon svg-icon-2"></span>
+                  </button>
+                  <app-dropdown-menu1></app-dropdown-menu1>
+                  <!-- end::Menu -->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body py-0">
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs027.svg'" class="svg-icon svg-icon-2x svg-icon-success"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Project Briefing</a>
+                    <span class="sidebar-text-muted fw-bold">Project Manager</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/art/art005.svg'" class="svg-icon svg-icon-2x svg-icon-warning"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Concept Design</a>
+                    <span class="sidebar-text-muted fw-bold">Art Director</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon svg-icon-2x svg-icon-primary"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Functional Logics</a>
+                    <span class="sidebar-text-muted fw-bold">Lead Developer</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/coding/cod008.svg'" class="svg-icon svg-icon-2x svg-icon-danger"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Development</a>
+                    <span class="sidebar-text-muted fw-bold">DevOps</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/general/gen049.svg'" class="svg-icon svg-icon-2x svg-icon-info">
+                      </span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Testing</a>
+                    <span class="sidebar-text-muted fw-bold">QA Managers</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+              </div>
+              <!--end::Body-->
+            </div>
+            <!--end::Tasks Widget-->
+          </div>
+          <!--end::Tab pane-->
+          <!--begin::Tab pane-->
+          <div class="tab-pane fade" id="kt_sidebar_tab_5" role="tabpanel" [ngClass]="activeClass('kt_sidebar_tab_5')">
+            <!--begin::Statistics Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-10">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Outgoing Emails</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+
+                <div class="card-toolbar">
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="bottom-end">
+                    <app-keenicon name="category" class="fs-6"></app-keenicon>
+                  </button>
+                  <!--begin::Menu 2-->
+                  <app-dropdown-menu2></app-dropdown-menu2>
+                  <!--end::Menu 2-->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body">
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="160" data-kt-countup-prefix="">160</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Sending</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="2600" data-kt-countup-prefix="">2,600</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Sent</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="2500" data-kt-countup-prefix="">2,500</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Delivered</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Item-->
+                    <div class="sidebar-border-dashed d-flex flex-column justify-content-center rounded p-3 p-xxl-5">
+                      <!--begin::Value-->
+                      <div class="text-white fs-2 fs-xxl-2x fw-bolder mb-1 counted" data-kt-countup="true" data-kt-countup-value="11" data-kt-countup-prefix="">11</div>
+                      <!--begin::Value-->
+                      <!--begin::Label-->
+                      <div class="sidebar-text-muted fs-6 fw-bold">Failed</div>
+                      <!--end::Label-->
+                    </div>
+                    <!--end::Item-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Card Body-->
+            </div>
+            <!--end::Statistics Widget-->
+            <!--begin::Tasks Widget-->
+            <div class="card card-flush card-p-0 card-reset mb-5">
+              <!--begin::Header-->
+              <div class="card-header align-items-center border-0">
+                <!--begin::Title-->
+                <h3 class="card-title fw-bolder text-white fs-3">Latest Tasks</h3>
+                <!--end::Title-->
+                <!--begin::Toolbar-->
+                <div class="card-toolbar">
+                  <!-- begin::Menu -->
+                  <button type="button" class="btn btn-icon btn-icon-white btn-active-color-primary me-n4" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen024.svg'" class="svg-icon svg-icon-2"></span>
+                  </button>
+                  <app-dropdown-menu1></app-dropdown-menu1>
+                  <!-- end::Menu -->
+                </div>
+                <!--end::Title-->
+              </div>
+              <!--end::Header-->
+              <!--begin::Body-->
+              <div class="card-body py-0">
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs027.svg'" class="svg-icon svg-icon-2x svg-icon-success"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Project Briefing</a>
+                    <span class="sidebar-text-muted fw-bold">Project Manager</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/art/art005.svg'" class="svg-icon svg-icon-2x svg-icon-warning"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Concept Design</a>
+                    <span class="sidebar-text-muted fw-bold">Art Director</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon svg-icon-2x svg-icon-primary"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Functional Logics</a>
+                    <span class="sidebar-text-muted fw-bold">Lead Developer</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center mb-7">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/coding/cod008.svg'" class="svg-icon svg-icon-2x svg-icon-danger"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Development</a>
+                    <span class="sidebar-text-muted fw-bold">DevOps</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-nowrap align-items-center">
+                  <!--begin::Symbol-->
+                  <div class="symbol symbol-50px me-5">
+                    <span class="symbol-label sidebar-bg-muted">
+                      <!--begin::Svg Icon | path: icons/duotune/general/gen049.svg-->
+                      <span [inlineSVG]="'./assets/media/icons/duotune/general/gen049.svg'" class="svg-icon svg-icon-2x svg-icon-info"></span>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </div>
+                  <!--end::Symbol-->
+                  <!--begin::Text-->
+                  <div class="d-flex flex-column">
+                    <a href="#" class="text-white text-hover-primary fs-6 fw-bolder">Testing</a>
+                    <span class="sidebar-text-muted fw-bold">QA Managers</span>
+                  </div>
+                  <!--end::Text-->
+                </div>
+                <!--end::Item-->
+              </div>
+              <!--end::Body-->
+            </div>
+            <!--end::Tasks Widget-->
+          </div>
+          <!--end::Tab pane-->
+        </div>
+        <!--end::Tab content-->
+      </div>
+    </div>
+    <!--end::Sidebar Content-->
+  </div>
+  <!--end::Sidebar Content-->
+</div>

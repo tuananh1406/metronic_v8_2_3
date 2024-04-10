@@ -1,0 +1,85 @@
+//
+// Header
+//
+
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+		.app-container {
+			border-bottom: 1px solid var(--#{$prefix}gray-200);
+			margin-left: $app-container-padding-x;
+			margin-right: $app-container-padding-x;			
+			padding-left: 0 !important;
+    		padding-right: 0 !important; 	
+		} 		
+
+
+		.app-header-menu {
+			.menu {
+				> .menu-item {
+					margin-right: 0.5rem;   
+
+					> .menu-link {
+						.menu-title {
+							font-weight: $font-weight-semibold;
+							font-size: 1.15rem;
+						}
+					}
+
+					@include menu-link-default-state( 
+						$title-color: var(--#{$prefix}gray-600), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null,
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-hover-state( 
+						$title-color: var(--#{$prefix}gray-800), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-show-state( 
+						$title-color: var(--#{$prefix}gray-800), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					);
+		
+					@include menu-link-here-state( 
+						$title-color: var(--#{$prefix}gray-800), 
+						$icon-color: null,
+						$bullet-color: null, 
+						$arrow-color: null,
+						$bg-color: null,
+						$all-links: false
+					);
+		
+					@include menu-link-active-state( 
+						$title-color: var(--#{$prefix}gray-800), 
+						$icon-color: null, 
+						$bullet-color: null, 
+						$arrow-color: null, 
+						$bg-color: null,
+						$all-links: false
+					); 
+				}         
+			}        
+		} 		
+	}
+}   
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		
+	}
+}

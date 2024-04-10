@@ -1,0 +1,63 @@
+//
+// Sidebar
+//
+
+.app-sidebar {
+    border-right: var(--#{$prefix}app-separator-border);
+
+    .hover-scroll-y {        
+        @include scrollbar-color(var(--#{$prefix}gray-200), var(--#{$prefix}gray-300));
+    }
+
+    .app-sidebar-logo {
+        height: $app-header-base-height;
+        border-bottom: var(--#{$prefix}app-separator-border);
+    }
+
+    .menu {
+        @include menu-link-default-state( 
+            $title-color: var(--#{$prefix}gray-600), 
+            $icon-color: var(--#{$prefix}gray-500), 
+            $bullet-color: var(--#{$prefix}gray-400), 
+            $arrow-color: var(--#{$prefix}gray-500), 
+            $bg-color: null,
+            $all-links: true
+        );
+        
+        @include menu-link-hover-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-700), 
+            $bullet-color: var(--#{$prefix}gray-700),  
+            $arrow-color: var(--#{$prefix}gray-700), 
+            $bg-color: null,
+            $all-links: true
+        );
+        
+        @include menu-link-show-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-700), 
+            $bullet-color: var(--#{$prefix}gray-700),  
+            $arrow-color: var(--#{$prefix}gray-700), 
+            $bg-color: null,
+            $all-links: true
+        );
+        
+        @include menu-link-here-state( 
+            $title-color: var(--#{$prefix}gray-800), 
+            $icon-color: var(--#{$prefix}gray-700), 
+            $bullet-color: var(--#{$prefix}gray-700),  
+            $arrow-color: var(--#{$prefix}gray-700), 
+            $bg-color: null,
+            $all-links: true
+        );
+
+        @include menu-link-active-state( 
+            $title-color: var(--#{$prefix}primary), 
+            $icon-color: var(--#{$prefix}primary), 
+            $bullet-color: var(--#{$prefix}primary), 
+            $arrow-color: var(--#{$prefix}white), 
+            $bg-color: var(--#{$prefix}primary-light),
+            $all-links: true
+        ); 
+    }       
+}

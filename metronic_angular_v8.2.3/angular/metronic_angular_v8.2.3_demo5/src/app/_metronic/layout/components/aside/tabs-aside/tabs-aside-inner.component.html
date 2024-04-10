@@ -1,0 +1,44 @@
+<!--begin::Wrapper-->
+<div class="flex-column-fluid hover-scroll-y" data-kt-scroll="true" data-kt-scroll-activate="true"
+  data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_aside_wordspace"
+  data-kt-scroll-dependencies="#kt_aside_secondary_footer" data-kt-scroll-offset="0px">
+  <div class="tab-content">
+
+    <app-projects-tab class="tab-pane fade" id="kt_aside_nav_tab_projects" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'projects'}">
+    </app-projects-tab>
+
+    <app-menu-tab class="tab-pane fade" id="kt_aside_nav_tab_menu" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'menu'}"></app-menu-tab>
+
+    <app-subscriptions-tab class="tab-pane fade" id="kt_aside_nav_tab_subscription" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'subscription'}">
+    </app-subscriptions-tab>
+
+    <app-tasks-tab class="tab-pane fade  active show" id="kt_aside_nav_tab_tasks" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'tasks'}"></app-tasks-tab>
+
+    <app-notifications-tab class="tab-pane fade  active show" id="kt_aside_nav_tab_notifications" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'notifications'}">
+    </app-notifications-tab>
+
+    <app-authors-tab class="tab-pane fade  active show" id="kt_aside_nav_tab_authors" role="tabpanel"
+      [ngClass]="{'active show': activeTab.link === 'authors'}">
+    </app-authors-tab>
+  </div>
+</div>
+<!--end::Wrapper-->
+
+<!--begin::Footer-->
+<div class="flex-column-auto pt-10 px-5" id="kt_aside_secondary_footer">
+  <a [href]="appDocsUrl" target="_blank"
+    class="btn btn-bg-light btn-color-gray-600 btn-flex btn-active-color-primary flex-center w-100"
+    title="Docs & Components">
+    <span class="btn-label">
+      Docs & Components
+    </span>
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen005.svg'"
+      class="svg-icon btn-icon svg-icon-4 ms-2"></span>
+  </a>
+</div>
+<!--end::Footer-->

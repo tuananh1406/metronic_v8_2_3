@@ -1,0 +1,27 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Header
+    --#{$prefix}app-header-search-bg-color: #{$app-header-base-search-bg-color};
+    --#{$prefix}app-header-search-icon-color: #{$app-header-base-search-icon-color};
+    --#{$prefix}app-header-search-placeholder-color: #{$app-header-base-search-placeholder-color};
+    --#{$prefix}app-header-search-border-color: #{$app-header-base-search-border-color};
+
+    // Toolbar
+    --#{$prefix}app-toolbar-bg-color: #{$app-toolbar-base-bg-color};
+}
+
+// Dark mode
+@include color-mode(dark) {
+	// Header
+    --#{$prefix}app-header-search-bg-color: #{$app-header-base-search-bg-color-dark};
+    --#{$prefix}app-header-search-icon-color: #{$app-header-base-search-icon-color-dark};
+    --#{$prefix}app-header-search-placeholder-color: #{$app-header-base-search-placeholder-color-dark};
+    --#{$prefix}app-header-search-border-color: #{$app-header-base-search-border-color-dark};
+
+    // Toolbar
+    --#{$prefix}app-toolbar-bg-color: #{$app-toolbar-base-bg-color-dark};
+} 

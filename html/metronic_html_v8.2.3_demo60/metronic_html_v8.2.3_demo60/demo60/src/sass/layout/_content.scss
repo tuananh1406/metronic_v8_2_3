@@ -1,0 +1,17 @@
+
+//
+// Content
+//
+
+.app-content-stretch {
+	padding: 0 !important;
+
+	.app-container {
+		padding: 0 !important;
+
+		> .card {
+			box-shadow: none;
+			border: 0;	
+		}
+	}	
+}

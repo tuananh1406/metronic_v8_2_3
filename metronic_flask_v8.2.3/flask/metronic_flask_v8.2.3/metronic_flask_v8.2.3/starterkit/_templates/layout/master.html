@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" {{ printHtmlAttributes('html') }}>
+    <!--begin::Head-->
+    <head>
+        <title>{% block title %}{% endblock title %} - Keenthemes</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>      
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="" />
+        <link rel="canonical" href=""/>
+        <link rel="shortcut icon" href="{{ includeFavicon() }}"/>
+
+        {% block css %}
+        <!--begin::Fonts-->
+        {{ includeFonts() }}
+        <!--end::Fonts-->
+
+        <!--begin::Vendor Stylesheets(optional)-->
+        {% for file in getVendors('css') %}
+        <link href="{{ file }}" rel="stylesheet" type="text/css" />
+        {% endfor %}
+        <!--end::Vendor Stylesheets-->
+
+        <!--begin::Custom Stylesheets(optional)-->
+        {% for file in getCustomCss() %}
+        <link href="{{ url_for('static', filename=file) }}" rel="stylesheet" type="text/css" />
+        {% endfor %}
+        <!--end::Custom Stylesheets-->
+
+        <!--begin::Global Stylesheets(mandatory)-->
+        {% for file in getGlobalAssets('css') %}
+        <link href="{{ url_for('static', filename=file) }}" rel="stylesheet" type="text/css" />
+        {% endfor %}
+        <!--end::Global Stylesheets-->
+        {% endblock css %}
+
+        <!--begin::Tracking-->
+        <!--end::Tracking-->
+    </head>
+    <!--end::Head-->
+
+    <!--begin::Body-->
+    <body {{ printHtmlClasses('body') }} {{ printHtmlAttributes('body') }}>
+
+        {% include 'partials/theme-mode/_init.html' %}
+
+        {% block layout %}
+        {% endblock layout %}
+
+        {% block javascript %}
+        <!--begin::Global Javascript(mandatory)-->
+        {% for file in getGlobalAssets('js') %}
+            <script src="{{ url_for('static', filename=file) }}"></script>
+        {% endfor %}
+        <!--end::Global Javascript-->
+
+        <!--begin::Vendors Javascript(optional)-->
+        {% for file in getVendors('js') %}
+        <script src="{{ file }}"></script>
+        {% endfor %}
+        <!--end::Vendors Javascript-->
+
+        <!--begin::Custom Javascript(optional)-->
+        {% for file in getCustomJs() %}
+        <script src="{{ url_for('static', filename=file) }}"></script>
+        {% endfor %}
+        <!--end::Custom Javascript-->
+        {% endblock javascript %}
+
+    </body>
+    <!--end::Body-->
+</html>

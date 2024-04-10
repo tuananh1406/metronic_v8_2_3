@@ -1,0 +1,69 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color-dark: $coal-400; 
+$app-blank-body-bg-color: $body-bg; 
+$app-blank-body-bg-color-dark: $body-bg-dark;
+
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Container
+$app-container-padding-x: 40px;
+$app-container-padding-x-mobile: 20px;
+
+// Wrapper
+$app-wrapper-border-radius: 12px;
+$app-wrapper-border-radius-mobile: 9px;
+$app-wrapper-shadow: 0px 0px 30px rgba(53, 59, 89, 0.25);
+$app-wrapper-shadow-dark: $box-shadow-sm-dark;
+$app-wrapper-padding-y: 60px;
+$app-wrapper-padding-y-mobile: 20px;
+
+// Header base
+$app-header-base-height: 100px;
+$app-header-base-height-mobile: 70px;
+$app-header-base-bg-color: $body-bg;
+$app-header-base-bg-color-dark: $body-bg-dark;
+$app-header-base-link-color: rgba(255, 255, 255, 0.5);
+$app-header-base-bg-color-mobile: linear-gradient(180deg, rgba(0, 33, 117, 0.96) 0%, rgba(0, 33, 117, 0.92) 99.99%);
+$app-header-base-bg-color-mobile-dark: $gray-100-dark;
+
+// Header sticky
+$app-header-sticky-height: 70px;
+$app-header-sticky-height-mobile: 60px;
+$app-header-sticky-bg-color: $body-bg;
+$app-header-sticky-bg-color-dark: $body-bg-dark;
+$app-header-sticky-box-shadow: 0px 10px 30px 0px rgba(82,63,105,0.05);
+$app-header-sticky-box-shadow-dark: $box-shadow-sm-dark;
+
+// Toolbar base 
+$app-toolbar-base-height: auto;
+
+// Content
+$app-content-padding-y: 40px;
+$app-content-padding-y-mobile: 20px;
+$app-content-padding-x: 40px;
+$app-content-padding-x-mobile: 20px;
+
+// Footer
+$app-footer-height: 60px;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px; 

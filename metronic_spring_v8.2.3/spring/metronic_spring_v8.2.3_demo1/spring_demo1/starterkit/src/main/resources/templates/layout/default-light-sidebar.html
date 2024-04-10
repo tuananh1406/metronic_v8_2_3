@@ -1,0 +1,46 @@
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/master}">
+<body>
+<!--begin::App-->
+<div layout:fragment="body" class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <!--begin::Page-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+        <div th:replace="${@theme.getView('partials/sidebar-layout/_header.html')}"></div>
+        <!--begin::Wrapper-->
+        <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+            <div th:replace="${@theme.getView('partials/sidebar-layout/_sidebar.html')}"></div>
+            <!--begin::Main-->
+            <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+                <!--begin::Content wrapper-->
+                <div class="d-flex flex-column flex-column-fluid">
+                    <div th:replace="${@theme.getView('partials/sidebar-layout/_toolbar.html')}"></div>
+                    <div id="kt_app_content" class="app-content flex-column-fluid">
+                        <!--begin::Content container-->
+                        <div id="kt_app_content_container" class="app-container container-fluid">
+                            <div layout:fragment="content"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--end::Content wrapper-->
+                <div th:replace="${@theme.getView('partials/sidebar-layout/_footer.html')}"></div>
+            </div>
+            <!--end:::Main-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+</div>
+<!--end::App-->
+<div layout:fragment="offcanvas">
+    <div th:replace="partials/_drawers.html"></div>
+
+    <div th:replace="partials/_scrolltop.html"></div>
+
+    <div th:replace="partials/modals/_upgrade-plan.html"></div>
+    <div th:replace="partials/modals/create-app/_main.html"></div>
+    <div th:replace="partials/modals/_new-target.html"></div>
+    <div th:replace="partials/modals/_view-users.html"></div>
+    <div th:replace="partials/modals/users-search/_main.html"></div>
+    <div th:replace="partials/modals/_invite-friends.html"></div>
+</div>
+</body>
+</html>

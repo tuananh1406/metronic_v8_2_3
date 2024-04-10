@@ -1,0 +1,71 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color: #E1ECD5;
+$app-bg-color-dark: $coal-500; 
+$app-blank-body-bg-color: $body-bg; 
+$app-blank-body-bg-color-dark: $coal-500; 
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Container
+$app-container-padding-x: 30px;
+$app-container-padding-x-mobile: 20px;
+
+// Header base
+$app-header-base-height: 90px;
+$app-header-base-height-mobile: 60px;
+$app-header-base-bg-color: #E1ECD5;
+$app-header-base-bg-color-dark: $coal-500;
+$app-header-base-link-bg-color: #C4D6B0;
+$app-header-base-link-bg-color-dark: $gray-100-dark;
+$app-header-base-search-border-color: rgba(24, 28, 50, 0.3);
+$app-header-base-search-border-color-dark: $gray-200-dark;
+
+// Header sticky
+$app-header-sticky-height: 70px;
+$app-header-sticky-bg-color: $app-header-base-bg-color;
+$app-header-sticky-bg-color-dark: $app-header-base-bg-color-dark;
+$app-header-sticky-box-shadow: 0px 10px 30px 0px rgba(82,63,105,0.05);
+$app-header-sticky-box-shadow-dark: none;
+
+// Toolbar base 
+$app-toolbar-height: auto;
+ 
+// Content
+$app-content-padding-y: 30px;
+$app-content-padding-y-mobile: 20px;
+$app-content-padding-x: 0;
+$app-content-padding-x-mobile: 0;
+$app-content-border-radius: 20px 20px 0px 0px;
+$app-content-border-radius-mobile: 20px 20px 0px 0px;
+
+// Sidebar 
+$app-sidebar-base-width: 80px; 
+$app-sidebar-base-width-mobile: 80px; 
+$app-sidebar-base-border-end: 1px solid rgba(217, 219, 228, 0.6);
+$app-sidebar-base-border-end-dark: 1px solid $gray-200-dark;
+$app-sidebar-base-bg-color: $body-bg; 
+$app-sidebar-base-bg-color-dark: $coal-200; 
+
+// Footer
+$app-footer-height: auto;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px; 

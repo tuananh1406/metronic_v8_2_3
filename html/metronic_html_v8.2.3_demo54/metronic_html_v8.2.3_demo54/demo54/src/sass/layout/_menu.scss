@@ -1,0 +1,31 @@
+//
+// Menu
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {	
+	.app-menu {
+		.menu {
+			border-bottom: 2px solid var(--#{$prefix}gray-200);	
+
+			> .menu-item {	
+				margin-top: 0;
+				margin-bottom: -2px;
+				padding-top: 0;
+				padding-bottom: 0;
+
+				& > .menu-link {
+					padding: 0.6rem 1.5rem 0.7rem 1.5rem;
+				}			
+
+				&.here,
+				&.active {
+					& > .menu-link {
+						border-bottom: 2px solid var(--#{$prefix}primary);	
+						border-radius: 0;
+					}
+				}
+			}	
+		}
+	}
+}

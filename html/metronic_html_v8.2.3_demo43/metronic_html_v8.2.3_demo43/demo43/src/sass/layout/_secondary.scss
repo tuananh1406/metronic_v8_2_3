@@ -1,0 +1,30 @@
+//
+// Secondary
+//
+
+// General
+.app-header-secondary {
+    border-top: 1px solid  var(--#{$prefix}header-secondary-border-top-color);
+
+    .custom-link {
+        &:hover {
+            background-color: #292D40;
+        }
+    }
+    
+    .toolbar {  
+        display: flex;
+        align-items: center;    
+        background-color: var(--#{$prefix}header-secondary-bg-color);             
+    } 
+} 
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header-secondary {
+        .custom-link {
+            width: 32px;
+            height: 32px;
+        }
+    } 
+}

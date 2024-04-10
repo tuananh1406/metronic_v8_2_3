@@ -1,0 +1,95 @@
+<!--begin::Primary-->
+<div class="aside-primary d-flex flex-column align-items-lg-center flex-row-auto">
+  <!--begin::Logo-->
+  <div class="aside-logo d-none d-lg-flex flex-column align-items-center flex-column-auto py-10" id="kt_aside_logo">
+    <a routerLink="/dashboard">
+      <img alt="Logo" src="./assets/media/logos/demo7.svg" class="h-35px" />
+    </a>
+  </div>
+  <!--end::Logo-->
+
+  <!--begin::Nav-->
+  <app-tabs-aside [activeTab]="activeTab" [setActiveTab]="setActiveTab"
+    class="aside-nav d-flex flex-column align-items-center flex-column-fluid w-100 pt-5 pt-lg-0" id="kt_aside_nav">
+  </app-tabs-aside>
+  <!--end::Nav-->
+
+  <!--begin::Footer-->
+  <div class="aside-footer d-flex flex-column align-items-center flex-column-auto" id="kt_aside_footer">
+    <!--begin::Quick links-->
+    <div class="d-flex align-items-center mb-2">
+      <!--begin::Menu wrapper-->
+      <div class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
+        data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="top-start"
+        title="Quick links">
+        <span [inlineSVG]="'./assets/media/icons/duotune/general/gen022.svg'"
+          class="svg-icon svg-icon-2 svg-icon-lg-1"></span>
+      </div>
+      <!--end::Menu wrapper-->
+      <app-quick-links-inner></app-quick-links-inner>
+    </div>
+    <!--end::Quick links-->
+
+    <!--begin::Activities-->
+    <div class="d-flex align-items-center mb-3">
+      <!--begin::Drawer toggle-->
+      <div class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
+        data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="top-start"
+        title="Activity Logs" id="kt_activities_toggle">
+        <span [inlineSVG]="'./assets/media/icons/duotune/general/gen032.svg'"
+          class="svg-icon svg-icon-2 svg-icon-lg-1"></span>
+      </div>
+      <!--end::drawer toggle-->
+    </div>
+    <!--end::Activities-->
+
+    <!--begin::Notifications-->
+    <div class="d-flex align-items-center mb-2">
+      <!--begin::Menu wrapper-->
+      <div class="btn btn-icon btn-active-color-primary btn-color-gray-500 btn-active-light"
+        data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="top-start"
+        title="Notifications">
+        <span [inlineSVG]="'./assets/media/icons/duotune/general/gen025.svg'"
+          class="svg-icon svg-icon-2 svg-icon-lg-1"></span>
+      </div>
+      <!--end::Menu wrapper-->
+      <app-notifications-inner></app-notifications-inner>
+    </div>
+    <!--end::Notifications-->
+
+    <!--begin::User-->
+    <div class="d-flex align-items-center mb-10" id="kt_header_user_menu_toggle">
+      <!--begin::Menu wrapper-->
+      <div class="cursor-pointer symbol symbol-40px" data-kt-menu-trigger="click" data-kt-menu-overflow="true"
+        data-kt-menu-placement="top-start" title="User profile">
+        <img src="./assets/media/avatars/300-1.jpg" alt="image" />
+      </div>
+      <!--end::Menu wrapper-->
+      <app-user-inner></app-user-inner>
+    </div>
+    <!--end::User-->
+  </div>
+  <!--end::Footer-->
+</div>
+<!--end::Primary-->
+
+<ng-container *ngIf="asideMenuSecondary">
+  <!--begin::Secondary-->
+  <div class="aside-secondary d-flex flex-row-fluid">
+    <!--begin::Workspace-->
+    <div class="aside-workspace my-5 p-5" id="kt_aside_wordspace">
+      <app-tabs-aside-inner [activeTab]="activeTab" class="d-flex h-100 flex-column"></app-tabs-aside-inner>
+    </div>
+    <!--end::Workspace-->
+  </div>
+  <!--end::Secondary-->
+
+  <!--begin::Aside Toggle-->
+  <button id="kt_aside_toggle"
+    class="btn btn-sm btn-icon bg-body btn-color-gray-700 btn-active-primary position-absolute translate-middle start-100 end-0 bottom-0 shadow-sm d-none d-lg-flex <?php Theme::printHtmlClasses('asideToggle', false)?>"
+    data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
+    data-kt-toggle-name="aside-minimize" style="margin-bottom: 1.35rem">
+    <span [inlineSVG]="'./assets/media/icons/duotune/arrows/arr063.svg'" class="svg-icon svg-icon-2 rotate-180"></span>
+  </button>
+  <!--end::Aside Toggle-->
+</ng-container>

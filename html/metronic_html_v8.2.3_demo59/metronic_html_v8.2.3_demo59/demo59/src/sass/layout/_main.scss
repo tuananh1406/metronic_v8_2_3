@@ -1,0 +1,16 @@
+//
+// Main
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-container {
+		padding-left: 0 !important;
+	}
+	
+	.app-wrapper {
+		[data-kt-app-header-fixed=true] & {
+			margin-top: 0;
+		}    	
+	}
+}

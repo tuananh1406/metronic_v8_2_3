@@ -1,0 +1,26 @@
+<!--begin::App-->
+<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+	<!--begin::Page-->
+	<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+		<%- include(theme.getLayoutPath("partials/sidebar-layout/_header.ejs")); %>
+			<!--begin::Wrapper-->
+			<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+				<%- include(theme.getLayoutPath("partials/sidebar-layout/_sidebar.ejs")); %>
+					<!--begin::Main-->
+					<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+						<!--begin::Content wrapper-->
+						<div class="d-flex flex-column flex-column-fluid">
+							<%- include(theme.getLayoutPath("partials/sidebar-layout/_toolbar.ejs")); %>
+								<%- include(theme.getLayoutPath("partials/sidebar-layout/_content.ejs")); %>
+						</div>
+						<!--end::Content wrapper-->
+						<%- include(theme.getLayoutPath("partials/sidebar-layout/_footer.ejs")); %>
+					</div>
+					<!--end:::Main-->
+			</div>
+			<!--end::Wrapper-->
+	</div>
+	<!--end::Page-->
+</div>
+<!--end::App-->
+<%- include(theme.getPartialPath("partials/_drawers.ejs")); %>

@@ -1,0 +1,15 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Content
+    --#{$prefix}app-wrapper-shadow: #{$app-wrapper-shadow};    
+}
+
+// Dark mode
+@include color-mode(dark) {
+    // Content
+    --#{$prefix}app-wrapper-shadow: #{$app-wrapper-shadow-dark};
+}

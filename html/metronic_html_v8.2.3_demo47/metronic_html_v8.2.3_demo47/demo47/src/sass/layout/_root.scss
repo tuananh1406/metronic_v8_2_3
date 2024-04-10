@@ -1,0 +1,15 @@
+//
+// Root
+//
+
+// Light mode
+@include color-mode(light) {
+    // Header
+    --#{$prefix}app-header-base-search-bg-color: #{$app-header-base-search-bg-color};
+}
+
+// Dark mode
+@include color-mode(dark) {
+    // Header
+    --#{$prefix}app-header-base-search-bg-color: #{$app-header-base-search-bg-color-dark};  
+} 

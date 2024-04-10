@@ -1,0 +1,92 @@
+//
+// Content
+//
+
+// General
+.app-content {
+	background-color: var(--#{$prefix}body-bg);	
+	overflow: hidden;
+
+	.app-content-menu {
+		.menu-item {
+			.menu-link {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+			// Customize menu link default state       
+			@include menu-link-default-state( 
+				$title-color: var(--#{$prefix}gray-700), 
+				$icon-color: null, 
+				$bullet-color: null, 
+				$arrow-color: null, 
+				$bg-color: null, 
+				$all-links: false
+			);
+
+			// Customize menu link hover state       
+			@include menu-link-hover-state( 
+				$title-color: var(--#{$prefix}gray-900), 
+				$icon-color: null, 
+				$bullet-color: null, 
+				$arrow-color:  null, 
+				$bg-color: var(--#{$prefix}body-bg), 
+				$all-links: false
+			);
+
+			// Customize menu link here state       
+			@include menu-link-here-state( 
+				$title-color: var(--#{$prefix}gray-700), 
+				$icon-color: null,
+				$bullet-color: null, 
+				$arrow-color:  null,
+				$bg-color: transparent, 
+				$all-links: false
+			);
+
+			// Customize menu link show state       
+			@include menu-link-show-state( 
+				$title-color: var(--#{$prefix}gray-900), 
+				$icon-color: null, 
+				$bullet-color: null, 
+				$arrow-color: null, 
+				$bg-color: transparent, 
+				$all-links: false
+			);
+
+			// Customize menu link active state       
+			@include menu-link-active-state( 
+				$title-color: var(--#{$prefix}gray-900), 
+				$icon-color: null, 
+				$bullet-color: null, 
+				$arrow-color: null, 
+				$bg-color: var(--#{$prefix}body-bg), 
+				$all-links: false
+			);
+		}	 
+	}
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-content {		
+		@include border-radius($app-content-border-radius);
+
+		.app-content-menu {
+			margin: 0 -#{$app-content-padding-x};	
+			padding: 0 #{$app-content-padding-x};
+		}
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-content { 
+		@include border-radius($app-content-border-radius-mobile);		
+		
+		.app-content-menu {
+			margin: 0 -#{$app-content-padding-x-mobile};
+			padding: 0 #{$app-content-padding-x-mobile};
+		}
+	}
+}

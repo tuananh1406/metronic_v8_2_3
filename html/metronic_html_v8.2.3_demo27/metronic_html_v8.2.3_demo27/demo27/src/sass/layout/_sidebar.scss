@@ -1,0 +1,192 @@
+//
+// Sidebar
+//
+
+.app-sidebar {
+    .hover-scroll-y {        
+        @include scrollbar-color(transparent, lighten(#505463, 3%));
+    }
+
+    .separator {
+        border-bottom: 1px solid #272727;
+        margin: 1rem 0;
+    }
+}
+
+.app-sidebar-header {
+    .btn.btn-custom {
+        border-style: dashed;
+
+        @include button-custom-variant(
+            $color: null, 
+            $icon-color: null, 
+            $border-color: #313131, 
+            $bg-color: #101010, 
+            $color-active: null, 
+            $icon-color-active: null, 
+            $border-color-active: #313131, 
+            $bg-color-active: null
+        );    
+    }
+
+    .menu {
+        background-color: var(--#{$prefix}app-sidebar-base-bg-color);
+        border: 1px dashed #313131;
+        
+        .menu-item {             
+            @include menu-link-hover-state( 
+                $title-color: null, 
+                $icon-color: null, 
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: $app-sidebar-base-menu-link-active,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: null, 
+                $icon-color: null, 
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: $app-sidebar-base-menu-link-active,
+                $all-links: true
+            ); 
+        } 
+    }
+}
+
+.app-sidebar-navs {
+    .menu {
+        padding: 0 1.5rem;     
+
+        > .menu-item {
+            // Inner level
+            .menu-link {
+                .menu-title {
+                    font-size: 1.05rem;
+                    font-weight: $font-weight-normal; 
+                }
+            }
+
+            // Root level
+            > .menu-heading,
+            > .menu-link > .menu-title {
+                font-size: 1.15rem;
+                font-weight: $font-weight-semibold;      
+            }
+        }
+
+        .menu-item { 
+            .menu-heading {
+                color: $gray-600;
+            }
+
+            .menu-link {
+                .menu-icon {
+                    margin-right: 0.9rem;
+
+                    i {
+                        font-size: 1.5rem !important;
+                        line-height: 0;
+                    }
+
+                    .svg-icon {
+                        @include svg-icon-size(1.75rem, true);
+                    }
+                }
+
+                .menu-badge {
+                    .badge {
+                        font-weight: $font-weight-bold;
+                        font-size: 0.8rem;
+                    }
+
+                    .badge.badge-custom {
+                        background-color: #262626;
+                        color: $gray-600;                        
+                    }
+                }            
+
+                .menu-arrow {
+                    width: 11px;
+                    height: 11px;    
+                }
+            } 
+
+            @include menu-link-default-state( 
+                $title-color: $gray-300, 
+                $icon-color: $gray-700, 
+                $bullet-color: $gray-700, 
+                $arrow-color: $gray-700, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: $white, 
+                $icon-color: null, 
+                $bullet-color: $white, 
+                $arrow-color: $white, 
+                $bg-color: $app-sidebar-base-menu-link-active,
+                $all-links: true
+            ); 
+        }       
+
+        .menu-collapse-toggle {
+            background-color: transparent !important;
+
+            .menu-title {
+                font-size: 1rem !important;
+                color: $gray-600 !important;
+            }          
+            
+            .svg-color {
+                color: $gray-400 !important;
+            }    
+        } 
+    } 
+}
+
+.app-sidebar-footer {
+    .btn.btn-custom {
+        border-style: dashed;
+
+        @include button-custom-variant(
+            $color: $gray-500, 
+            $icon-color: $gray-500, 
+            $border-color: $gray-800,
+            $bg-color: null, 
+            $color-active: $gray-300, 
+            $icon-color-active: $gray-300, 
+            $border-color-active: $gray-700, 
+            $bg-color-active: null
+        );    
+    }
+}

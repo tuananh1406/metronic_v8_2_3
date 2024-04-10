@@ -1,0 +1,67 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color:  $white;
+$app-bg-color-dark: $coal-400; 
+$app-blank-bg-color: $body-bg;
+$app-blank-bg-color-dark: $app-bg-color-dark;
+
+// Container
+$app-container-padding-x: 30px !default;
+$app-container-padding-x-mobile: 20px !default;
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Header base
+$app-header-base-height: 120px;
+$app-header-base-height-mobile: 70px;
+$app-header-base-bg-color: $white;
+$app-header-base-bg-color-dark: $coal-600;
+$app-header-base-border-color: $gray-200; 
+$app-header-base-border-color-dark: none;
+
+// Header sticky
+$app-header-sticky-height: 70px;
+$app-header-sticky-bg-color: $body-bg;
+$app-header-sticky-bg-color-dark: $coal-600; 
+$app-header-sticky-box-shadow: 0px 10px 30px 0px rgba(82,63,105,0.05);
+$app-header-sticky-box-shadow-dark: none;
+
+// Header fixed
+$app-header-fixed-z-index: 107; 
+
+// Sidebar base
+$app-sidebar-base-width: 70px;
+$app-sidebar-base-width-mobile: 70px; 
+$app-sidebar-base-bg-color: $body-bg; 
+$app-sidebar-base-bg-color-dark: $coal-600; 
+
+// Sidebar sticky
+$app-sidebar-sticky-bg-color: $body-bg;
+$app-sidebar-sticky-bg-color-dark: $coal-600; 
+
+// Content
+$app-content-padding-y: 30px;
+$app-content-padding-y-mobile: 20px;
+
+// Footer
+$app-footer-height: auto;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px;

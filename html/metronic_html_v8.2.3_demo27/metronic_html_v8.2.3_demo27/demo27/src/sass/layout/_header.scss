@@ -1,0 +1,14 @@
+//
+// Header
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+		.app-container {
+			[data-kt-app-header-sticky="on"] & {
+				margin-top: 0;	
+			}
+		}
+	}
+}

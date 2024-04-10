@@ -1,0 +1,56 @@
+//
+// Menu
+//
+
+// Aside menu
+.aside-menu {
+    .hover-scroll-y,
+    .hover-scroll-overlay-y {
+        --#{$prefix}scrollbar-space: 0.4rem;
+        @include scrollbar-color(#3b3b64, lighten(#3b3b64, 3%));
+    }
+
+    // Basic
+    .menu {
+        .menu-section {
+            color: #4c4e6f !important;
+        }
+
+        > .menu-item {
+			> .menu-link {
+				width: 74px;
+                height: 74px;
+                margin: 0 auto; 
+                flex-direction: column;
+                display: flex;     
+                @include border-radius($border-radius);   
+
+				.menu-icon {					
+					justify-content: center;
+                    width: 0; 
+                    margin-bottom: 0.5rem;                  
+                    
+                    i {                        
+                        font-size: 26px !important;				
+                    }					
+				} 
+
+                .menu-title {					
+					flex-grow: 0;                 
+				}   
+			}       
+
+            &.here > .menu-link,
+            & > .menu-link.active {
+                border: 1px solid $gray-100-dark;
+            }      
+
+            //$title-color, $icon-color, $bullet-color, $arrow-color, $bg-color, $all-links
+            @include menu-link-default-state( $gray-700, $gray-300, $gray-300, $gray-300, null, false);
+            @include menu-link-hover-state( $gray-900-dark, var(--#{$prefix}primary), var(--#{$prefix}primary), var(--#{$prefix}primary), null, false);
+            @include menu-link-here-state( $gray-900-dark, var(--#{$prefix}primary), var(--#{$prefix}primary), var(--#{$prefix}primary), $coal-500, false);
+            @include menu-link-show-state( $gray-900-dark, var(--#{$prefix}primary), var(--#{$prefix}primary), var(--#{$prefix}primary), null, false);
+            @include menu-link-active-state( $gray-900-dark, var(--#{$prefix}primary), var(--#{$prefix}primary), var(--#{$prefix}primary), $coal-500 , false);
+		}
+    }     
+}

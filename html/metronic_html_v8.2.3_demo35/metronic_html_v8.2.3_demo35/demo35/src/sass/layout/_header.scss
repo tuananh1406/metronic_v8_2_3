@@ -1,0 +1,84 @@
+//
+// Header Customization
+//  
+
+// General mode
+.app-header {
+    .app-header-slider {
+        .btn-default {
+			@include button-custom-variant(
+				$color: null, 
+				$icon-color: null, 
+				$border-color: null, 
+				$bg-color: null, 
+				$color-active: null, 
+				$icon-color-active: null, 
+				$border-color-active: null, 
+				$bg-color-active: var(--#{$prefix}gray-100), 
+			);				 
+		}
+    } 
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {    
+    .app-header-menu {
+        .menu {
+            > .menu-item {
+                margin-right: 0.5rem;   
+
+                > .menu-link {
+                    .menu-title {
+                        font-weight: $font-weight-bold;
+                        font-size: 1.1rem;
+                    }
+                }
+
+                @include menu-link-default-state( 
+                    $title-color: var(--#{$prefix}header-primary-link-color), 
+                    $icon-color: null, 
+                    $bullet-color: null, 
+                    $arrow-color: null,
+                    $bg-color: null,
+                    $all-links: false
+                );
+                
+                @include menu-link-hover-state( 
+                    $title-color: $primary, 
+                    $icon-color: null, 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: var(--#{$prefix}header-primary-link-bg-color),
+                    $all-links: false
+                );
+                
+                @include menu-link-show-state( 
+                    $title-color: $primary, 
+                    $icon-color: null, 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: null,
+                    $all-links: false
+                );
+    
+                @include menu-link-here-state( 
+                    $title-color: $primary, 
+                    $icon-color: null,
+                    $bullet-color: null, 
+                    $arrow-color: null,
+                    $bg-color: var(--#{$prefix}header-primary-link-bg-color),
+                    $all-links: false
+                );
+    
+                @include menu-link-active-state( 
+                    $title-color: $primary, 
+                    $icon-color: null, 
+                    $bullet-color: null, 
+                    $arrow-color: null, 
+                    $bg-color: var(--#{$prefix}header-primary-link-bg-color),
+                    $all-links: false
+                ); 
+            }         
+        }        
+    } 
+}

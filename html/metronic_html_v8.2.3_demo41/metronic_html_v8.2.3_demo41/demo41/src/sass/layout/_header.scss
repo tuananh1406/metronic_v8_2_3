@@ -1,0 +1,116 @@
+//
+// Layout
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+			// Root links
+			> .menu-item {
+				// Customize menu link default state       
+				@include menu-link-default-state( 
+					$title-color: var(--#{$prefix}gray-700), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link hover state       
+				@include menu-link-hover-state( 
+					$title-color: var(--#{$prefix}gray-700), 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link here state       
+				@include menu-link-here-state( 
+					$title-color: var(--#{$prefix}gray-900), 
+					$icon-color: null,
+					$bullet-color: null, 
+					$arrow-color: null,
+					$bg-color: var(--#{$prefix}header-link-bg-color), 
+					$all-links: false
+				);
+
+				// Customize menu link show state       
+				@include menu-link-show-state( 
+					$title-color: null, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link active state       
+				@include menu-link-active-state( 
+					$title-color: null, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+				
+				> .menu-link {
+					padding: 7px 16px;				 
+
+					.menu-title {
+						font-size: 1.15rem;
+						font-weight: $font-weight-semibold;							
+					}
+				}
+
+				margin-right: 0.5rem; 
+			}
+		}
+    } 
+
+	.app-header {
+		.app-container {
+			padding-left: 23px !important;
+			padding-right: 23px !important;
+		}	
+
+		.header-search {
+			.search-input {
+				background: transparent;
+				border-color: var(--#{$prefix}header-search-border-bg-color);
+
+				@include placeholder($gray-600);
+			}
+
+			.search-icon {						 				 			 
+				color: $gray-800; 
+			} 
+		}
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		.header-search {
+			.search-toggle-mobile {
+				cursor: pointer;
+
+				@include button-custom-variant(
+					$color: null, 
+					$icon-color: $gray-600, 
+					$border-color: null, 
+					$bg-color: null, 
+					$color-active: null, 
+					$icon-color-active: $primary, 
+					$border-color-active: null, 
+					$bg-color-active: null
+				); 
+			}	
+		}
+	}
+}

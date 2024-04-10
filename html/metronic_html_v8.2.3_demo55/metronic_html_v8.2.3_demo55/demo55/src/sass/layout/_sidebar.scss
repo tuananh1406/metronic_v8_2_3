@@ -1,0 +1,148 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    @include app-layout-transition(padding);
+
+    .hover-scroll-y {        
+        @include scrollbar-color(var(--#{$prefix}gray-200), var(--#{$prefix}gray-300));
+    }
+
+    .app-sidebar-logo {
+        height: $app-header-base-height;
+    }
+
+    .menu {
+        // Toggle
+        .btn.btn-color-primary {
+            color: var(--#{$prefix}gray-700);
+
+            i {
+                color: var(--#{$prefix}gray-700);
+            }
+        }
+
+        .menu-arrow {
+            display: none !important;    
+        }
+
+        // Child items
+        .menu-item {
+            .menu-link {
+                .menu-title {
+                    font-size: 1.1rem;
+                    font-weight: $font-weight-bold;
+                }
+
+                &.active {
+                    .bullet-dot {
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-500), 
+                $icon-color: null,  
+                $bullet-color: var(--#{$prefix}gray-400),  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: null,  
+                $bullet-color: var(--#{$prefix}gray-800),  
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-show-state( 
+               $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: null,  
+                $bullet-color: var(--#{$prefix}gray-800),  
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: null,  
+                $bullet-color: var(--#{$prefix}gray-800), 
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: false
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: null, 
+                $bullet-color: var(--#{$prefix}gray-800), 
+                $arrow-color: null, 
+                $bg-color: null, 
+                $all-links: false
+            ); 
+        }
+
+        // Root items
+        > .menu-item {
+            > .menu-link {
+                .menu-title {
+                    font-size: 1.1rem;
+                    font-weight: $font-weight-bold;
+                }
+            }
+
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-700), 
+                $icon-color: var(--#{$prefix}gray-500),  
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-700),  
+                $bullet-color: null,  
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-700),  
+                $bullet-color: null,  
+                $arrow-color: null,
+                $bg-color: null,
+                $all-links: false
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}white), 
+                $icon-color: var(--#{$prefix}white),  
+                $bullet-color: null,  
+                $arrow-color: null,
+                $bg-color: $gray-800,
+                $all-links: false
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}gray-800), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: null, 
+                $arrow-color: null, 
+                $bg-color: null, 
+                $all-links: false
+            ); 
+        }
+    }
+} 

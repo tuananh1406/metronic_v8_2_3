@@ -1,0 +1,27 @@
+//
+// Wrapper
+//
+
+// General
+.app-wrapper {
+	background-color: var(--#{$prefix}body-bg);	
+	overflow: hidden;
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-wrapper {		
+		@include border-radius($app-wrapper-border-radius);
+		box-shadow: var(--#{$prefix}app-wrapper-shadow);
+		margin-top: $app-wrapper-padding-y;
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-wrapper { 
+		@include border-radius($app-wrapper-border-radius-mobile);		
+		box-shadow: var(--#{$prefix}app-wrapper-shadow-mobile);
+		margin-top: $app-wrapper-padding-y-mobile;
+	}
+}

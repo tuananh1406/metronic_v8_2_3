@@ -1,0 +1,24 @@
+//
+// Sidebar
+//
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-sidebar {   
+        margin-top: $app-header-base-height;      
+        margin-left: $app-layout-gap;
+        margin-right: calc(#{$app-layout-gap} + #{$app-sidebar-base-width});  
+        
+        .app-navbar {         
+            @include border-radius($border-radius-lg);
+            background-color: var(--#{$prefix}sidebar-navbar-bg-color); 
+        }  
+    }      
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar {   
+        background-color: var(--#{$prefix}sidebar-navbar-bg-color);
+    }  
+}

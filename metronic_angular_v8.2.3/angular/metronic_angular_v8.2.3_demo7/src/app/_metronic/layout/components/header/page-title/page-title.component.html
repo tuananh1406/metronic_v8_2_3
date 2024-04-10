@@ -1,0 +1,31 @@
+<ng-container *ngIf="title$ | async as title">
+  <ng-container *ngIf="showTitle">
+    <!-- begin::Title -->
+    <h1 class="text-gray-900 fw-bolder my-0 fs-2">
+      {{ title }}
+      <ng-container *ngIf="description$ | async as description">
+        <ng-container *ngIf="showDescritption">
+          <small class="text-muted fs-6 fw-normal ms-1">{{description}}</small>
+        </ng-container>
+      </ng-container>
+
+    </h1>
+    <!-- end::Title -->
+  </ng-container>
+
+  <ng-container *ngIf="showBC">
+    <ng-container *ngIf="bc$ | async as _bc">
+      <ng-container *ngIf="_bc.length > 0">
+        <ul class="breadcrumb fw-bold fs-base my-1">
+          <li *ngFor="let bc of filteredBC(_bc)" class="breadcrumb-item"
+            [ngClass]="{'text-gray-900': bc.isActive, 'text-muted': !bc.isActive}">
+            <a class="text-muted" [routerLink]="bc.path">
+              {{ bc.title }}
+            </a>
+          </li>
+          <li class="breadcrumb-item text-gray-900">{{ title }}</li>
+        </ul>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</ng-container>

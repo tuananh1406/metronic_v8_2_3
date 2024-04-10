@@ -1,0 +1,56 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    display: none;
+    
+    .menu{
+        .menu-item {
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-700), 
+                $icon-color: var(--#{$prefix}gray-500), 
+                $bullet-color: var(--#{$prefix}gray-500), 
+                $arrow-color: var(--#{$prefix}gray-500), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}primary), 
+                $icon-color: var(--#{$prefix}primary), 
+                $bullet-color: var(--#{$prefix}primary), 
+                $arrow-color: var(--#{$prefix}white), 
+                $bg-color: var(--#{$prefix}primary-light),
+            ); 
+        }  
+    }     
+}

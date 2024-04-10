@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html @Html.Raw(KTTheme.PrintHtmlAttributes("html"))>
+<!--begin::Head-->
+
+<head>
+    <title>@ViewData["Title"] - Keenthemes</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+
+
+    <link rel="shortcut icon" href="@KTTheme.GetFavicon()" />
+
+    <!--begin::Fonts-->
+    @foreach(string font in KTTheme.GetFonts()){
+        <link rel="stylesheet" href="@font" />
+    }
+    <!--end::Fonts-->
+
+    <!--begin::Vendor Stylesheets(optional)-->
+    @foreach(string file in KTTheme.GetVendors("Css")){
+    <link rel="stylesheet" type="text/css" href="@file" />
+    }
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Global Stylesheets(mandatory)-->
+    @foreach(string file in KTTheme.GetGlobalAssets("Css")){
+    <link rel="stylesheet" type="text/css" href="@file" />
+    }
+    <!--end::Global Stylesheets-->
+
+    <!--begin::Custom Stylesheets(optional)-->
+    @foreach(string file in KTTheme.GetCssFiles()){
+        <link rel="stylesheet" type="text/css" href='@KTTheme.GetAssetPath(file)' />
+    }
+    <!--end::Custom Stylesheets-->
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<!body @Html.Raw(KTTheme.PrintHtmlAttributes("body")) class='@KTTheme.PrintHtmlClasses("body")'>
+    <partial name="~/Views/Partials/ThemeMode/_Init.cshtml"></partial>
+
+    @RenderBody()
+
+    <!--begin::Global Javascript(mandatory)-->
+    @foreach (string file in KTTheme.GetGlobalAssets("Js"))
+    {
+        <script src="@file"></script>
+    }
+    <!--end::Global Javascript-->
+
+    <!--begin::Vendors Javascript(optional)-->
+    @foreach (string file in KTTheme.GetVendors("Js"))
+    {
+        <script src="@file"></script>
+    }
+    <!--end::Vendors Javascript-->
+
+    <!--begin::Custom Javascript(optional)-->
+    @foreach (string file in KTTheme.GetJavascriptFiles())
+    {
+        <script src='@KTTheme.GetAssetPath(file)'></script>
+    }
+    <!--end::Custom Javascript-->
+</!body>
+<!--end::Body-->
+
+</html>

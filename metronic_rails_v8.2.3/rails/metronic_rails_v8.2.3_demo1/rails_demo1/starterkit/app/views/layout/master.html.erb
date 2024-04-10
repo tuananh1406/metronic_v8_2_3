@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" <%= printHtmlAttributes('html').html_safe %>>
+<!--begin::Head-->
+<head>
+  <base href=""/>
+  <title><%= yield(:title) %> - Keenthemes</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <meta charset="utf-8"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="" />
+  <link rel="canonical" href=""/>
+
+  <%= includeFavicon.html_safe %>
+
+  <!--begin::Fonts-->
+  <%= includeFonts.html_safe %>
+  <!--end::Fonts-->
+
+  <!--begin::Vendor Stylesheets(used by this page)-->
+  <% getVendors('css').each do |path| %>
+    <%= stylesheet_link_tag path %>
+  <% end %>
+  <!--end::Vendor Stylesheets-->
+
+  <!--begin::Custom Stylesheets(optional)-->
+  <% getCustomCss.each do |path| %>
+    <%= stylesheet_link_tag path %>
+  <% end %>
+  <!--end::Custom Stylesheets-->
+
+  <!--begin::Global Stylesheets Bundle(used by all pages)-->
+  <% getGlobalAssets('css').each do |path| %>
+    <%= stylesheet_link_tag path %>
+  <% end %>
+  <!--end::Global Stylesheets Bundle-->
+
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_app_body" <%= printHtmlClasses('body').html_safe %> <%= printHtmlAttributes('body').html_safe %>>
+<%= render "partials/theme-mode/init" %>
+<%= content_for?(:app) ? yield(:app) : yield %>
+<%= render "partials/scrolltop" %>
+<!--begin::Modals-->
+<%= render "partials/modals/upgrade-plan" %>
+<%= render "partials/modals/create-app/main" %>
+<%= render "partials/modals/new-target" %>
+<%= render "partials/modals/view-users" %>
+<%= render "partials/modals/users-search/main" %>
+<%= render "partials/modals/invite-friends" %>
+<!--end::Modals-->
+<!--begin::Javascript-->
+<script>var hostUrl = "assets/";</script>
+
+<!--begin::Global Javascript Bundle(used by all pages)-->
+<% getGlobalAssets('js').each do |path| %>
+  <%= javascript_include_tag path %>
+<% end %>
+<!--end::Global Javascript Bundle-->
+
+<!--begin::Vendors Javascript(used by this page)-->
+<% getVendors('js').each do |path| %>
+  <%= javascript_include_tag path %>
+<% end %>
+<!--end::Vendors Javascript-->
+
+<!--begin::Custom Javascript(optional)-->
+<% getCustomJs.each do |path| %>
+  <%= javascript_include_tag path %>
+<% end %>
+<!--end::Custom Javascript-->
+
+<!--end::Javascript-->
+</body>
+<!--end::Body-->
+</html>

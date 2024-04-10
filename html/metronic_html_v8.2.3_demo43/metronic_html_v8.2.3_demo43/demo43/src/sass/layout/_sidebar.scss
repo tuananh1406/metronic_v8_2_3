@@ -1,0 +1,82 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {    
+    .menu {
+        .menu-item {
+            @include menu-link-default-state( 
+                $title-color: var(--#{$prefix}gray-600), 
+                $icon-color: var(--#{$prefix}gray-500), 
+                $bullet-color: var(--#{$prefix}gray-500), 
+                $arrow-color: var(--#{$prefix}gray-500), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-700), 
+                $bullet-color: var(--#{$prefix}gray-700),  
+                $arrow-color: var(--#{$prefix}gray-700), 
+                $bg-color: null,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--#{$prefix}gray-900), 
+                $icon-color: var(--#{$prefix}gray-900), 
+                $bullet-color: var(--#{$prefix}gray-900), 
+                $arrow-color: var(--#{$prefix}white), 
+                $bg-color: var(--#{$prefix}body-bg),
+                $all-links: true
+            ); 
+        } 
+    }          
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-sidebar { 
+        padding-top: $app-content-padding-y;
+        margin-right: $app-container-padding-x;
+
+        .hover-scroll-y {
+            @include scrollbar-color(transpate, var(--#{$prefix}gray-300));    
+        }
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-sidebar {        
+        background-color: var(--#{$prefix}body-bg) !important;
+
+        .card {
+            padding: 0 !important;
+            margin: 0 !important;
+            background-color: transparent;
+            border: 0 !important;
+            box-shadow: none !important;    
+        }
+    }
+}

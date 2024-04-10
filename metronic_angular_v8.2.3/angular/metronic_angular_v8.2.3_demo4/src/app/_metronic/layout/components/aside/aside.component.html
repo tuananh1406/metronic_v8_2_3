@@ -1,0 +1,60 @@
+<!-- begin::Brand -->
+<div class="aside-logo d-none d-lg-flex flex-column align-items-center flex-column-auto py-8" id="kt_aside_logo">
+  <!-- begin::Logo -->
+  <a routerLink="/dashboard">
+    <img
+      alt="Logo"
+      class="h-55px"
+      src="./assets/media/logos/demo4.svg"
+    />
+  </a>
+  <!-- end::Logo -->
+
+  <!-- begin::Aside toggle -->
+  <ng-container *ngIf="asideMinimize">
+    <div
+      id="kt_aside_toggle"
+      class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
+      data-kt-toggle="true"
+      data-kt-toggle-state="active"
+      data-kt-toggle-target="body"
+      data-kt-toggle-name="aside-minimize"
+    >
+    </div>
+  </ng-container>
+  <!-- end::Aside toggler -->
+</div>
+<!-- end::Brand  -->
+
+<!-- begin::Aside menu -->
+<div
+  #ktAsideScroll
+  id="kt_aside_nav"
+  class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0"
+>
+  <app-aside-menu
+    id="kt_aside_menu"
+    data-kt-menu="true"
+    class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-6">>
+  </app-aside-menu>
+</div>
+<!-- end::Aside menu -->
+
+<!-- begin::Footer -->
+<div class="aside-footer d-flex flex-column align-items-center flex-column-auto" id="kt_aside_footer">
+  <a
+    target="_blank"
+    class="btn btn-custom btn-primary w-100"
+    [href]="appPreviewDocsUrl"
+    data-bs-toggle="tooltip"
+    data-bs-trigger="hover"
+    data-bs-dismiss-="click"
+    ngbDropdown="Check out the complete documentation with over 100 components"
+  >
+    <span
+      [inlineSVG]="'./assets/media/icons/duotune/general/gen005.svg'"
+      class="svg-icon btn-icon svg-icon-2"
+    ></span>
+  </a>
+</div>
+<!-- end::Footer -->

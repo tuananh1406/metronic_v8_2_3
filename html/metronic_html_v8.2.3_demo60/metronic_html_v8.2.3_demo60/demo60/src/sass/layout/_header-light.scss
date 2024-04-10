@@ -1,0 +1,240 @@
+//
+// Header light mode
+//
+
+@include color-mode(light) {
+	// General
+	.app-header {
+		.btn.btn-custom {
+			@include button-custom-variant(
+				$color: null, 
+				$icon-color: $white, 
+				$border-color: null, 
+				$bg-color: rgba($white, 0.16),
+				$color-active: null, 
+				$icon-color-active: $white,
+				$border-color-active: null, 
+				$bg-color-active: rgba($white, 0.08),
+			);
+		}
+	}
+
+	.app-header-secondary-menu-main {
+		.menu-separator {
+			background: rgba(255, 255, 255, 0.16);
+		}
+
+		.menu {
+			// Root items
+			> .menu-item {
+				@include menu-link-default-state( 
+					$title-color: $white, 
+					$icon-color: $white,
+					$bullet-color: $white,  
+					$arrow-color: $white,
+					$bg-color: null,
+					$all-links: false
+				);
+				
+				@include menu-link-hover-state( 
+					$title-color: $white, 
+					$icon-color: $primary,
+					$bullet-color: $primary,  
+					$arrow-color: $white,
+					$bg-color: null,
+					$all-links: false
+				);
+				
+				@include menu-link-show-state( 
+					$title-color: $white, 
+					$icon-color: $primary,
+					$bullet-color: $primary,  
+					$arrow-color: $white,
+					$bg-color: null,
+					$all-links: false
+				);
+
+				@include menu-link-active-state( 
+					$title-color: $gray-900, 
+					$icon-color: $primary,
+					$bullet-color: $primary, 
+					$arrow-color: $gray-900,
+					$bg-color: $app-header-secondary-menu-sub-bg-color,
+					$all-links: false
+				);
+				
+				@include menu-link-here-state( 
+					$title-color: $gray-900, 
+					$icon-color: $primary,
+					$bullet-color: $primary,   
+					$arrow-color: $gray-900,
+					$bg-color: $app-header-secondary-menu-sub-bg-color,
+					$all-links: false
+				);
+
+				.menu-sub {
+					.menu-item {
+						@include menu-link-default-state( 
+							$title-color: $gray-600, 
+							$icon-color: $gray-600,
+							$bullet-color: $gray-600,
+							$arrow-color: $gray-600,
+							$bg-color: null,
+							$all-links: true
+						);
+						
+						@include menu-link-hover-state( 
+							$title-color: $gray-700, 
+							$icon-color: $primary,
+							$bullet-color: $primary,
+							$arrow-color: $gray-700,
+							$bg-color: null,
+							$all-links: true
+						);
+						
+						@include menu-link-show-state( 
+							$title-color: $gray-700, 
+							$icon-color: $primary,
+							$bullet-color: $primary, 
+							$arrow-color: $gray-700,
+							$bg-color: null,
+							$all-links: true
+						);
+
+						@include menu-link-active-state( 
+							$title-color: $gray-700, 
+							$icon-color: $primary,
+							$bullet-color: $primary, 
+							$arrow-color: $gray-700,
+							$bg-color: $gray-100,
+							$all-links: true
+						);
+						
+						@include menu-link-here-state( 
+							$title-color: $gray-700, 
+							$icon-color: $primary,
+							$bullet-color: $primary,  
+							$arrow-color: $gray-700,
+							$bg-color: $gray-100,
+							$all-links: true
+						);	
+					}				
+				}
+			}
+		}
+	}
+
+	.app-header-secondary-menu-sub {
+		background-color: $app-header-secondary-menu-sub-bg-color;
+
+		.menu {
+			// Root items
+			> .menu-item {		
+				@include menu-link-default-state( 
+					$title-color: $gray-600, 
+					$icon-color: $gray-600,
+					$bullet-color: $gray-600, 
+					$arrow-color: $gray-600,
+					$bg-color: null,
+					$all-links: true
+				);
+				
+				@include menu-link-hover-state( 
+					$title-color: $gray-700, 
+					$icon-color: $primary,
+					$bullet-color: $primary,
+					$arrow-color: $gray-700,
+					$bg-color: null,
+					$all-links: true
+				);
+				
+				@include menu-link-show-state( 
+					$title-color: $gray-700, 
+					$icon-color: $primary,
+					$bullet-color: $primary,   
+					$arrow-color: $gray-700,
+					$bg-color: null,
+					$all-links: true
+				);
+
+				@include menu-link-active-state( 
+					$title-color: $gray-700, 
+					$icon-color: $primary,
+					$bullet-color: $primary,
+					$arrow-color: $gray-700,
+					$bg-color: $gray-100,
+					$all-links: true
+				);
+				
+				@include menu-link-here-state( 
+					$title-color: $gray-700, 
+					$icon-color: $primary,
+					$bullet-color: $primary,
+					$arrow-color: $gray-700,
+					$bg-color: $gray-100,
+					$all-links: true
+				);
+
+				.menu-link.active,
+				&.here .menu-link {
+					border: 1px solid $gray-200;
+				}
+			}
+		}
+	}	
+
+	// Desktop mode
+	@include media-breakpoint-up(lg) {
+		.app-header-menu {
+			.menu {
+				// Root items
+				> .menu-item {
+					@include menu-link-default-state( 
+						$title-color: $white, 
+						$icon-color: $white,
+						$bullet-color: $white,  
+						$arrow-color: $white,
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-hover-state( 
+						$title-color: $white, 
+						$icon-color: $primary,
+						$bullet-color: $primary,  
+						$arrow-color: $white,
+						$bg-color: rgba($white, 0.06),
+						$all-links: false
+					);
+					
+					@include menu-link-show-state( 
+						$title-color: $white, 
+						$icon-color: $primary,
+						$bullet-color: $primary,  
+						$arrow-color: $white,
+						$bg-color: rgba($white, 0.06),
+						$all-links: false
+					);
+
+					@include menu-link-active-state( 
+						$title-color: $white, 
+						$icon-color: $primary,
+						$bullet-color: $primary, 
+						$arrow-color: $white,
+						$bg-color: rgba($white, 0.12),
+						$all-links: false
+					);
+					
+					@include menu-link-here-state( 
+						$title-color: $white, 
+						$icon-color: $primary,
+						$bullet-color: $primary,   
+						$arrow-color: $white,
+						$bg-color: rgba($white, 0.12),
+						$all-links: false
+					);
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,34 @@
+//
+// Sidebar panel
+//
+
+// General
+.app-sidebar-panel {
+	.separator {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}	
+}
+
+.app-sidebar-panel-btn {
+	.app-sidebar-panel-icon {
+		height: 50px;
+		width: 50px;
+		background-color: rgba(255, 255, 255, 0.1);
+		@include border-radius($border-radius-lg);
+	}
+
+	&:hover,
+	&.active {
+		.app-sidebar-panel-icon {
+			background-color: var(--#{$prefix}success);	
+		}		
+	}
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-sidebar-panel {
+		@include border-bottom-start-radius($app-content-border-radius);	
+		margin-bottom: $app-footer-height;
+	}
+}

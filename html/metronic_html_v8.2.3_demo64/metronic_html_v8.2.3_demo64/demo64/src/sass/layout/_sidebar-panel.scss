@@ -1,0 +1,35 @@
+//
+// Sidebar panel
+//
+
+// General mode
+.shadow-custom {
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);	
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-sidebar-panel {
+		border: 1px solid #FFF0EA;
+		border-radius: $border-radius-xl;
+	}
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-sidebar-panel {
+		
+	}
+}
+
+@include color-mode(dark) {
+	.shadow-custom {
+		box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+	}
+
+	@include media-breakpoint-up(lg) {
+    .app-sidebar-panel {
+      border: 1px solid $coal-100;
+    }
+	}
+}

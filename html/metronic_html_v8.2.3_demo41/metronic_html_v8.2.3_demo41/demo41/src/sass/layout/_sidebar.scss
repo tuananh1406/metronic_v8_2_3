@@ -1,0 +1,11 @@
+//
+// Sidebar
+//
+
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-sidebar {                 
+        @include border-top-start-radius(20px);
+    }
+}

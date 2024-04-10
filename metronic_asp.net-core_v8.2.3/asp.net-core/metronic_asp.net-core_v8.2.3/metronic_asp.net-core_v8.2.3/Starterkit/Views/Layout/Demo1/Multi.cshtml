@@ -1,0 +1,11 @@
+@{ 
+	// Master layout
+	Layout = "~/Views/Layout/Master.cshtml"; 
+
+	// Layout options
+	KTTheme.AddHtmlClass("body", "app-blank");
+}
+
+<div class="d-flex flex-column flex-root" >
+    @RenderBody()
+</div>

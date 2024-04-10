@@ -1,0 +1,39 @@
+<div class="d-flex flex-column flex-root">
+  <div class="page d-flex flex-row flex-column-fluid">
+    <app-aside *ngIf="asideDisplay" id="kt_aside" class="aside aside-extended" [ngClass]="asideCSSClasses"
+      data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}"
+      data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="start"
+      data-kt-drawer-toggle="#kt_aside_toggle"></app-aside>
+
+    <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+      <app-header id="kt_header" class="header" [ngClass]="headerCSSClasses" #ktHeader data-kt-sticky="true"
+        data-kt-sticky-name="header">
+      </app-header>
+
+
+      <div id="kt_content" class="content d-flex flex-column flex-column-fluid">
+        <app-content id="kt_content_container" [ngClass]="contentContainerClasses"></app-content>
+      </div>
+
+      <app-footer class="footer py-4 d-flex flex-lg-column" [ngClass]="footerCSSClasses" id="kt_footer"></app-footer>
+    </div>
+  </div>
+</div>
+
+<app-scripts-init></app-scripts-init>
+<app-scroll-top></app-scroll-top>
+
+<!-- begin:: Drawers -->
+<app-activity-drawer></app-activity-drawer>
+<app-messenger-drawer></app-messenger-drawer>
+<!-- end:: Drawers -->
+
+<!-- end:: Engage -->
+<app-engages></app-engages>
+<!-- end:: Engage -->
+
+<!-- begin:: Modals -->
+<app-main-modal></app-main-modal>
+<app-invite-users-modal></app-invite-users-modal>
+<app-upgrade-plan-modal></app-upgrade-plan-modal>
+<!-- end:: Modals -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" th:attr="__${@theme.printHtmlAttributes('html')}__">
+<!--begin::Head-->
+
+<head>
+    <title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular & Laravel by Keenthemes</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+
+
+    <link rel="shortcut icon" th:href="@{${@theme.getFavicon()}}" />
+
+    <!--begin::Fonts-->
+    <link th:each="font: ${@theme.getFonts()}" rel="stylesheet" th:href="@{${font}}" />
+    <!--end::Fonts-->
+
+    <!--begin::Vendor Stylesheets(optional)-->
+    <link th:each="file: ${@theme.getVendors('Css')}" rel="stylesheet" type="text/css" th:href="@{${file}}" />
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Global Stylesheets(mandatory)-->
+    <link th:each="file: ${@theme.getGlobalAssets('Css')}" rel="stylesheet" type="text/css" th:href="@{${file}}" />
+    <!--end::Global Stylesheets-->
+
+    <!--begin::Custom Stylesheets(optional)-->
+    <link th:each="file: ${@theme.getCssFiles()}" rel="stylesheet" type="text/css" th:href="@{${@theme.getAssetPath(file)}}" />
+    <!--end::Custom Stylesheets-->
+</head>
+<!--end::Head-->
+
+<body th:attr="__${@theme.printHtmlAttributes('body')}__" th:class="${@theme.printHtmlClasses('body')}">
+    <th:block th:replace="partials/theme-mode/_init.html"></th:block>
+
+    <th:block layout:fragment="body"></th:block>
+
+    <th:block layout:fragment="offcanvas"></th:block>
+
+    <!--begin::Global Javascript(mandatory)-->
+    <script th:each="file: ${@theme.getGlobalAssets('Js')}" th:src="${file}"></script>
+    <!--end::Global Javascript-->
+
+    <!--begin::Vendors Javascript(optional)-->
+    <script th:each="file: ${@theme.getVendors('Js')}" th:src="${file}"></script>
+    <!--end::Vendors Javascript-->
+
+    <!--begin::Custom Javascript(optional)-->
+    <script th:each="file: ${@theme.getJavascriptFiles()}" th:src="${@theme.getAssetPath(file)}"></script>
+    <!--end::Custom Javascript-->
+</body>
+</html>

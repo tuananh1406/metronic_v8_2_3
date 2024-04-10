@@ -1,0 +1,64 @@
+<!-- begin::Brand -->
+<div class="aside-logo py-8" id="kt_aside_logo">
+  <!-- begin::Logo -->
+  <a routerLink="/dashboard" class="d-flex align-items-center">
+    <img alt="Logo" src="./assets/media/logos/demo6.svg" class="h-45px logo">
+  </a>
+  <!-- end::Logo -->
+
+  <!-- begin::Aside toggle -->
+  <ng-container *ngIf="asideMinimize">
+    <div
+      id="kt_aside_toggle"
+      class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle"
+      data-kt-toggle="true"
+      data-kt-toggle-state="active"
+      data-kt-toggle-target="body"
+      data-kt-toggle-name="aside-minimize"
+    >
+    </div>
+  </ng-container>
+  <!-- end::Aside toggler -->
+</div>
+<!-- end::Brand  -->
+
+<!-- begin::Aside menu -->
+<div
+  #ktAsideScroll
+  id="kt_aside_nav"
+  class="aside-nav d-flex flex-column align-lg-center flex-column-fluid w-100 pt-5 pt-lg-0"
+>
+  <app-aside-menu
+    id="kt_aside_menu"
+    data-kt-menu="true"
+    class="aside-menu flex-column-fluid">
+  </app-aside-menu>
+</div>
+<!-- end::Aside menu -->
+
+<!-- begin::Footer -->
+<div class="aside-footer flex-column-auto" id="kt_aside_footer">
+  <!--begin::Menu-->
+  <div class="d-flex justify-content-center">
+    <button type="button" class="btn btm-sm btn-icon btn-active-color-primary"
+      data-kt-menu-trigger="click"
+      data-kt-menu-placement="right-end"
+      data-kt-menu-flip="top-end"
+      data-bs-toggle="tooltip"
+      data-bs-trigger="hover"
+      data-bs-dismiss-="click"
+      ngbDropdown="Quick actions">
+      <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
+      <span
+        [inlineSVG]="'./assets/media/icons/duotune/general/gen008.svg'"
+        class="svg-icon btn-icon svg-icon-2"
+      ></span>
+      <!--end::Svg Icon-->
+    </button>
+    <!--begin::Menu 2-->
+    <app-dropdown-menu2></app-dropdown-menu2>
+    <!--end::Menu 2-->
+  </div>
+  <!--end::Menu-->
+</div>
+<!-- end::Footer -->

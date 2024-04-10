@@ -1,0 +1,49 @@
+//
+// Toolbar
+//
+
+.app-toolbar {
+	background-color: $app-toolbar-base-bg-color;
+
+	.header-search.search-custom {
+		input {
+			background-color: $app-toolbar-base-input-bg-color !important;	
+			border: transparent;		 
+		}
+
+		::placeholder { 
+			color: $gray-700 !important;
+		}
+
+		.svg-icon-custom {			 
+			color: $danger !important;			 	
+		}	
+
+		[data-kt-search-element="toggle"] {
+			svg {
+				color: $gray-900 !important;
+				cursor: pointer;	
+			}
+		}	 
+	}
+
+	.btn-custom {
+		background-color: $gray-200;
+	}
+	
+	.title-custom {
+		color: $gray-900;		 
+		font-weight: 700;
+	}
+
+	.description-custom {
+		color: $gray-700;	 
+	}
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	input {
+		height: 50px;			 
+	}
+}

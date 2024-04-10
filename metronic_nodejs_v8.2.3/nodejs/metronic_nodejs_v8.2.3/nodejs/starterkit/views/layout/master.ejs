@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html <%= theme.printHtmlAttributes('html') %>>
+<!--begin::Head-->
+
+<head>
+    <title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel by Keenthemes</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+
+
+    <link rel="shortcut icon" href="<%= theme.getFavicon() %>" />
+
+    <!--begin::Fonts-->
+    <% theme.getFonts().forEach(function(font){ %>
+        <link rel="stylesheet" href="<%= font %>" />
+    <% }); %>
+    <!--end::Fonts-->
+
+    <!--begin::Vendor Stylesheets(optional)-->
+    <% theme.getVendors("css").forEach(function(file){ %>
+        <link rel="stylesheet" type="text/css" href="<%= file %>" />
+    <% }); %>
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Global Stylesheets(mandatory)-->
+    <% theme.getGlobalAssets("css").forEach(function(file){ %>
+        <link rel="stylesheet" type="text/css" href="<%= file %>" />
+    <% }); %>
+    <!--end::Global Stylesheets-->
+
+    <!--begin::Custom Stylesheets(optional)-->
+    <% theme.getCssFiles().forEach(function(file){ %>
+        <link rel="stylesheet" type="text/css" href="<%= theme.getAssetPath(file) %>" />
+    <% }); %>
+    <!--end::Custom Stylesheets-->
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<body <%= theme.printHtmlAttributes('body') %> class="<%= theme.printHtmlClasses('body') %>">
+    <%- include(theme.getPartialPath("partials/theme-mode/_init.ejs")); %>
+
+    <%- include(currentLayout); %>
+    
+    <!--begin::Global Javascript(mandatory)-->
+    <% theme.getGlobalAssets("js").forEach(function(file){ %>
+        <script src="<%= file %>"></script>
+    <% }); %>
+    <!--end::Global Javascript-->
+
+    <!--begin::Vendors Javascript(optional)-->
+    <% theme.getVendors("js").forEach(function(file){ %>
+        <script src="<%= file %>"></script>
+    <% }); %>
+    <!--end::Vendors Javascript-->
+
+    <!--begin::Custom Javascript(optional)-->
+    <% theme.getJavascriptFiles().forEach(function(file){ %>
+        <script src='<%= theme.getAssetPath(file) %>'></script>
+    <% }); %>
+    <!--end::Custom Javascript-->
+</body>
+<!--end::Body-->
+
+</html>

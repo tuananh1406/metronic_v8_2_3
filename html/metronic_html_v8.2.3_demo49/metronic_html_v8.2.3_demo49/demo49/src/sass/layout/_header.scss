@@ -1,0 +1,83 @@
+//
+// Header
+//
+
+
+// General mode
+.app-header {
+	border-bottom: var(--#{$prefix}app-separator-border);
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+		display: flex;
+		align-items: stretch;
+
+		.app-header-logo {
+			display: flex;
+			align-items: center;
+			transition: $app-sidebar-base-transition;
+			width: var(--#{$prefix}app-sidebar-width-actual);
+
+			[data-kt-app-sidebar-collapse="on"] & {
+				transition: $app-sidebar-base-transition;
+			}
+		}
+
+		.app-header-wrapper {
+			flex-grow: 1;
+			display: flex;
+			align-items: stretch;
+			justify-content: space-between;
+
+			.app-container {
+				display: flex;
+				align-items: stretch;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	[dir="rtl"] {
+        .app-sidebar-secondary-toggle {
+            .svg-icon {
+                transform: rotateZ(180deg);
+            }
+
+            &.active .svg-icon {
+                transform: rotateZ(0deg) !important;
+            }
+        }
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+	.app-header {
+		display: flex;
+		align-items: stretch;
+		padding: 0 $app-container-padding-x-mobile;
+
+		.app-header-brand {
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			padding-left: 0 !important;
+		}
+
+		.app-header-wrapper {
+			flex-grow: 1;
+			display: flex;
+			align-items: stretch;
+			justify-content: end;
+
+			.app-container {
+				padding: 0 !important;
+				display: flex;
+				align-items: stretch;
+				justify-content: end;
+			}
+		}
+	}
+}

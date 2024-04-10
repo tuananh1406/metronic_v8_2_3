@@ -1,0 +1,41 @@
+<!--begin::Invite user-->
+<div class="d-flex ms-3">
+  <a class="btn btn-flex flex-center bg-body btn-color-gray-700 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
+    data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
+    <span [inlineSVG]="'./assets/media/icons/duotune/arrows/arr075.svg'"
+      class="svg-icon svg-icon-2 svg-icon-primary me-0 me-md-2"></span>
+    <span class="d-none d-md-inline">New Member</span>
+  </a>
+</div>
+<!--end::Invite user-->
+
+<!--begin::Create app-->
+<div class="d-flex ms-3">
+  <a class="btn btn-flex flex-center bg-body btn-color-gray-700 btn-active-color-primary w-40px w-md-auto h-40px px-0 px-md-6"
+    data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button"
+    data-bs-original-title="" title="" aria-describedby="popover399151">
+    <span [inlineSVG]="'./assets/media/icons/duotune/general/gen005.svg'"
+      class="svg-icon svg-icon-2 svg-icon-primary me-0 me-md-2"></span>
+    <span class="d-none d-md-inline">New App</span>
+  </a>
+</div>
+<!--end::Create app-->
+
+
+
+<!--begin::Chat-->
+<div class="d-flex align-items-center ms-3">
+  <!--begin::Menu wrapper-->
+  <div class="btn btn-icon btn-primary w-40px h-40px pulse pulse-white" id="kt_drawer_chat_toggle">
+    <span [inlineSVG]="'./assets/media/icons/duotune/communication/com012.svg'" class="svg-icon svg-icon-2"></span>
+    <span class="pulse-ring"></span>
+  </div>
+  <!--end::Menu wrapper-->
+</div>
+<!--end::Chat-->
+
+<!-- begin::Theme mode -->
+<app-theme-mode-switcher class="d-flex align-items-center ms-3"
+  toggleBtnClass="btn btn-icon btn-primary w-40px h-40px pulse pulse-white">
+</app-theme-mode-switcher>
+<!-- end::Theme mode -->

@@ -1,0 +1,53 @@
+//
+// Variables
+//
+
+// Reboot
+$app-bg-color: $body-bg;
+$app-bg-color-dark: $coal-400;
+
+// General
+$app-general-root-font-size-desktop: 13px;
+$app-general-root-font-size-tablet: 12px;
+$app-general-root-font-size-mobile: 12px;
+
+// Container
+$app-container-padding-x: 40px !default;
+$app-container-padding-x-mobile: 20px !default;
+
+// Header base
+$app-header-base-height: 90px;
+$app-header-base-height-mobile: 70px;
+$app-header-base-bg-color: $app-bg-color;
+$app-header-base-bg-color-dark: $app-bg-color-dark;
+
+// Sidebar base
+$app-sidebar-base-width: 300px;
+$app-sidebar-base-bg-color: $body-bg;
+$app-sidebar-base-bg-color-dark: $app-bg-color-dark;
+
+// Aside base
+$app-aside-base-width: 300px;
+$app-aside-base-bg-color: $body-bg;
+$app-aside-base-bg-color-dark: $app-bg-color-dark;
+
+// Content
+$app-content-padding-y: 20px;
+$app-content-padding-y-mobile: 15px;
+
+// Footer
+$app-footer-height: auto;
+$app-footer-height-mobile: auto;
+
+// Scrolltop
+$scrolltop-bottom: 43px;
+$scrolltop-bottom-mobile: 23px;
+$scrolltop-end: 7px;
+$scrolltop-end-mobile: 5px;
+
+// Layout builder toggle(used for Demo purposes only)
+$app-layout-builder-toggle-bg-color: $body-bg;
+$app-layout-builder-toggle-end: 50px;
+$app-layout-builder-toggle-end-mobile: 40px;
+$app-layout-builder-toggle-bottom: 40px;
+$app-layout-builder-toggle-bottom-mobile: 20px;

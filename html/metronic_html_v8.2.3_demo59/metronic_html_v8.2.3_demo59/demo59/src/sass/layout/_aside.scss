@@ -1,0 +1,10 @@
+//
+// Aside
+//
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-aside {
+        background-color: var(--#{$prefix}body-bg),
+    }
+}

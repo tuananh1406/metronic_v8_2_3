@@ -1,0 +1,83 @@
+//
+// Header Customization
+//
+
+// General
+.app-header-secondary-menu-main {
+	.menu-separator {
+		width: 1px;
+		height: 20px;
+		border-radius: 8px 8px 0px 0px;
+	}
+
+	.menu {
+		// Root items
+		> .menu-item {
+			margin: 0;
+			padding: 0;
+
+			> .menu-link {
+				border-radius: 8px 8px 0px 0px;
+				margin: 0;
+				padding: 0.65rem 1.25rem;
+			}
+
+			> .menu-content {
+				padding: 0;	
+			}				
+
+			&.here,
+			&.active {
+				& + .menu-item {
+					.menu-separator {
+						display: none;	
+					}	
+				}	
+			}
+		}
+	}
+}
+
+.app-header-secondary-menu-sub {
+	.menu {
+		// Root items
+		> .menu-item {
+			padding: 0.5rem 0.5rem 0.5rem 0rem;
+
+			> .menu-link {
+				padding: 0.45rem 0.75rem;
+
+				.menu-icon {
+					width: 1.5rem;
+					margin-right: 0.25rem;
+				}
+			}
+		}
+	}
+}	
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header-menu {
+		.menu {
+			// Root items
+			> .menu-item {
+				> .menu-link {
+					.menu-title {
+						font-size: 1.1rem;
+					}
+				}
+			}
+    	}
+	}	
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-header-secondary-menu-main,
+	.app-header-secondary-menu-sub {
+        .app-container {
+			padding: 0 !important;	
+		}
+    }
+}

@@ -1,0 +1,240 @@
+//
+// Header dark mode
+//
+
+@include color-mode(dark) {
+	// General
+	.app-header {
+		.btn.btn-custom {
+			@include button-custom-variant(
+				$color: null, 
+				$icon-color: $white, 
+				$border-color: null, 
+				$bg-color: $coal-100,
+				$color-active: null, 
+				$icon-color-active: $white,
+				$border-color-active: null, 
+				$bg-color-active: $coal-200,
+			);
+		}
+	}
+
+	.app-header-secondary-menu-main {
+		.menu-separator {
+			background: $coal-100;
+		}
+
+		.menu {
+			// Root items
+			> .menu-item {
+				@include menu-link-default-state( 
+					$title-color: $gray-900-dark, 
+					$icon-color: $gray-900-dark,
+					$bullet-color: $gray-900-dark,  
+					$arrow-color: $gray-900-dark,
+					$bg-color: null,
+					$all-links: false
+				);
+				
+				@include menu-link-hover-state( 
+					$title-color: $gray-900-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark, 
+					$arrow-color: $gray-900-dark,
+					$bg-color: null,
+					$all-links: false
+				);
+				
+				@include menu-link-show-state( 
+					$title-color: $gray-900-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark,
+					$arrow-color: $gray-900-dark,
+					$bg-color: null,
+					$all-links: false
+				);
+
+				@include menu-link-active-state( 
+					$title-color: $gray-900-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark,
+					$arrow-color: $gray-900-dark,
+					$bg-color: $app-header-secondary-menu-sub-bg-color-dark,
+					$all-links: false
+				);
+				
+				@include menu-link-here-state( 
+					$title-color: $gray-900-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark,
+					$arrow-color: $gray-900-dark,
+					$bg-color: $app-header-secondary-menu-sub-bg-color-dark,
+					$all-links: false
+				);
+
+				.menu-sub {
+					.menu-item {
+						@include menu-link-default-state( 
+							$title-color: $gray-600-dark, 
+							$icon-color: $gray-600-dark,
+							$bullet-color: $gray-600-dark, 
+							$arrow-color: $gray-600-dark,
+							$bg-color: null,
+							$all-links: true
+						);
+						
+						@include menu-link-hover-state( 
+							$title-color: $gray-700-dark, 
+							$icon-color: $primary-dark,
+							$bullet-color: $primary-dark,
+							$arrow-color: $gray-700-dark,
+							$bg-color: null,
+							$all-links: true
+						);
+						
+						@include menu-link-show-state( 
+							$title-color: $gray-700-dark, 
+							$icon-color: $primary-dark,
+							$bullet-color: $primary-dark, 
+							$arrow-color: $gray-700-dark,
+							$bg-color: null,
+							$all-links: true
+						);
+
+						@include menu-link-active-state( 
+							$title-color: $gray-700-dark, 
+							$icon-color: $primary-dark,
+							$bullet-color: $primary-dark,  
+							$arrow-color: $gray-700-dark,
+							$bg-color: $gray-100-dark,
+							$all-links: true
+						);
+						
+						@include menu-link-here-state( 
+							$title-color: $gray-700-dark, 
+							$icon-color: $primary-dark,
+							$bullet-color: $primary-dark, 
+							$arrow-color: $gray-700-dark,
+							$bg-color: $gray-100-dark,
+							$all-links: true
+						);	
+					}				
+				}
+			}
+		}
+	}
+
+	.app-header-secondary-menu-sub {
+		background-color: $app-header-secondary-menu-sub-bg-color-dark;
+
+		.menu {
+			// Root items
+			> .menu-item {		
+				@include menu-link-default-state( 
+					$title-color: $gray-600-dark, 
+					$icon-color: $gray-600-dark,
+					$bullet-color: $gray-600-dark, 
+					$arrow-color: $gray-600-dark,
+					$bg-color: null,
+					$all-links: true
+				);
+				
+				@include menu-link-hover-state( 
+					$title-color: $gray-800-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark, 
+					$arrow-color: $gray-800-dark,
+					$bg-color: null,
+					$all-links: true
+				);
+				
+				@include menu-link-show-state( 
+					$title-color: $gray-800-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark, 
+					$arrow-color: $gray-800-dark,
+					$bg-color: null,
+					$all-links: true
+				);
+
+				@include menu-link-active-state( 
+					$title-color: $gray-800-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark, 
+					$arrow-color: $gray-800-dark,
+					$bg-color: $coal-100,
+					$all-links: true
+				);
+				
+				@include menu-link-here-state( 
+					$title-color: $gray-800-dark, 
+					$icon-color: $primary-dark,
+					$bullet-color: $primary-dark, 
+					$arrow-color: $gray-800-dark,
+					$bg-color: $coal-100,
+					$all-links: true
+				);
+
+				.menu-link.active,
+				&.here .menu-link {
+					border: 1px solid $dark-light-dark;
+				}
+			}
+		}
+	}	
+
+	// Desktop mode
+	@include media-breakpoint-up(lg) {
+		.app-header-menu {
+			.menu {
+				// Root items
+				> .menu-item {
+					@include menu-link-default-state( 
+						$title-color: $gray-900-dark, 
+						$icon-color: $gray-900-dark,
+						$bullet-color: $gray-900-dark,  
+						$arrow-color: $gray-900-dark,
+						$bg-color: null,
+						$all-links: false
+					);
+					
+					@include menu-link-hover-state( 
+						$title-color: $gray-900-dark, 
+						$icon-color: $primary-dark,
+						$bullet-color: $primary-dark,   
+						$arrow-color: $gray-900-dark,
+						$bg-color: rgba($coal-100, 0.06),
+						$all-links: false
+					);
+					
+					@include menu-link-show-state( 
+						$title-color: $gray-900-dark, 
+						$icon-color: $primary-dark,
+						$bullet-color: $primary-dark, 
+						$arrow-color: $gray-900-dark,
+						$bg-color: rgba($coal-100, 0.06),
+						$all-links: false
+					);
+
+					@include menu-link-active-state( 
+						$title-color: $gray-900-dark, 
+						$icon-color: $primary-dark,
+						$bullet-color: $primary-dark, 
+						$arrow-color: $gray-900-dark,
+						$bg-color: $coal-100,
+						$all-links: false
+					);
+					
+					@include menu-link-here-state( 
+						$title-color: $gray-900-dark, 
+						$icon-color: $primary-dark,
+						$bullet-color: $primary-dark,   
+						$arrow-color: $gray-900-dark,
+						$bg-color: $coal-100,
+						$all-links: false
+					);
+				}
+			}
+		}	
+	}
+}

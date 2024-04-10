@@ -1,0 +1,21 @@
+~/.vscode-root
+
+tools/yarn.lock
+tools/package-lock.json
+tools/node_modules
+tools/yarn-error.log
+
+Starterkit/wwwroot/assets
+
+# exclude font cache
+_cache.php
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

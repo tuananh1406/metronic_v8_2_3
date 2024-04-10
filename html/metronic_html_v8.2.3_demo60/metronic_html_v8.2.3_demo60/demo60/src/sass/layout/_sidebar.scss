@@ -1,0 +1,57 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    .btn.btn-action {
+        width: 22px;
+        height: 22px;
+        margin-right: -6px;
+
+        @include button-custom-variant(
+            $color: null, 
+            $icon-color: var(--#{$prefix}gray-600),
+            $border-color: null, 
+            $bg-color: null,
+            $color-active: null, 
+            $icon-color-active: var(--#{$prefix}primary-inverse),
+            $border-color-active: null, 
+            $bg-color-active: var(--#{$prefix}primary)
+        );
+    }
+
+    .menu {
+        // General items
+        .menu-item {
+            .menu-content {
+                padding: 0.3rem 0 !important;
+            }
+
+            .menu-link {
+                .menu-icon {
+                    width: 1.1rem !important;          
+                } 
+            } 
+        } 
+    }
+
+    .separator {
+        border-bottom: 1px dashed $gray-300;
+    }
+} 
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar {
+        border-right: 0;
+    }
+}
+
+@include color-mode(dark) {
+    .app-sidebar {
+        .separator {
+            border-bottom: 1px dashed $dark-light-dark;
+        }
+    }
+}

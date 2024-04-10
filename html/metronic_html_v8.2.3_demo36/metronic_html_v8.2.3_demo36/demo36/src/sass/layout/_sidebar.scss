@@ -1,0 +1,200 @@
+//
+// Sidebar
+//
+
+.app-sidebar {
+    .hover-scroll-y {        
+        @include scrollbar-color(transparent, lighten(#383b47, 3%));
+    }
+
+    .separator {
+        border-bottom: 1px solid $gray-100-dark;
+        margin: 1rem 0;
+    }
+}
+
+.app-sidebar-header {
+    .symbol.symbol-custom {
+        background: rgba(255, 255, 255, 0.15);
+        width: 47px;
+        height: 47px;
+        border-radius: 12px;
+
+        img {
+            border-radius: 10px; 
+        }
+    }
+
+    .btn.btn-custom {
+        @include button-custom-variant(
+            $color: null, 
+            $icon-color: #818181,
+            $border-color: null, 
+            $bg-color: null, 
+            $color-active: null, 
+            $icon-color-active: null, 
+            $border-color-active: null, 
+            $bg-color-active: null
+        );
+
+        background-color: rgba(#767676, 0.3); 
+    }
+
+    .header-search {
+        input,
+        input:focus {
+			background: rgba(255, 255, 255, 0.05);	
+			border: transparent;
+		}
+
+        @include placeholder($gray-600);
+	
+        [data-kt-search-element="toggle"] {
+			svg {
+				color: $gray-700 !important;
+				cursor: pointer;	
+			}
+		}
+    }
+
+    .menu {
+        .menu-item {             
+            @include menu-link-hover-state( 
+                $title-color: null, 
+                $icon-color: null, 
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: $app-sidebar-base-menu-link-active,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: null, 
+                $icon-color: null, 
+                $bullet-color: null,  
+                $arrow-color: null, 
+                $bg-color: $app-sidebar-base-menu-link-active,
+                $all-links: true
+            ); 
+        } 
+    }
+}   
+
+.app-sidebar-navs {
+    .menu {
+        padding: 0 1.5rem;     
+
+        > .menu-item {
+            // Inner level
+            .menu-link {
+                .menu-title {
+                    font-size: 1.05rem;
+                    font-weight: $font-weight-normal; 
+                }
+            }
+
+            // Root level
+            > .menu-heading,
+            > .menu-link > .menu-title {
+                font-size: 1.15rem;
+                font-weight: $font-weight-semibold;      
+            }
+        }
+
+        .menu-item { 
+            .menu-heading {
+                color: $gray-600;
+            }
+
+            .menu-link {
+                .menu-icon {
+                    margin-right: 0.9rem;
+
+                    i {
+                        font-size: 1.5rem !important;
+                        line-height: 0;
+                    }
+
+                    .svg-icon {
+                        @include svg-icon-size(1.75rem, true);
+                    }
+                } 
+                
+                .menu-badge {
+                    .badge {
+                        font-weight: $font-weight-bold;
+                        font-size: 0.8rem;
+                    }
+
+                    .badge.badge-custom {
+                        background-color: #262626;
+                        color: $gray-600;                        
+                    }
+                } 
+
+                .menu-arrow {
+                    width: 11px;
+                    height: 11px;    
+                }
+            } 
+
+            @include menu-link-default-state( 
+                $title-color: $gray-300, 
+                $icon-color: $gray-700, 
+                $bullet-color: $gray-700, 
+                $arrow-color: $gray-700, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+            
+            @include menu-link-here-state( 
+                $title-color: $white, 
+                $icon-color: $white, 
+                $bullet-color: $white,  
+                $arrow-color: $white, 
+                $bg-color: null,
+                $all-links: true
+            );
+
+            @include menu-link-active-state( 
+                $title-color: $white, 
+                $icon-color: null, 
+                $bullet-color: $white, 
+                $arrow-color: $white, 
+                $bg-color: $primary,
+                $all-links: true
+            ); 
+        }       
+
+        .menu-collapse-toggle {
+            background-color: transparent !important;
+
+            .menu-title {
+                font-size: 1rem !important;
+                color: $gray-600 !important;
+            }          
+            
+            .svg-color {
+                color: $gray-400 !important;
+            }    
+        } 
+    } 
+}

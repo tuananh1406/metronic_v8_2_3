@@ -1,0 +1,112 @@
+//
+// Layout
+//
+
+
+.app-header {
+	border-bottom: $app-header-base-border-color; 
+
+	.app-navbar {
+		.app-navbar-item {
+			@include button-custom-variant(
+				$color: null, 
+				$icon-color: $app-header-base-nav-icon-color, 
+				$border-color: null, 
+				$bg-color: null, 
+				$color-active: null, 
+				$icon-color-active: $primary, 
+				$border-color-active: null, 
+				$bg-color-active: null
+			)
+		}
+	}	
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+			// Root links
+			> .menu-item {
+				position: relative; 
+				margin-right: 2.3rem !important; 
+
+				// Customize menu link default state       
+				@include menu-link-default-state( 
+					$title-color: $gray-700-dark, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: null, 
+					$all-links: false
+				);
+
+				// Customize menu link hover state       
+				@include menu-link-hover-state( 
+					$title-color: $white, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link here state       
+				@include menu-link-here-state( 
+					$title-color: $white, 
+					$icon-color: null,
+					$bullet-color: null, 
+					$arrow-color: null,
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link show state       
+				@include menu-link-show-state( 
+					$title-color: $white, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				// Customize menu link active state       
+				@include menu-link-active-state( 
+					$title-color: $white, 
+					$icon-color: null, 
+					$bullet-color: null, 
+					$arrow-color: null, 
+					$bg-color: transparent, 
+					$all-links: false
+				);
+
+				> .menu-link {                       
+                    margin-left: 0;                     
+                    padding: 0;
+                    font-size: 1.2rem;
+
+					.menu-title {
+						font-size: 1.1rem;
+						font-weight: $font-weight-bold;							
+					}
+                }
+
+				// States
+                &.here > .menu-link,
+                & > .menu-link.active {                     
+                    &:after {
+                        position: absolute;                                                    
+                        bottom: -1px;
+                        left: 0;                        
+                        width: 100%;
+                        height: 2px;                        
+                        content: " ";
+                        background-color: $white;      
+						@include border-radius(20px);                   
+                    }                     				
+                }     
+			}
+		}
+    } 
+}

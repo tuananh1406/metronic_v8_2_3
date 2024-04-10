@@ -1,0 +1,26 @@
+<!--begin::Authors-->
+<div class="mx-5">
+  <!--begin::Header-->
+  <h3 class="fw-bolder text-gray-900 mx-0 mb-10">Authors</h3>
+  <!--end::Header-->
+  <!--begin::Body-->
+  <div class="mb-12">
+    <!--begin::Item-->
+    <div *ngFor="let item of allAuthors" class="d-flex align-items-center mb-7">
+      <!--begin::Avatar-->
+      <div class="symbol symbol-50px me-5">
+        <img [src]="item.avatar" class="" [alt]="item.name" />
+      </div>
+      <!--end::Avatar-->
+      <!--begin::Text-->
+      <div class="flex-grow-1">
+        <a class="text-gray-900 fw-bolder text-hover-primary fs-6">{{item.name}}</a>
+        <span class="text-muted d-block fw-bold">{{item.description}}</span>
+      </div>
+      <!--end::Text-->
+    </div>
+    <!--end::Item-->
+  </div>
+  <!--end::Body-->
+</div>
+<!--end::Authors-->

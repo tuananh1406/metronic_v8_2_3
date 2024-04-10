@@ -1,0 +1,29 @@
+//
+// Root
+//
+
+@include color-mode(light) {
+    // Separator
+    --#{$prefix}app-separator-border: #{$app-separator-border};
+
+    // Content
+    --#{$prefix}app-content-bg-color: #{$app-content-bg-color};
+    --#{$prefix}app-content-border-color: #{$app-content-border-color};
+    --#{$prefix}app-content-box-shadow: #{$app-content-box-shadow};
+
+    // Sidebar menu
+    --#{$prefix}app-sidebar-base-menu-link-box-shadow-active: #{$app-sidebar-base-menu-link-box-shadow-active};
+}
+
+@include color-mode(dark) {
+	// Separator
+    --#{$prefix}app-separator-border: #{$app-separator-border-dark};
+
+    // Content
+    --#{$prefix}app-content-bg-color: #{$app-content-bg-color-dark};
+    --#{$prefix}app-content-border-color: #{$app-content-border-color-dark};
+    --#{$prefix}app-content-box-shadow: #{$app-content-box-shadow-dark};
+
+    // Sidebar menu
+    --#{$prefix}app-sidebar-base-menu-link-box-shadow-active: #{$app-sidebar-base-menu-link-box-shadow-active-dark};
+}

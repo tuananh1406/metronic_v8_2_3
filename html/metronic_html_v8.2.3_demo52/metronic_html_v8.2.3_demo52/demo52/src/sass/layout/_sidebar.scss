@@ -1,0 +1,43 @@
+//
+// Sidebar
+//
+
+// General mode
+.app-sidebar {
+    .app-sidebar-menu {
+        gap: 4;
+
+        > .menu-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > .menu-link {
+                height: 50px;
+                max-width: 50px;
+                @include border-radius($border-radius-lg);
+                margin-bottom: 0.6rem;
+            }
+
+            @include menu-link-here-state( 
+                $title-color: null,
+                $icon-color: null, 
+                $bullet-color: null,
+                $arrow-color: null,
+                $bg-color: var(--#{$prefix}menu-link-bg-color-here),
+                $all-links: false
+            );
+        }
+    }
+
+    .menu-heading {
+        color: var(--#{$prefix}gray-700);
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    .app-sidebar {
+        background-color: var(--#{$prefix}body-bg);
+    }
+}

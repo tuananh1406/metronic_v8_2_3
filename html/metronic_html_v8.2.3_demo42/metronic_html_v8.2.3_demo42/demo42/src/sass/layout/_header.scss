@@ -1,0 +1,33 @@
+//
+// Header
+//
+
+// General mode
+.app-header {
+	border-bottom: var(--#{$prefix}app-separator-border);
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+	.app-header {
+		.app-container {
+			display: flex;
+		}
+
+		.header-search {
+			.search-input {
+				@include placeholder($gray-500);
+				background-color: transparent;	
+				border: 0;
+				padding-left: 0 !important;
+				margin-left: 26px !important;
+			}	
+
+			.search-icon {
+				margin-left: 0 !important;
+				color: $gray-600;
+				font-size: 2x;
+			}
+		}
+	}
+}
