@@ -10,6 +10,7 @@ import {Routes, Route, BrowserRouter, Navigate} from 'react-router-dom'
 import {PrivateRoutes} from './PrivateRoutes'
 import {ErrorsPage} from '../modules/errors/ErrorsPage'
 import {Logout, AuthPage, useAuth} from '../modules/auth'
+import {CustomLayout} from '../modules/custom/CustomLayout'
 import {App} from '../App'
 
 /**
@@ -26,6 +27,7 @@ const AppRoutes: FC = () => {
       <Routes>
         <Route element={<App />}>
           <Route path='error/*' element={<ErrorsPage />} />
+          <Route path='custom' element={<CustomLayout />} />
           <Route path='logout' element={<Logout />} />
           {currentUser ? (
             <>
