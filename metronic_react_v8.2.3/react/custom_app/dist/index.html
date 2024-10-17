@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta property="og:url"                content="https://react.huutuananh.com" />
+        <meta property="og:type"                content="website" />
+        <meta property="og:title"              content="Hữu Tuấn Anh website" />
+        <meta property="og:description"        content="Hữu Tuấn Anh" />
+        <meta property="og:image"              content="https://react.huutuananh.com/media/huutuananh/cover-share-img.jpg" />
+        <meta property="og:image.secure_url"              content="https://react.huutuananh.com/media/huutuananh/cover-share-img.jpg" />
+        <meta property="og:locale"              content="vi_VN" />
+        <meta property="fb:app_id"               content="662801778322921" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Hữu Tuấn Anh" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+        <title>Hữu Tuấn Anh website</title>
+        <link rel="shortcut icon" href="/media/logos/favicon.ico" />
+        <link rel="stylesheet" id="layout-styles-anchor" href="/splash-screen.css" />
+      <script type="module" crossorigin src="/assets/index-f3c3beea.js"></script>
+      <link rel="stylesheet" href="/assets/index-f07139ed.css">
+    </head>
+
+    <body id="kt_body" class="page-loading">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <!--begin::Theme mode setup on page load-->
+        <script>
+            let themeMode = 'dark'
+
+            if (localStorage.getItem('kt_theme_mode_value')) {
+                themeMode = localStorage.getItem('kt_theme_mode_value')
+            }
+
+            if (themeMode === 'system') {
+                themeMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark'
+            }
+
+            if (themeMode === 'light') {
+                themeMode = localStorage.setItem('kt_theme_mode_value', 'dark')
+            }
+
+            document.documentElement.setAttribute('data-bs-theme', 'dark')
+        </script>
+        <!--end::Theme mode setup on page load-->
+
+        <div id="root"></div>
+
+        <!--begin::Loading markup-->
+        <div id="splash-screen" class="splash-screen">
+            <img src="/media/logos/default-dark.svg" class="dark-logo" alt="Metronic dark logo" />
+            <img src="/media/logos/default.svg" class="light-logo" alt="Metronic light logo" />
+            <span>Loading ...</span>
+        </div>
+        <!--end::Loading markup-->
+
+        <div id="root-modals"></div>
+
+        
+    </body>
+
+</html>
